@@ -1,0 +1,22 @@
+{
+    "name": "jwd",
+    "version": "1.0.0",
+    "license": "GPL-3.0",
+    "description" : "jin - softphone",
+    "main": "index.html",
+    "single-instance": false,
+    "window": {
+        "toolbar": true,
+        "width": 1130,
+        "height": 750,
+        "icon": "./web/public/jin-icon.png"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/komunikator/jin"
+    },
+    "license": "GNU GPLv3",
+    "dependencies": {
+        "mars": "https://github.com/komunikator/mars.git"
+    }
+}

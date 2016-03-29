@@ -1,0 +1,781 @@
+/* ---------->>> GLOBAL beginning<<<-----------*/
+* {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100.01%;
+}
+body {
+    font-size: 1em;
+    height: 100%;
+}
+.cleaner {
+    clear: both;
+}
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-size{
+    width:60px !important;
+    height:60px !important;
+}
+.call-end_btn{
+    display: flex; 
+    margin-right:0px;
+}
+.online-icon{
+    background:url(../images/online.png) ;
+}
+.offline-icon{
+    background:url(../images/offline.png) ;
+}
+.notAvailable-icon{
+    background:url(../images/notAvailable.png) ;
+}
+.dontDisturb-icon{
+    background:url(../images/dontDisturb.png) ;
+}
+.online-text:after{
+    content: 'online';
+}
+.offline-text:after{
+    content: 'offline';
+}
+.notAvailable-text:after{
+    content: 'not available';
+}
+.online_border{
+    box-shadow: 0 0 0 2px #009E00;
+}
+.offline_border{
+    box-shadow: 0 0 0 2px #CECECE;
+}
+.notAvailable_border{
+    box-shadow: 0 0 0 2px #FFCC4D;
+}
+.blue {
+    background-color: #489FD1 !important;
+}
+
+.blue-text {
+    color: #489FD1 !important;
+}
+.waves-effect.waves-blue .waves-ripple {
+    background-color: rgba(87, 175, 218, 0.7);
+}
+
+.orange {
+    background-color: #FF7726 !important;
+}
+
+.orange-text {
+    color: #FF7726 !important;
+}
+
+.waves-effect.waves-orange .waves-ripple {
+    background-color: rgba(255, 140, 49, 0.7);
+}
+
+.grey {
+    background-color: #f0f0f0 !important;
+}
+
+.grey-text {
+    color: #f0f0f0 !important;
+}
+/* FORM */
+/* label color */
+.input-field label {
+    color: #FF7726 !important;
+}
+
+input {
+    border-bottom: 1px solid #FF7726 !important;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+    color: #FF7726 !important;
+    background-color: transparent!important;
+}
+
+/* label underline focus color */
+.input-field input:focus {
+    border-bottom: 1px solid #FF7726 !important;
+    box-shadow: 0 1px 0 0 #FF7726 !important;
+}
+
+/* valid color */
+.input-field input.valid {
+    border-bottom: 1px solid #FF7726 !important;
+    box-shadow: 0 1px 0 0 #FF7726 !important;
+    color: #FF7726 !important;
+}
+
+/* invalid color */
+.input-field input.invalid {
+    border-bottom: 1px solid #FB0029 !important;
+    box-shadow: 0 1px 0 0 #FB0029 !important;
+    color: #FB0029 !important;
+}
+
+
+/* checkbox */
+[type="checkbox"] + label:before {
+    border: 2px solid #969696;
+}
+
+[type="checkbox"]:checked + label:before {
+    border-right: 2px solid #FF7726;
+    border-bottom: 2px solid #FF7726;
+}
+.title{
+    color: #000000 !important;
+    font-size: 11pt !important;
+    margin-top: 1vh;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+}
+/* ---------->>> GLOBAL end<<<-----------*/
+
+
+/* ---------->>> Login form beginning <<<-----------*/
+.login {
+    height: 300px;
+    margin-top: 150px;
+    top: 50%;
+    width: 450px;
+}
+
+.login__btn {
+    text-align: center;
+}
+.login__btn_style {
+    border-radius: 15px;
+    width: 200px;
+}
+.login__link {
+    margin-top: 10px;
+    text-align: center;
+}
+/* ---------->>> Login form end <<<-----------*/
+
+
+/* ---------->>> Guest login form beginning <<<-----------*/
+
+.guest {
+    height: 300px;
+    margin-top: 150px;
+    top: 50%;
+    width: 450px;
+}
+.guest__btn_style {
+    border-radius: 15px;
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 200px;
+}
+.guest__link {
+    margin-top: 10px;
+    text-align: center;
+}
+/* ---------->>> Guest login form end <<<-----------*/
+
+
+/* ---------->>> general form beginning <<<-----------*/
+#general {
+    height: 100vh;
+    min-height: 580px;
+    width: 100%;
+    min-width: 550px;
+}
+/* ---------->>> general form end <<<-----------*/
+
+
+/* ---------->>> head block form beginning<<<-----------*/
+.head {
+    width: 100%;
+    height: 170px;
+    position: fixed;
+}
+.head__nav{
+    height:170px; 
+    line-height: 170px; 
+    padding-left:10px; 
+    padding-right:10px;
+}
+.head__nav_my-status{
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    background-size: cover;
+    height:20px;
+    width:20px;
+    top: 75px;
+    left:40px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+}
+.head__nav_my-status:hover{
+    opacity: 0.5; 
+    background:url(../images/down.png) ;
+    background-size: cover;
+    height:20px;
+    width:20px; 
+    top:75px; 
+    left:40px;
+    z-index: 2;
+    position: absolute;
+}
+.head__nav_left{
+    width: 25%; 
+    max-width: 250px; 
+    min-width: 170px; 
+    display: inline-block; 
+    line-height: 170px; 
+    vertical-align: middle;
+    border: none
+}
+.my-profile__el{
+    background-color:transparent !important; 
+}
+.my-profile__el_ava{
+    height:40px !important;
+    width:40px !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important; 
+}
+.head__nav_right{
+    display: inline-block;
+}
+.ability__item{
+    margin-right:10px;
+}
+.ability__item_numpad-icon{
+    height:30px; 
+    width:30px; 
+    cursor:pointer;
+}
+.ability__item_search-input{
+    height:30px !important;
+    width:100px !important; 
+    padding-left:0 !important;
+    margin-top:60px !important; 
+}
+.ability__item_search-icon{
+    height:30px; 
+    width:30px; 
+    cursor:pointer;
+}
+/* ---------->>> head block form end <<<-----------*/
+
+
+/* ---------->>> dropdown list status beginning <<<-----------*/
+.drop-status{
+    font-size:11px; 
+    min-width:120px;
+}
+.drop-status__el{
+    min-height:30px !important;
+}
+.drop-status__el >a{
+    padding: 5px 5px !important;
+}
+.drop-status__el_icon-style{
+    height:20px !important; 
+    width:20px !important; 
+    background-size: cover !important; 
+    float: left !important; 
+    margin-right:5px !important;
+}
+/* ---------->>> dropdown list status end <<<-----------*/
+
+
+/* ---------->>> middle block form beginning <<<-----------*/
+.middle-block{
+    display:block; 
+    width: 100%;
+    min-width: 735px;
+    position: fixed;  
+    top: 170px;
+}
+/* ---------->>> middle block end <<<-----------*/
+
+
+/* ---------->>> menu form beginning <<<-----------*/
+.menu {
+    float:left;
+    width: 25%;
+    min-width: 170px;
+    max-width: 250px;
+    height: calc(100vh - 170px);
+    background: #f0f0f0;
+}
+.menu__list{
+    margin:0;
+    border-top: none; 
+    box-shadow:none; 
+    height:97%;
+}
+.menu__list_item{
+    cursor: pointer;
+}
+.menu__list_txt-contact{
+    color: #000000; 
+    font-size: 16pt;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+.menu__list_txt-last{
+    background:transparent;
+    color: #565656; 
+    font-size: 13pt ;
+}
+.menu__list_item#last_btn{
+    background:transparent;
+    height: 100%; 
+    overflow-y: auto;
+}
+/* ---------->>> menu form end <<<-----------*/
+
+
+/* ---------->>> content form beginning <<<-----------*/
+.content {
+    height: calc(100vh - 170px);
+        position: relative;
+    /* width: 100%; */
+    /* float: left; */
+    /* max-width: calc(100% - 250px); */
+    /* min-width: 72%; */
+    /* min-width:550px; */
+}
+/* ---------->>> content form end <<<-----------*/
+
+
+/* ---------->>> contacts list block form beginning <<<-----------*/
+.contform{
+    background: rgba(234, 189, 89, 0.44);
+    padding-top: 40px;
+}
+.contform__title{
+    margin-left:calc(4% + 2px);
+}
+/* ---------->>> contacts list block form end <<<-----------*/
+
+
+/* ---------->>> history block form beginning <<<-----------*/
+.histform{
+    width:100%;
+    display: block;
+    height: 100%;
+}
+.histform__nav{
+    background: #FFFFFF;
+    line-height: 90px;
+    height: 90px;
+}
+.histform-head__item{
+    cursor:pointer;
+    height: 100% !important;  
+}
+.histform-head__item_ava{
+    height: 60px !important;
+    width: 60px !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    /* margin-left: 10px !important; */
+    margin-left: calc((8vw - 50px)) !important;
+    margin-right: 10px !important;
+    margin-top: 20px !important;
+}
+.histform-head__item_img-style{
+    width: 30px;
+    height: auto;
+    /*    margin-top: 10px;*/
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.user-profile{
+    width:20%; 
+    min-width:100px; 
+    max-width:300px;
+    font-size:1.5em;
+}
+.user-profile__el{
+    width: 25%;
+    max-width: 250px;
+    min-width: 170px; 
+    display: inline-block; 
+    line-height: 170px; 
+    vertical-align: middle; 
+    border-color:transparent;
+}
+.user-profile__el_style{
+    background-color:transparent !important; 
+    padding-left:0px !important;
+}
+.user-profile__el_text{
+    font-size:14pt;
+}
+.user-profile__el_icon{
+    height:20px !important;
+    width:20px !important;
+    left:0px !important;
+    margin:0px;
+    margin-right: 20px;
+}
+/* ---------->>> history block form end <<<-----------*/
+
+.new_msg{
+    min-width: 1.5rem !important;
+    background: #FF7726;
+    color: white !important;
+    right: 5px !important; 
+    font-size: 9pt !important; 
+    border-radius: 20px;
+}
+
+.lastMessage{
+    color: #969696;
+    font-size: 2vh !important;
+    padding-top: 0.5vh;
+}
+.userListIcon{
+    height: 30px !important;
+    width: 30px !important;
+    left: 0px !important;
+    background-size: cover !important;
+    margin-left: 1rem !important;
+    background-position: center !important;
+}
+.userListIcon1{
+    height: 60px !important;
+    width: 60px !important;
+    left: 0px !important;
+    background-size: cover !important;
+    margin-left: 1rem !important;
+    background-position: center !important;
+}
+
+.userStatusIcon{
+    border: 0px solid white;
+    height: 15px !important;
+    width: 15px !important;
+    top: 30px !important;
+    left: 35px !important;
+    vertical-align: middle;
+}
+.userStatusIcon1{
+    border: 0px solid white;
+    height: 20px !important;
+    width: 20px !important;
+    top: 50px !important;
+    left: 60px !important;
+    vertical-align: middle;
+}
+
+nav ul li:hover, nav ul li.active {
+    background-color: transparent !important;
+}
+
+.histform-head__item#userName{
+
+}
+.histform-head__item#outgoingCall, .histform-head__item#outgoingVideo{
+    height: auto;
+    float: right;
+}
+.histform-head__item#outgoingCall i, .histform-head__item#outgoingVideo i{
+    line-height: 56px; 
+}
+.histform__table1{
+    width:100%; 
+    height:68%; 
+    overflow:auto;
+    /*margin-bottom: 3%;*/
+    padding-bottom: 5%;
+}
+.histform__table1 td:nth-child(3){
+    width:65px;
+}
+.chat{
+    /*    margin:0 10px;*/
+    /*    width: 90%;*/
+
+}
+td{
+    /*    padding: 1vh 1vw;*/
+    /*margin-bottom: 2vh;
+    margin-right: 2vw;
+    */}
+/*Ð½Ð°Ñ‡Ð°Ð»Ð¾ Ð¿Ñ€Ð¾Ð¿ÑƒÑ‰ÐµÐ½Ð½Ñ‹Ð¹ Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+.chat .msg__missed_call td:first-child{
+    width:8vw;
+    text-align: right;
+}
+.chat .msg__missed_call td:first-child img{
+    max-width:30px; 
+    height:auto;
+}
+.chat  .msg__missed_call td:nth-child(2){
+    color: #C60000;
+}
+.chat .msg__missed_call td:nth-child(3){
+    width:5vw;
+}
+/*ÐºÐ¾Ð½ÐµÑ† Ð¿Ñ€Ð¾Ð¿ÑƒÑ‰ÐµÐ½Ð½Ñ‹Ð¹ Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+
+/*Ð½Ð°Ñ‡Ð°Ð»Ð¾ Ð¿Ñ€Ð¾Ð¿ÑƒÑ‰ÐµÐ½Ð½Ñ‹Ð¹ Ð²Ð¸Ð´ÐµÐ¾Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+.chat .msg__missed_video-call td:first-child{
+    width:8vw;
+    text-align: right;
+}
+.chat .msg__missed_video-call td:first-child img{
+    max-width:30px; 
+    height:auto;
+}
+.chat  .msg__missed_video-call td:nth-child(2){
+    color: #C60000;
+}
+.chat .msg__missed_video-call td:nth-child(3){
+    width:5vw;
+}
+/*ÐºÐ¾Ð½ÐµÑ† Ð¿Ñ€Ð¾Ð¿ÑƒÑ‰ÐµÐ½Ð½Ñ‹Ð¹ Ð²Ð¸Ð´ÐµÐ¾Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+
+/*Ð½Ð°Ñ‡Ð°Ð»Ð¾ Ð²Ñ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ Ð²Ð¸Ð´ÐµÐ¾Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+.chat .msg__incoming_video-call td:first-child{
+    width:8vw;
+}
+
+.chat  .msg__incoming_video-call td:nth-child(2){
+    color: #3C3C3C;
+}
+.chat .msg__incoming_video-call td:nth-child(3){
+    width:5vw;
+}
+/*ÐºÐ¾Ð½ÐµÑ† Ð²Ñ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ Ð²Ð¸Ð´ÐµÐ¾Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+
+/*Ð½Ð°Ñ‡Ð°Ð»Ð¾ Ð¸ÑÑ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ Ð²Ð¸Ð´ÐµÐ¾Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+.chat .msg__outgoing_video-call td:first-child{
+    width:8vw;
+    text-align: right;
+}
+.chat .msg__outgoing_video-call td:first-child img{
+    max-width:30px; 
+    height:auto;
+}
+.chat  .msg__outgoing_video-call td:nth-child(2){
+    color: #3C3C3C;
+}
+.chat .msg__outgoing_video-call td:nth-child(3){
+    width:5vw;
+}
+/*ÐºÐ¾Ð½ÐµÑ† Ð¸ÑÑ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ Ð²Ð¸Ð´ÐµÐ¾Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+
+/*Ð½Ð°Ñ‡Ð°Ð»Ð¾ Ð²Ñ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+.chat .msg__incoming_call td:first-child{
+    width:8vw;
+    text-align: right;
+}
+.chat .msg__incoming_call td:first-child img{
+    max-width: 30px;
+    height:auto;
+}
+.chat  .msg__incoming_call td:nth-child(2){
+    color: #3C3C3C;
+}
+.chat .msg__incoming_call td:nth-child(3){
+    width:5vw;
+}
+/*ÐºÐ¾Ð½ÐµÑ† Ð²Ñ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+
+/*Ð½Ð°Ñ‡Ð°Ð»Ð¾ Ð¸ÑÑ…Ð¾Ð´ÑÑ‰Ð¸Ð¹ Ð·Ð²Ð¾Ð½Ð¾Ðº*/
+.chat .msg__outgoing_call td:first-child{
+    width:8vw;
+    text-align: right;
+}
+.chat .msg__outgoing_call td:first-child img{
+    max-width:30px;
+    height:auto;
+}
+.chat  .msg__outgoing_call td:nth-child(2){
+    color: #3C3C3C;
+}
+.chat .msg__outgoing_call td:nth-child(3){
+    width:5vw;
+}
+
+
+.bubble {
+    position: relative;
+    width: 70%;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4;
+    color: #3C3C3C;
+    word-wrap: break-word;
+        z-index: 0;
+}
+.bubble:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -10px;
+    height: 40px;
+    width: 50px;
+}
+.bubble.left {
+    float: left;
+    margin-left: 20px;
+}
+.bubble.left:before {
+    left: -20px;
+    border-bottom-right-radius: 100% 100%;
+    box-shadow: -38px 9px 0 -9px #CECECE inset;
+}
+.bubble.left .content1 {
+    background: #CECECE;
+    color: #3C3C3C;
+    border-radius: 10px;
+}
+.bubble.right {
+    float: right;
+    margin-right: 20px;
+}
+.bubble.right:before {
+    right: -20px;
+    border-bottom-left-radius: 100% 100%;
+    box-shadow: 38px 9px 0 -9px #489FD1 inset;
+}
+.bubble.right .content1 {
+    background: #489FD1;
+    color: white;
+    border-radius: 10px;
+}
+.bubble .content1 {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+.circle1 {
+    width: 30px;
+    height: 30px;
+    background: #C4C3C3;
+    text-align: center;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    line-height: 30px;
+    float: right;
+}
+
+
+/* ---------->>> outform & incform & videoform block form beginning <<<-----------*/
+.outform, .incform{
+    margin-top:30px;
+}
+.outform__avatar, .incform__avatar{
+    width:150px; 
+    height:150px; 
+    display:block; 
+    margin: auto;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+.outform__status{
+    display:block; 
+    margin: 10px auto; 
+    text-align: center;
+}
+.outform__timer{
+    display:block; 
+    margin: 10px auto; 
+    color: #3C3C3C; 
+    text-align: center;
+}
+.outform__buttons, .incform__buttons, .videoform__buttons{
+    display: -webkit-box;
+    -webkit-box-pack: justify; 
+    display: -webkit-flex; 
+    -webkit-justify-content: -webkit-justify-content; 
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-align-last: justify; 
+    margin-bottom: 10px;
+}
+
+.outform__buttons_item, .incform__buttons_item, .videoform__buttons_item{
+    display: inline-block;    
+    display: -webkit-box; 
+    text-align: left;
+    margin-right:30px; 
+}
+.outform__buttons li:last-child, .incform__buttons li:last-child{
+    margin-right:0px;
+}
+.outform__called-name{
+    font-size: 2em;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    color: #3C3C3C;
+    text-align: center;
+}
+.incform__status{
+    display:block; 
+    margin: 0 auto; 
+    text-align: center;
+    color: #3C3C3C;
+    font-size: 1.5em;
+    margin-top:20px; 
+}
+.incform__caller-name{
+    display: block;
+    text-align: center;
+    margin-top:20px; 
+}
+.videoform{
+    height: 100%; 
+    padding-top: 10%;
+}
+.videoform__avatar{
+    width: 100px; 
+    height: 100px; 
+    display: block; 
+    margin: auto;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+.videoform__called-name{
+    font-size:2em; 
+    display:block; 
+    width:90%; 
+    margin: 5% auto; 
+    color: #3C3C3C;  
+    text-align: center;
+}
+.videoform__status{
+    display:block; 
+    margin: 5% auto; 
+    text-align: center;
+}
+.videoform__timer{
+    display:block; 
+    margin: 5% auto; 
+    color: #3C3C3C; 
+    text-align: center;
+}
+/* ---------->>> outform & incform & videoform block form end <<<-----------*/
+

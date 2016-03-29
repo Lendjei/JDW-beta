@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JIN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="Author" content="Jose Luis Millan, Inaki Baz Castillo" />
+        <link rel="stylesheet" href="web/public/softphone/css/style.css" type="text/css" />
+        <script>
+        </script>
+        <script type='text/javascript'>
+
+
+            //console.log( '*********************** getCurrentTransport() = ,' getCurrentTransport(); );
+            /* - - определяется основной язык пользовател и по этому параметру
+             * выбираем какой файл css подключать - - - - - - - - - - - - - */
+            function getUrlVars()
+            {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++)
+                {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+
+            var lang = getUrlVars()["lang"];
+            (lang == 'ru') ? docss("web/public/softphone/ru.css") : (lang == 'en') ? docss("en.css") : docss("ru.css");
+
+            function docss(name)
+            {
+                var st = document.createElement("link");
+                st.setAttribute("rel", "stylesheet");
+                st.setAttribute("href", "web/public/softphone/css/" + name);
+                document.getElementsByTagName("head")[0].appendChild(st)
+            }
+
+        </script>
+
+        <link rel="icon" type="images/png" href="web/public/softphone/images/favicon.png" />
+        <link rel="icon" type="images/png" href="web/public/softphone/images/dialed-number.png" />
+        <link rel="icon" type="images/png" href="web/public/softphone/images/help-icon.png" />
+        <link rel="icon" type="images/png" href="web/public/softphone/images/logo-mini.png" />
+        <link rel="icon" type="images/png" href="web/public/softphone/images/transparent-25-bg.png" />
+        <link rel="icon" type="images/png" href="web/public/softphone/images/transparent-50-bg.png" />
+        <link rel="icon" type="images/png" href="web/public/softphone/images/transparent-black-75-bg.png" />
+    </head>
+
+
+    <body id="body" class="bg01">
+        <script src="web/public/softphone/js/jquery-2.1.1.min.js"></script>
+        <script src="web/public/softphone/js/materialize.js"></script>
+        <script src="web/public/softphone/js/jquery.balloon.min.js" type="text/javascript"></script>
+        <script src="web/public/softphone/js/parseuri.js" type="text/javascript"></script>
+        <script src="web/public/softphone/js/init.js" type="text/javascript"></script>
+        <script src="web/public/softphone/js/gui.js" type="text/javascript"></script>
+
+        <script src="jin.js"></script>
+        <link href="web/public/softphone/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="web/public/softphone/css/jin.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+
+        <!-- For Hacking Tryit read http://tryit.jssip.net/js/custom.REMOVE_THIS.js -->
+
+        <!-- Try to load js/custom.js file -->
+        <!--script src="http://tryit.jssip.net/js/custom.js" type="text/javascript"></script -->
+        <!-- If CustomJsSIP is set in js/custom.js file then load JsSIP from the URL in CustomJsSIP variable. -->
+
+        <script>
+            if (window.CustomJsSIP) {
+                console.log("Tryit: CustomJsSIP found in js/custom.js, loading JsSIP from " + window.CustomJsSIP + "...");
+                // document.write('<script src="http://tryit.jssip.net/'%20+%20CustomJsSIP%20+%20'"><\/script>');
+                document.write('<script src="js/jssip.js"><\/script>');
+            } else {
+                document.write('<script src="js/jssip.js"><\/script>');
+            }
+        </script>
+
+        <script>JsSIP.debug.enable("*");</script>
+
+        <!-- Try to load rtcninja-temasys.js -->
+        <script src="web/public/softphone/js/rtcninja-temasys.min.js" type="text/javascript"></script>
+        <!-- If CustomJsSIP is set in js/custom.js file then load JsSIP from the URL in CustomJsSIP variable. -->
+        <script>
+            if (window.rtcninjaTemasys) {
+                rtcninjaTemasys({},
+                        // alreadyInstalledCb
+                                function () {
+                                    JsSIP.rtcninja({plugin: rtcninjaTemasys});
+                                },
+                                // needInstallCb
+                                        function (data) {
+                                            alert('WebRTC plugin required');
+                                        },
+                                        // notRequiredCb
+                                        null
+                                        );
+                            }
+
+        </script>
+
+        <!-- ---------- dropdown list status beginning ----------- -->
+        <ul id="dropdown_status" class="dropdown-content drop-status">
+            <li class="drop-status__el">
+                <a href="#!">
+                    <div class="drop-status__el_icon-style circle online-icon"></div>В сети</a>
+            </li>
+            <li class="drop-status__el">
+                <a href="#!">
+                    <div class="drop-status__el_icon-style circle notAvailable-icon"></div>Занят</a>
+            </li>
+            <li class="drop-status__el">
+                <a href="#!">
+                    <div class="drop-status__el_icon-style circle dontDisturb-icon"></div>Не в сети</a>
+            </li>
+        </ul>
+        <!-- ----------  dropdown list status end ----------- -->
+
+
+
+        <div id="login-full-background"></div>
+
+        <div id="login-box">
+            <!-- ---------- login form beginning----------- -->
+
+            <div id="loginForm" class="row login">
+                <form class="col s12"  autocomplete="off" action="index.html">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="sip_uri" type="text" class="validate" tabindex="2" autocomplete="off">
+                            <label for="sip_uri">Логин</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="sip_password" type="password" class="validate" tabindex="3">
+                            <label for="sip_password">Пароль</label>
+                        </div>
+                    </div>
+
+                    <!-- Name -->
+                    <label class="name_text" style="display:none;"><a href="index.html#" class="balloon display_name"></a></label>
+                    <input id="display_name" tabindex="1" type="text" style="display:none;"/>
+
+                    <!-- WS URI -->
+                    <label class="wsURI_text" style="display:none;"><a href="index.html#" class="balloon ws_uri" ></a></label>
+                    <input id="ws_servers" tabindex="4" type="text" style="display:none;"/>
+                    <div class="login__btn">
+                        <input type="checkbox" id="autoEnter" />
+                        <label for="autoEnter" id="autoEnterLabel"></label>
+                        <button id="btnEnter" class="waves-effect waves-light btn-large login__btn_style blue">
+                            Войти
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- ---------- login form end----------- -->
+        </div>
+
+
+        <div id="advanced-settings-link">
+            <a href="index.html#" class="text_settings"></a>
+        </div>
+
+        <div id="advanced-settings" style="display:none;">
+            <div class="close"></div>
+            <p class="link-jssip-doc"><span class="link_jssip_text"></span> <a href="http://jssip.net/documentation/" target="_blank" class="link_text"></a></p>
+            <form id="advanced-settings-form" action="index.html">
+                <table>
+                    <tr>
+                        <td class="label"><label>authorization_user</label></td>
+                        <td class="value"><input type="text" name="authorization_user"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>register</label></td>
+                        <td class="value"><input type="checkbox" name="register"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>register_expires</label></td>
+                        <td class="value"><input type="text" name="register_expires" value="600"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>registrar_server</label></td>
+                        <td class="value"><input type="text" name="registrar_server"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>no_answer_timeout</label></td>
+                        <td class="value"><input type="text" name="no_answer_timeout" value="60"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>session_timers</label></td>
+                        <td class="value"><input type="checkbox" name="session_timers" checked/></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>peerconnection_config (use JSON)</label></td>
+                        <td class="value"><input type="text" name="peerconnection_config" value='{ "iceServers": [ {"urls": ["stun:stun.l.google.com:19302"]} ], "gatheringTimeout": 2000 }'></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>use_preloaded_route</label></td>
+                        <td class="value"><input type="checkbox" name="use_preloaded_route"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>connection_recovery_min_interval</label></td>
+                        <td class="value"><input type="text" name="connection_recovery_min_interval" value="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>connection_recovery_max_interval</label></td>
+                        <td class="value"><input type="text" name="connection_recovery_max_interval" value="30"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>hack_via_tcp</label></td>
+                        <td class="value"><input type="checkbox" name="hack_via_tcp"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>hack_via_ws</label></td>
+                        <td class="value"><input type="checkbox" name="hack_via_ws"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>hack_ip_in_contact</label></td>
+                        <td class="value"><input type="checkbox" name="hack_ip_in_contact"></td>
+                    </tr>
+                </table>
+                <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+            </form>
+        </div>
+
+        <div id="Y_U_NO"><p></p></div>
+
+
+        <div id="phone-page" style="display: none;">
+
+            <!-- <div id="themes">
+               <div class="theme01"></div>
+               <div class="theme02"></div>
+               <div class="theme03"></div>
+               <div class="theme04"></div>
+             </div>-->
+            <div class="display_user_name">
+                <span id="user_display_name"></span>
+            </div>
+            <div id="phone">
+                <div class="status">
+                    <div id="transport">
+                        <input type="radio" name="transport" id="transport_webrtc" value="webrtc" checked>WebRTC<br>
+                        <input type="radio" name="transport" id="transport_rtp" value="rtp" >RTP<br>
+                    </div>
+                    <div id="conn-status">
+                        <span class="field status_text"></span>
+                        <span class="value"></span>
+                    </div>
+                    <div style="display: none">
+                        <span class="field register_text"></span>
+                        <input type="checkbox" id="register"/>
+                    </div>
+                    <div>
+                        <span class="field video_text"></span>
+                        <input type="checkbox" id="enableVideo" checked/>
+                    </div>
+                    <div>
+                        <span class="field user_text"></span>
+                        <span class="value user"></span>
+                    </div>
+                </div>
+
+                <div class="controls">
+
+                    <div class="ws-disconnected"></div>
+
+                    <div class="dialbox">
+                        <input type="text" class="destination" value=""/>
+                        <div class="to to_text"></div>
+                        <div class="dial-buttons">
+                            <div class="button call call_text"></div>
+                            <div class="line-separator"></div>
+                            <div class="button chat chat_text"></div>
+                        </div>
+                    </div>
+
+                    <div class="dialpad">
+                        <div class="line">
+                            <div class="button digit-1">1</div>
+                            <div class="button digit-2">2</div>
+                            <div class="button digit-3">3</div>
+                        </div>
+                        <div class="line-separator"></div>
+                        <div class="line">
+                            <div class="button digit-4">4</div>
+                            <div class="button digit-5">5</div>
+                            <div class="button digit-6">6</div>
+                        </div>
+                        <div class="line-separator"></div>
+                        <div class="line">
+                            <div class="button digit-7">7</div>
+                            <div class="button digit-8">8</div>
+                            <div class="button digit-9">9</div>
+                        </div>
+                        <div class="line-separator"></div>
+                        <div class="line">
+                            <div class="button digit-asterisk">*</div>
+                            <div class="button digit-0">0</div>
+                            <div class="button digit-pound">#</div>
+                        </div>
+                    </div><!-- .dialpad -->
+
+                </div><!-- .controls -->
+            </div><!-- #phone -->
+
+ </div><!-- phone-page -->
+            <div id="general">
+                <!-- ---------- head block form beginning ----------- -->
+                <div id="head" class="head" style="box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);">
+                    <nav class="head__nav " style="background:white;">
+                        <div class="nav-wrapper">
+
+                            <div class="circle dropdown-button head__nav_my-status online-icon" id="myStatus" data-activates='dropdown_status' ></div>
+                            <div class="collection head__nav_left my-profile">
+                                <div class="collection-item avatar action my-profile__el">
+                                    <div class="circle my-profile__el_ava" style="background:url(web/public/softphone/avatars/4.jpg);" id="myAvatar"></div>
+                                    <span class="title truncate" id="myName">Кондратьев Константин Юрьевич бла бла бла балаааааааааааааааааааааааааааааааааааааааааааа</span>
+                                    <p class="truncate online-text" id="myStatus" style="color: #565656 !important;"></p>
+                                </div>
+                            </div>
+
+                            <ul class="right head__nav_right ability">
+                                <li style="" class="ability__item">
+                                    <img src="web/public/softphone/images/numpad.png" class="ability__item_numpad-icon" data-beloworigin="true" id="call_smb"/>
+                                </li>
+                                <li class="ability__item">
+                                    <div class="input-field">
+                                        <input id="search_input" type="search" required class="ability__item_search-input">
+                                    </div>
+                                </li>
+                                <li class="ability__item">
+                                    <img src="web/public/softphone/images/search.png" class="ability__item_search-icon" />
+                                </li>
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+                <!-- ---------- head block form end----------- -->
+
+                <div class="middle-block">
+                    <!-- ---------- menu block form beginning----------- -->
+                    <div id="menu" class="menu" style="border-right:none;">
+                        <ul class="collapsible menu__list" data-collapsible="accordion">
+                            <li id="contact_btn" class="menu__list_item" style="box-shadow: 5px 9px 5px 0 rgba(0, 0, 0, 0.16);" >
+                                <div class="collapsible-header menu__list_txt-contact" style="">Контакты</div>
+                            </li>
+                            <li id="last_btn" class="menu__list_item">
+                                <div class="collapsible-header active menu__list_txt-last" style="">Последние</div>
+                                <div class="collapsible-body ">
+                                    <div id="lastAction" style="margin-bottom:20px;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ---------- menu block form end----------- -->
+
+                    <!-- ---------- content form beginning----------- -->
+                    <div id="content" class="content" style="overflow-y: auto;">
+
+                        <!-- ---------- contacts list block form beginning ----------- -->
+                        <div id="contacts" class="contform">
+                            <span class="contform__title">Контакты</span>
+                            <div id="contacts_list">
+                            </div>
+                        </div>
+                        <!-- ---------- contacts list block end ----------- -->
+                        <!-- ---------- history block form beginning----------- -->
+                        <div class="histform" id="history">
+                            <nav class="histform__nav">
+                                <div class="nav-wrapper">
+                                    <ul class="histform-head">
+
+                                        <li class="histform-head__item" id="userAvatar">
+                                            <img style="background: url(web/public/softphone/avatars/7.jpg);" class="circle  histform-head__item_ava offline_border">
+                                        </li>
+
+                                        <li class="histform-head__item user-profile" id="userName">
+                                            <div class="collection user-profile__el">
+                                                <div class="collection-item avatar action user-profile__el_style">
+                                                    <span class="title truncate">Кондратьев Константин Юрьевич бла бла бла балаааааааааааааааааааааааааааааааааааааааааааа</span>
+                                                    <div class="circle online-icon user-profile__el_icon" style="background:#DAD1D1;"></div> 
+                                                    <div class="truncate user-profile__el_text" style="color: #565656 !important;    margin-left: 30px;">
+                                                        offline
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="histform-head__item" id="outgoingCall">
+                                            <img src="web/public/softphone/images/phone_dark.png" class="histform-head__item_img-style">
+                                        </li>
+                                        <li class="histform-head__item" id="outgoingVideo">
+                                            <img src="web/public/softphone/images/video_dark.png" class="histform-head__item_img-style">
+                                        </li>
+                                        <!--                                    <li class="histform-head__item" id="outgoingVideo">
+                                                                                <img src="img/video_dark.png" class="histform-head__item_img-style">
+                                                                            </li>-->
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="histform__table1" style="width:100%; margin-right:0%;">
+                                <table class="chat scrollspy">
+                                    <tbody class="scrollspy">
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <!-- начало необходимо только для демо входящего звонка -->
+                                                <br>
+                                                <br>
+                                                <br> входящий звонок
+                                                <a class="waves-effect waves-light btn" id="testIncCall">Click</a>
+                                                <!-- конец необходимо только для демо входящего звонка -->
+                                                <!-- начало необходимо только для демо окна чата во время звонка -->
+                                                <br>
+                                                <br>
+                                                <br> окно чата во время звонка
+                                                <a class="waves-effect waves-light btn" id="testMsgIncCall">Click</a>
+                                                <!-- конец необходимо только для демо окна чата во время звонка -->
+                                                <!-- начало необходимо только для демо видеозвонок -->
+                                                <br>
+                                                <br>
+                                                <br> видеозвонок
+                                                <a class="waves-effect waves-light btn" id="testMsgVideoCall">Click</a>
+                                                <!-- конец необходимо только для демо видеозвонок -->
+                                            </td>
+                                        </tr>
+                                        <tr class="msg__missed_call">
+                                            <td>
+                                                <img src="web/public/softphone/images/phone_dark.png" alt="phone">
+                                            </td>
+                                            <td>Пропущенный звонок</td>
+                                            <td>19.01.16 11:13</td>
+                                        </tr>
+                                        <tr class="msg__missed_video-call">
+                                            <td>
+                                                <img src="web/public/softphone/images/video_dark.png" alt="videocam">
+                                            </td>
+                                            <td>Пропущенный видеозвонок</td>
+                                            <td>21.01.16 11:13</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="bubble right">
+                                                    <div class="content1">Нууу мааааам!</div>
+                                                </div>
+                                            </td>
+                                            <td>19.01.16 11:13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="circle1">1</div>
+                                            </td>
+                                            <td>
+                                                <div class="bubble left">
+                                                    <div class="content1">Ромка хватит работать, ложись спать!</div>
+                                                </div>
+                                            </td>
+                                            <td>19.01.16 11:13</td>
+                                        </tr>
+                                        <tr class="msg__incoming_call">
+                                            <td>
+                                                <img src="web/public/softphone/images/phone_dark.png" alt="phone">
+                                            </td>
+                                            <td>Входящий звонок. Длительность: 00:01:33</td>
+                                            <td>19.01.16 11:13</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row histform__input1" style="display:block; position:fixed; bottom:0;width:90%;min-height:70px; max-height:100px; background:white; box-shadow: 0 -8px 5px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="chat_input1" class="materialize-textarea"></textarea>
+                                            <label for="chat_input">Написать сообщение</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- ---------- history block form end----------- -->
+                        <!-- ---------- outgoing call block form beginning----------- -->
+                        <div id="outgoingCall_Form" class="outform inactive">
+                            <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
+                            <div id="avatarCalled" style="background:url(http://ballroom12.ru/images/avatars/1.jpg);" class="circle avatar outform__avatar"></div>
+                            <span id="calledName" class="outform__called-name">Протасова Елена</span>
+                            <span id="statusCall" class="outform__status"></span>
+                            <span id="timerCall" class="outform__timer">1:10</span>
+                            <div id="buttons_block">
+                                <ul id="out_buttons" class="outform__buttons">
+                                    <li id="out_call_ok" class="outform__buttons_item">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/phone.png">
+                                        </a>
+                                    </li>
+                                    <li id="out_mic_off" class="outform__buttons_item">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/mic-on.png">
+                                        </a>
+                                    </li>
+                                    <li id="out_volume_mute" class="outform__buttons_item">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/speaker-on.png">
+                                        </a>
+                                    </li>
+                                    <li id="out_videocam" class="outform__buttons_item">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/video.png">
+                                        </a>
+                                    </li>
+                                    <li id="out_message" class="outform__buttons_item" style="">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/chat.png">
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="center-flex">
+                                    <a id="out_call_end" class="btn-floating btn-large waves-effect waves-light call-end_btn red center-flex  btn-size">
+                                        <img src="web/public/softphone/images/endcall.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---------- outgoing call block form end----------- -->
+
+                        <!-- ---------- incoming call block form beginning----------- -->
+                        <div id="incomingCall_Form" class="incform">
+                            <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
+                            <div id="avatarCaller" style="background:url(web/public/softphone/avatars/1.jpg);" class="circle avatar incform__avatar"></div>
+                            <span id="callerName" class="incform__caller-name">Звонящее Нечто</span>
+                            <span class="incform__status">Входящий звонок</span>
+
+                            <ul id="inc_buttons" class="incform__buttons" style="margin-top:20px; ">
+                                <li id="inc_phone" class="incform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                        <img src="web/public/softphone/images/phone.png">
+                                    </a>
+                                </li>
+                                <li id="inc_videocam" class="incform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size" style="width:60px; height:60px;">
+                                        <img src="web/public/softphone/images/video.png">
+                                    </a>
+                                </li>
+                                <li id="inc_message" class="incform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                        <img src="web/public/softphone/images/chat.png">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="center-flex">
+                                <a id="inc_call_end" class="btn-floating btn-large waves-effect waves-light red center-flex  btn-size call-end_btn" >
+                                    <img src="web/public/softphone/images/endcall.png">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ---------- incoming call block form end----------- -->
+
+
+                        <!-- ---------- chat in call form beginning----------- -->
+                        <div class="chatInCall" id="chatCall">
+                            <nav class="histform__nav" style="background:white; color:black;">
+                                <div class="nav-wrapper">
+                                    <ul>
+                                        <li class="histform__nav_li" id="backAction">
+                                            <img src="web/public/softphone/images/back.png" style="background:#DAD1D1; vertical-align: middle">
+                                        </li>
+                                        <li class="histform__nav_li" id="userNameCall">
+                                            <a href="#!" id="userFullNameCall" class="truncate" style="color:black;">Имя Какого-то Пользователя</a>
+                                        </li>
+                                        <li class="histform__nav_li" id="timeCall">
+                                            1:10:05
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                        </div>
+                        <!-- ---------- chat in call form end----------- -->
+
+
+                        <!-- ---------- video call block form beginning----------- -->
+                        <div id="outgoingVideo_Form" class="videoform">
+                            <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
+                            <div id="avatarVideo" style="background:url(web/public/softphone/avatars/8.jpg);" class="circle avatar videoform__avatar"></div>
+                            <span id="statusVideo" class="videoform__status">Соединение...</span>
+                            <span id="timerVideo" class="videoform__timer">1:10</span>
+                            <div class="videoform__btn_footer">
+                                <ul id="video_buttons" class="videoform__buttons">
+                                    <li id="video_volume_mut1e" class="videoform__buttons_item">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/speaker-on.png">
+                                        </a>
+                                    </li>
+                                    <li id="video_volume_mute" class="videoform__buttons_item">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/speaker-on.png">
+                                        </a>
+                                    </li>
+                                    <li id="video_videocam" class="videoform__buttons_item">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/video.png">
+                                        </a>
+                                    </li>
+                                    <li id="video_message" class="videoform__buttons_item" style="margin-right:0px;">
+                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                            <img src="web/public/softphone/images/chat.png">
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="center-flex">
+                                    <a id="video_end" class="btn-floating btn-large waves-effect waves-light red center-flex btn-size call-end_btn">
+                                        <img src="web/public/softphone/images/endcall.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---------- video call block form end----------- -->
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div id="sessions"></div>
+
+
+            <div id="webcam" style="display:none;">
+                <video id="remoteView" autoplay _hidden=true></video>
+                <!-- <video id="remoteView" autoplay
+                   src="http://shapeshed.com/examples/HTML5-video-element/video/320x240.ogg">
+                 </video>-->
+
+                <video id="selfView" autoplay muted="true" _hidden=true></video>
+                <!-- <video id="selfView" autoplay
+                   src="http://shapeshed.com/examples/HTML5-video-element/video/320x240.ogg">
+                 </video>-->
+            </div>
+
+            <div id="ws_reconnect"></div>
+            <div id="unregister_all"></div>
+       
+
+    </body>
+</html>

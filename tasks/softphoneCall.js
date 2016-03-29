@@ -1,0 +1,1 @@
+exports.src = {"active":"true","script":"softPhone","onEvent":"on_call[0]","startTime_time":"","startTime_date":"","startTime":"","target":"","sipAccountID":"0"}

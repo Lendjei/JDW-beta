@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.phone{
+  /*  */
+}
+.phone__inp{
+    width:75vw; 
+    margin: 0 auto;
+}
+
+.phone__inp_text{
+    width: 60vw !important;
+}
+
+.phone__inp .phone__inp_text input {
+    border-bottom: none !important;
+    color: #FF7726;
+    font-size: 1.7em;
+}
+/* поле ввода номера цвет подчеркивания в фокусе */
+.phone__inp .phone__inp_text input:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+/* поле ввода номера valid color */
+.phone__inp .phone__inp_text input.valid {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    color: #FF7726 !important;
+}
+/* поле ввода номера invalid color */
+.phone__inp_text input.invalid {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    color: #C60000 !important;
+}
+
+.phone__inp_backspace{
+    cursor: pointer; 
+    margin-top: 1.5rem; 
+}
+.phone__inp_backspace img{
+    width: 2rem;
+}
+.phone__numb{
+    width: 75vw !important; 
+    margin: 0 auto;
+    font-size: 1.7em;
+    border: none !important;
+}
+.dialerLi{
+    padding:0px !important;
+    border: none !important;
+}
+.dialer{
+    height: 15vh !important;
+    width: calc(25vw - 1px) !important;
+    padding: 0px !important;
+    border-bottom: none !important;
+    line-height: 15vh !important;
+    text-align: center !important;
+    color: #489FD1 !important;
+}
+.phone__btn_call{
+    border-radius: 20px; 
+    width: 60vw;
+}
+.phone__btn_call img {
+    width: 40px;
+    height: auto;
+    margin-top: 7px;
+}
+/*конец вкладки Номер*/

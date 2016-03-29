@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title>JIN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="Author" content="José Luis Millán, Iñaki Baz Castillo" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="icon" type="images/png" href="images/favicon.png" />
+        <script>
+
+        </script>
+        <script type='text/javascript'>
+
+            /* - - определяется основной язык пользовател и по этому параметру
+             * выбираем какой файл css подключать - - - - - - - - - - - - - */
+            function getUrlVars()
+            {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++)
+                {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+
+            var lang = getUrlVars()["lang"];
+            (lang == 'ru') ? docss("ru.css") : (lang == 'en') ? docss("en.css") : docss("ru.css");
+
+            function docss(name)
+            {
+                var st = document.createElement("link");
+                st.setAttribute("rel", "stylesheet");
+                st.setAttribute("href", "css/" + name);
+                document.getElementsByTagName("head")[0].appendChild(st)
+            }
+
+        </script>
+
+        <link rel="icon" type="images/png" href="images/favicon.png" />
+        <link rel="icon" type="images/png" href="images/dialed-number.png" />
+        <link rel="icon" type="images/png" href="images/help-icon.png" />
+        <link rel="icon" type="images/png" href="images/logo-mini.png" />
+        <link rel="icon" type="images/png" href="images/transparent-25-bg.png" />
+        <link rel="icon" type="images/png" href="images/transparent-50-bg.png" />
+        <link rel="icon" type="images/png" href="images/transparent-black-75-bg.png" />
+    </head>
+
+
+    <body id="body" class="bg01">
+        <script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery.balloon.min.js" type="text/javascript"></script>
+        <script src="js/parseuri.js" type="text/javascript"></script>
+        <script src="js/init.js" type="text/javascript"></script>
+        <script src="js/gui.js" type="text/javascript"></script>
+
+
+
+        <!-- For Hacking Tryit read http://tryit.jssip.net/js/custom.REMOVE_THIS.js -->
+
+        <!-- Try to load js/custom.js file -->
+        <!--script src="http://tryit.jssip.net/js/custom.js" type="text/javascript"></script -->
+        <!-- If CustomJsSIP is set in js/custom.js file then load JsSIP from the URL in CustomJsSIP variable. -->
+        <script>
+            if (window.CustomJsSIP) {
+                console.log("Tryit: CustomJsSIP found in js/custom.js, loading JsSIP from " + window.CustomJsSIP + "...");
+                // document.write('<script src="http://tryit.jssip.net/'%20+%20CustomJsSIP%20+%20'"><\/script>');
+                document.write('<script src="js/jssip.js"><\/script>');
+            } else {
+                document.write('<script src="js/jssip.js"><\/script>');
+            }
+        </script>
+
+        <script>JsSIP.debug.enable("*");</script>
+
+        <!-- Try to load rtcninja-temasys.js -->
+        <script src="js/rtcninja-temasys.min.js" type="text/javascript"></script>
+        <!-- If CustomJsSIP is set in js/custom.js file then load JsSIP from the URL in CustomJsSIP variable. -->
+        <script>
+            if (window.rtcninjaTemasys) {
+                rtcninjaTemasys({},
+                        // alreadyInstalledCb
+                                function () {
+                                    JsSIP.rtcninja({plugin: rtcninjaTemasys});
+                                },
+                                // needInstallCb
+                                        function (data) {
+                                            alert('WebRTC plugin required');
+                                        },
+                                        // notRequiredCb
+                                        null
+                                        );
+                            }
+        </script>
+
+
+
+        <!--<div id="top-bar">
+          <div class="description">
+            <p>a functional demo of <a href="http://jssip.net"><span>Js</span>SIP</a> "the JavaScript SIP library"</p>
+          </div>
+        -->
+
+
+            <div id="advanced-settings-link">
+                <a href="index.html#" class="text_settings"></a>
+            </div>
+
+            <div id="advanced-settings" style="display:none;">
+                <div class="close"></div>               
+                <p class="link-jssip-doc"><span class="link_jssip_text"></span> <a href="http://jssip.net/documentation/" target="_blank" class="link_text"></a></p>
+                <form id="advanced-settings-form" action="index.html">
+                    <table>
+                        <tr>
+                            <td class="label"><label>authorization_user</label></td>
+                            <td class="value"><input type="text" name="authorization_user"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>register</label></td>
+                            <td class="value"><input type="checkbox" name="register" checked></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>register_expires</label></td>
+                            <td class="value"><input type="text" name="register_expires" value="600"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>registrar_server</label></td>
+                            <td class="value"><input type="text" name="registrar_server"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>no_answer_timeout</label></td>
+                            <td class="value"><input type="text" name="no_answer_timeout" value="60"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>session_timers</label></td>
+                            <td class="value"><input type="checkbox" name="session_timers" checked/></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>peerconnection_config (use JSON)</label></td>
+                            <td class="value"><input type="text" name="peerconnection_config" value='{ "iceServers": [ {"urls": ["stun:stun.l.google.com:19302"]} ], "gatheringTimeout": 2000 }'></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>use_preloaded_route</label></td>
+                            <td class="value"><input type="checkbox" name="use_preloaded_route"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>connection_recovery_min_interval</label></td>
+                            <td class="value"><input type="text" name="connection_recovery_min_interval" value="2"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>connection_recovery_max_interval</label></td>
+                            <td class="value"><input type="text" name="connection_recovery_max_interval" value="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>hack_via_tcp</label></td>
+                            <td class="value"><input type="checkbox" name="hack_via_tcp"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>hack_via_ws</label></td>
+                            <td class="value"><input type="checkbox" name="hack_via_ws"></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><label>hack_ip_in_contact</label></td>
+                            <td class="value"><input type="checkbox" name="hack_ip_in_contact"></td>
+                        </tr>
+                    </table>
+                    <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+                </form>
+            </div>
+
+            <div id="Y_U_NO"><p></p></div>
+        </div>
+
+        <div id="phone-page">
+
+            <!-- <div id="themes">
+               <div class="theme01"></div>
+               <div class="theme02"></div>
+               <div class="theme03"></div>
+               <div class="theme04"></div>
+             </div>-->
+            <div class="display_user_name">
+                <span id="user_display_name"></span>
+            </div>
+            <div id="phone">
+                <div class="controls">
+
+                    <div class="ws-disconnected"></div>
+
+                    <div class="dialbox">
+                        <input type="text" class="destination" value=""/>
+                        <div class="to to_text"></div>
+                        <div class="dial-buttons">
+                            <div class="button call call_text"></div>
+                            <div class="line-separator"></div>
+                            <div class="button chat chat_text"></div>
+                        </div>
+                    </div>
+
+                    <div class="dialpad">
+                        <div class="line">
+                            <div class="button digit-1">1</div>
+                            <div class="button digit-2">2</div>
+                            <div class="button digit-3">3</div>
+                        </div>
+                        <div class="line-separator"></div>
+                        <div class="line">
+                            <div class="button digit-4">4</div>
+                            <div class="button digit-5">5</div>
+                            <div class="button digit-6">6</div>
+                        </div>
+                        <div class="line-separator"></div>
+                        <div class="line">
+                            <div class="button digit-7">7</div>
+                            <div class="button digit-8">8</div>
+                            <div class="button digit-9">9</div>
+                        </div>
+                        <div class="line-separator"></div>
+                        <div class="line">
+                            <div class="button digit-asterisk">*</div>
+                            <div class="button digit-0">0</div>
+                            <div class="button digit-pound">#</div>
+                        </div>
+                    </div><!-- .dialpad -->
+
+                </div><!-- .controls -->
+            </div><!-- #phone -->
+
+
+            <div id="sessions"></div>
+
+            <div id="webcam" style="display:none;">
+                <video id="remoteView" autoplay _hidden=true></video>
+                <!-- <video id="remoteView" autoplay
+                   src="http://shapeshed.com/examples/HTML5-video-element/video/320x240.ogg">
+                 </video>-->
+
+                <video id="selfView" autoplay muted="true" _hidden=true></video>
+                <!-- <video id="selfView" autoplay
+                   src="http://shapeshed.com/examples/HTML5-video-element/video/320x240.ogg">
+                 </video>-->
+            </div>
+
+            <div id="ws_reconnect"></div>
+            <div id="unregister_all"></div>
+        </div><!-- phone-page -->
+
+    </body>
+</html>

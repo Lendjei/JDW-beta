@@ -1,0 +1,114 @@
+#login-form .name_text:after
+{
+     content: 'Name';
+}
+
+#login-form .sipURI_text:after
+{
+     content: 'Login';
+}
+
+#login-form .sipPassword_text:after
+{
+     content: 'Password';
+}sipURI_text
+
+#login-form .wsURI_text:after
+{
+     content: 'WS URI';
+}
+
+#use-tryit-account-link .guest_text:after
+{
+    content: 'Guest login';
+}
+
+#login-form-from-invitation .text:after
+{
+   // content: 'Write your name and press Enter';
+ content: 'Write your name';
+}
+
+#phone #conn-status .status_text:after
+{
+    content: 'status: ';
+}
+
+#phone .register_text:after
+{
+    content: 'register: ';
+}
+
+#phone .video_text:after
+{
+    content: 'enable video: ';
+}
+
+#phone .user_text:after
+{
+    content: 'user: ';
+}
+
+.dialbox .to_text:after
+{
+    content: 'To:';
+}
+
+.dial-buttons .call_text:after
+{
+    content: 'call';
+}
+
+.dial-buttons .chat_text:after
+{
+    content: 'chat';
+}
+
+#call-invitation .invite_text:after
+{
+    content: 'invite others to call you!';
+}
+
+.copy_text:after
+{
+    content: 'copy and give the following link to others (via e-mail, chat, fax):';
+}
+
+/*статусы*/
+#phone .status #conn-status.connected span.value:after 
+{
+    content: 'connected..';
+}
+#phone .status #conn-status.registered span.value:after 
+{
+    content: 'registered';
+}
+#phone .status #conn-status.disconnected span.value:after 
+{
+    content: 'disconnected';
+}
+#phone .status #conn-status.unregistered span.value:after 
+{
+    content: 'unregistered';
+}
+#phone .status #conn-status.registrationFailed span.value:after 
+{
+    content: 'registration failed';
+}
+
+#login-form .enter_text:after,
+#login-form-from-invitation .enter_text:after
+{
+     content: 'Enter';
+}
+
+#login-form .auth_text:after
+{
+    content: 'You can authorize using your social accounts:';
+}
+
+#login-form-from-invitation .auth_text:after
+{
+    content: 'You can authorize using your social accounts:';
+}
+

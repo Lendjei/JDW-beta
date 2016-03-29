@@ -1,0 +1,119 @@
+#login-form .name_text:after
+{
+     content: 'Имя';
+}
+
+#login-form .sipURI_text:after
+{
+     content: 'Логин';
+}
+
+#login-form .sipPassword_text:after
+{
+     content: 'Пароль';
+}sipURI_text
+
+#login-form .wsURI_text:after
+{
+     content: 'WS URI';
+}
+
+#use-tryit-account-link .guest_text:after
+{
+    content: 'Гостевой вход';
+}
+
+#login-form-from-invitation .text:after
+{
+    //content: 'Впишите своё имя и нажмите "Enter"';
+    content: 'Введите своё имя';
+}
+
+#phone #conn-status .status_text:after
+{
+    content: 'статус: ';
+}
+
+#phone .register_text:after
+{
+    content: 'регистрация: ';
+}
+
+#phone .video_text:after
+{
+    content: 'включить видео: ';
+}
+
+#phone .user_text:after
+{
+    content: 'пользователь: ';
+}
+
+.dialbox .to_text:after
+{
+    content: 'Кому:';
+}
+
+.dial-buttons .call_text:after
+{
+    content: 'звонок';
+}
+
+.dial-buttons .chat_text:after
+{
+    content: 'чат';
+}
+
+#call-invitation .invite_text:after
+{
+    content: 'Предложить другим пообщаться!';
+}
+
+.copy_text:after
+{
+    content: 'скопируйте ссылку и передайте её другому абоненту:';
+}
+
+/*статусы*/
+#phone .status #conn-status.connected span.value:after 
+{
+    content: 'подключение..';
+}
+#phone .status #conn-status.registered span.value:after 
+{
+    content: 'зарегистрирован';
+}
+#phone .status #conn-status.disconnected span.value:after 
+{
+    content: 'отключён';
+}
+#phone .status #conn-status.unregistered span.value:after 
+{
+    content: 'не зарегистрирован';
+}
+#phone .status #conn-status.registrationFailed span.value:after 
+{
+    content: 'регистрация не удалась';
+}
+
+#login-form .enter_text:after,
+#login-form-from-invitation .enter_text:after
+{
+     content: 'Войти';
+}
+
+#login-form .auth_text:after
+{
+    content: 'Или Вы можете авторизоваться через аккаунты:';
+}
+
+#login-form-from-invitation .auth_text:after
+{
+    content: 'Или Вы можете авторизоваться через аккаунты:';
+}
+
+
+.chat_prompt:after
+{
+    content: "напишите в чат...";
+}
