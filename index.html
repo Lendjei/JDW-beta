@@ -119,6 +119,64 @@
         </ul>
         <!-- ----------  dropdown list status end ----------- -->
 
+        <!-- ---------- numpad beginning ----------- -->
+        <div id="numpad" class="dropdown-content drop-numpad">
+            <!-- начало вкладки Номер -->
+            <div id="phonePage" class="col s12 phone">
+                <div class="phone__inp">
+                    <form class="col s12" style="height:100%;">
+                        <div class="input-field col s6 left phone__inp_text" style="height:100%;">
+                            <input id="telephone" type="tel" class="validate phoneInput center">
+                            <!--TODO уменьшение шрифта по ширине строки. если больше 15 символов - обрезка многоточием слева есть matrialize flow-text и truncate-->
+                        </div>
+                        <div style="line-height: 100px;" class="left phone__inp_backspace" id="button_backspace">
+                            <img src="web/public/softphone/images/backspace.png" alt="backspace">
+                            <!--TODO автоповтор при нажатии на кнопку-->
+                        </div>
+                        <div style="clear:both;"></div>
+                    </form>
+                </div>
+
+                <!-- кнопки -->
+                <ul class="collection phone__numb">
+                    <li class="collection-item dialerLi">
+                        <a href="javascript:void(0)" class="collection-item left dialer">1</a>
+                        <a href="javascript:void(0)" class="collection-item left dialer">2</a>
+                        <a href="javascript:void(0)" class="collection-item left dialer">3</a>
+                        <div style="clear:both;"></div>
+                    </li>
+                    <li class="collection-item dialerLi">
+                        <a href="javascript:void(0)" class="collection-item left dialer">4</a>
+                        <a href="javascript:void(0)" class="collection-item left dialer">5</a>
+                        <a href="javascript:void(0)" class="collection-item left dialer">6</a>
+                        <div style="clear:both;"></div>
+                    </li>
+                    <li class="collection-item dialerLi">
+                        <a href="javascript:void(0)" class="collection-item left dialer">7</a>
+                        <a href="javascript:void(0)" class="collection-item left dialer">8</a>
+                        <a href="javascript:void(0)" class="collection-item left dialer">9</a>
+                        <div style="clear:both;"></div>
+                    </li>
+                    <li class="collection-item dialerLi">
+                        <a href="javascript:void(0)" class="collection-item left dialer">*</a>
+                        <a href="javascript:void(0)" class="collection-item left dialer">0</a>
+                        <a href="javascript:void(0)" class="collection-item left dialer">#</a>
+                        <div style="clear:both;"></div>
+                    </li>
+                </ul>
+                <!-- кнопка вызова -->
+                <div style="margin-top:1.5vh;" class="center_div">
+                    <a class="waves-effect waves-light btn-large phone__btn_call without_shadow blue">
+                        <img src="web/public/softphone/images/phone.png">
+                    </a>
+                </div>
+                <!-- конец кнопки вызова -->
+
+            </div>
+
+        </div>
+        <!-- ----------  numpad end ----------- -->
+
 
 
         <div id="login-full-background"></div>
@@ -308,248 +366,215 @@
                 </div><!-- .controls -->
             </div><!-- #phone -->
 
- </div><!-- phone-page -->
-            <div id="general">
-                <!-- ---------- head block form beginning ----------- -->
-                <div id="head" class="head" style="box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);">
-                    <nav class="head__nav " style="background:white;">
-                        <div class="nav-wrapper">
+        </div><!-- phone-page -->
+        <div id="general">
+            <!-- ---------- head block form beginning ----------- -->
+            <div id="head" class="head" style="box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);">
+                <nav class="head__nav " style="background:white;">
+                    <div class="nav-wrapper">
 
-                            <div class="circle dropdown-button head__nav_my-status online-icon" id="myStatus" data-activates='dropdown_status' ></div>
-                            <div class="collection head__nav_left my-profile">
-                                <div class="collection-item avatar action my-profile__el">
-                                    <div class="circle my-profile__el_ava" style="background:url(web/public/softphone/avatars/4.jpg);" id="myAvatar"></div>
-                                    <span class="title truncate" id="myName">Кондратьев Константин Юрьевич бла бла бла балаааааааааааааааааааааааааааааааааааааааааааа</span>
-                                    <p class="truncate online-text" id="myStatus" style="color: #565656 !important;"></p>
-                                </div>
+                        <div class="circle dropdown-button1 head__nav_my-status online-icon" id="myStatus" data-activates='dropdown_status' ></div>
+                        <div class="collection head__nav_left my-profile">
+                            <div class="collection-item avatar action my-profile__el">
+                                <div class="circle my-profile__el_ava" style="background:url(web/public/softphone/avatars/4.jpg);" id="myAvatar"></div>
+                                <span class="title truncate" id="myName">Кондратьев Константин Юрьевич бла бла бла балаааааааааааааааааааааааааааааааааааааааааааа</span>
+                                <p class="truncate online-text" id="myStatus" style="color: #565656 !important;"></p>
                             </div>
-
-                            <ul class="right head__nav_right ability">
-                                <li style="" class="ability__item">
-                                    <img src="web/public/softphone/images/numpad.png" class="ability__item_numpad-icon" data-beloworigin="true" id="call_smb"/>
-                                </li>
-                                <li class="ability__item">
-                                    <div class="input-field">
-                                        <input id="search_input" type="search" required class="ability__item_search-input">
-                                    </div>
-                                </li>
-                                <li class="ability__item">
-                                    <img src="web/public/softphone/images/search.png" class="ability__item_search-icon" />
-                                </li>
-                            </ul>
-
                         </div>
-                    </nav>
-                </div>
-                <!-- ---------- head block form end----------- -->
 
-                <div class="middle-block">
-                    <!-- ---------- menu block form beginning----------- -->
-                    <div id="menu" class="menu" style="border-right:none;">
-                        <ul class="collapsible menu__list" data-collapsible="accordion">
-                            <li id="contact_btn" class="menu__list_item" style="box-shadow: 5px 9px 5px 0 rgba(0, 0, 0, 0.16);" >
-                                <div class="collapsible-header menu__list_txt-contact" style="">Контакты</div>
+                        <ul class="right head__nav_right ability" >
+                            <li style="" class="ability__item ">
+                                <img src="web/public/softphone/images/numpad.png" data-alignment='right'
+                                     data-activates='numpad' class="ability__item_numpad-icon dropdown-button" data-beloworigin="true" id="call_smb"/>
                             </li>
-                            <li id="last_btn" class="menu__list_item">
-                                <div class="collapsible-header active menu__list_txt-last" style="">Последние</div>
-                                <div class="collapsible-body ">
-                                    <div id="lastAction" style="margin-bottom:20px;"></div>
+                            <li class="ability__item">
+                                <div class="input-field">
+                                    <input id="search_input" type="search" required class="ability__item_search-input">
                                 </div>
+                            </li>
+                            <li class="ability__item">
+                                <img src="web/public/softphone/images/search.png" class="ability__item_search-icon" />
                             </li>
                         </ul>
+
                     </div>
-                    <!-- ---------- menu block form end----------- -->
+                </nav>
+            </div>
+            <!-- ---------- head block form end----------- -->
 
-                    <!-- ---------- content form beginning----------- -->
-                    <div id="content" class="content" style="overflow-y: auto;">
-
-                        <!-- ---------- contacts list block form beginning ----------- -->
-                        <div id="contacts" class="contform">
-                            <span class="contform__title">Контакты</span>
-                            <div id="contacts_list">
+            <div class="middle-block">
+                <!-- ---------- menu block form beginning----------- -->
+                <div id="menu" class="menu" style="border-right:none;">
+                    <ul class="collapsible menu__list" data-collapsible="accordion">
+                        <li id="contact_btn" class="menu__list_item" style="box-shadow: 5px 9px 5px 0 rgba(0, 0, 0, 0.16);" >
+                            <div class="collapsible-header menu__list_txt-contact" style="">Контакты</div>
+                        </li>
+                        <li id="last_btn" class="menu__list_item">
+                            <div class="collapsible-header active menu__list_txt-last" style="">Последние</div>
+                            <div class="collapsible-body ">
+                                <div id="lastAction" style="margin-bottom:20px;"></div>
                             </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------- menu block form end----------- -->
+
+                <!-- ---------- content form beginning----------- -->
+                <div id="content" class="content" style="overflow-y: auto;">
+
+                    <!-- ---------- contacts list block form beginning ----------- -->
+                    <div id="contacts" class="contform">
+                        <span class="contform__title">Контакты</span>
+                        <div id="contacts_list">
                         </div>
-                        <!-- ---------- contacts list block end ----------- -->
-                        <!-- ---------- history block form beginning----------- -->
-                        <div class="histform" id="history">
-                            <nav class="histform__nav">
-                                <div class="nav-wrapper">
-                                    <ul class="histform-head">
+                    </div>
+                    <!-- ---------- contacts list block end ----------- -->
+                    <!-- ---------- history block form beginning----------- -->
+                    <div class="histform" id="history">
+                        <nav class="histform__nav">
+                            <div class="nav-wrapper">
+                                <ul class="histform-head">
 
-                                        <li class="histform-head__item" id="userAvatar">
-                                            <img style="background: url(web/public/softphone/avatars/7.jpg);" class="circle  histform-head__item_ava offline_border">
-                                        </li>
+                                    <li class="histform-head__item" id="userAvatar">
+                                        <img style="background: url(web/public/softphone/avatars/7.jpg);" class="circle  histform-head__item_ava offline_border">
+                                    </li>
 
-                                        <li class="histform-head__item user-profile" id="userName">
-                                            <div class="collection user-profile__el">
-                                                <div class="collection-item avatar action user-profile__el_style">
-                                                    <span class="title truncate">Кондратьев Константин Юрьевич бла бла бла балаааааааааааааааааааааааааааааааааааааааааааа</span>
-                                                    <div class="circle online-icon user-profile__el_icon" style="background:#DAD1D1;"></div> 
-                                                    <div class="truncate user-profile__el_text" style="color: #565656 !important;    margin-left: 30px;">
-                                                        offline
-                                                    </div>
+                                    <li class="histform-head__item user-profile" id="userName">
+                                        <div class="collection user-profile__el">
+                                            <div class="collection-item avatar action user-profile__el_style">
+                                                <span class="title truncate">Кондратьев Константин Юрьевич бла бла бла балаааааааааааааааааааааааааааааааааааааааааааа</span>
+                                                <div class="circle online-icon user-profile__el_icon" style="background:#DAD1D1;"></div> 
+                                                <div class="truncate user-profile__el_text" style="color: #565656 !important;    margin-left: 30px;">
+                                                    offline
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="histform-head__item" id="outgoingCall">
-                                            <img src="web/public/softphone/images/phone_dark.png" class="histform-head__item_img-style">
-                                        </li>
-                                        <li class="histform-head__item" id="outgoingVideo">
-                                            <img src="web/public/softphone/images/video_dark.png" class="histform-head__item_img-style">
-                                        </li>
-                                        <!--                                    <li class="histform-head__item" id="outgoingVideo">
-                                                                                <img src="img/video_dark.png" class="histform-head__item_img-style">
-                                                                            </li>-->
-                                    </ul>
-                                </div>
-                            </nav>
-                            <div class="histform__table1" style="width:100%; margin-right:0%;">
-                                <table class="chat scrollspy">
-                                    <tbody class="scrollspy">
-                                        <tr>
-                                            <td></td>
-                                            <td>
-                                                <!-- начало необходимо только для демо входящего звонка -->
-                                                <br>
-                                                <br>
-                                                <br> входящий звонок
-                                                <a class="waves-effect waves-light btn" id="testIncCall">Click</a>
-                                                <!-- конец необходимо только для демо входящего звонка -->
-                                                <!-- начало необходимо только для демо окна чата во время звонка -->
-                                                <br>
-                                                <br>
-                                                <br> окно чата во время звонка
-                                                <a class="waves-effect waves-light btn" id="testMsgIncCall">Click</a>
-                                                <!-- конец необходимо только для демо окна чата во время звонка -->
-                                                <!-- начало необходимо только для демо видеозвонок -->
-                                                <br>
-                                                <br>
-                                                <br> видеозвонок
-                                                <a class="waves-effect waves-light btn" id="testMsgVideoCall">Click</a>
-                                                <!-- конец необходимо только для демо видеозвонок -->
-                                            </td>
-                                        </tr>
-                                        <tr class="msg__missed_call">
-                                            <td>
-                                                <img src="web/public/softphone/images/phone_dark.png" alt="phone">
-                                            </td>
-                                            <td>Пропущенный звонок</td>
-                                            <td>19.01.16 11:13</td>
-                                        </tr>
-                                        <tr class="msg__missed_video-call">
-                                            <td>
-                                                <img src="web/public/softphone/images/video_dark.png" alt="videocam">
-                                            </td>
-                                            <td>Пропущенный видеозвонок</td>
-                                            <td>21.01.16 11:13</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>
-                                                <div class="bubble right">
-                                                    <div class="content1">Нууу мааааам!</div>
-                                                </div>
-                                            </td>
-                                            <td>19.01.16 11:13</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="circle1">1</div>
-                                            </td>
-                                            <td>
-                                                <div class="bubble left">
-                                                    <div class="content1">Ромка хватит работать, ложись спать!</div>
-                                                </div>
-                                            </td>
-                                            <td>19.01.16 11:13</td>
-                                        </tr>
-                                        <tr class="msg__incoming_call">
-                                            <td>
-                                                <img src="web/public/softphone/images/phone_dark.png" alt="phone">
-                                            </td>
-                                            <td>Входящий звонок. Длительность: 00:01:33</td>
-                                            <td>19.01.16 11:13</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="row histform__input1" style="display:block; position:fixed; bottom:0;width:90%;min-height:70px; max-height:100px; background:white; box-shadow: 0 -8px 5px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);">
-                                <form class="col s12">
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <textarea id="chat_input1" class="materialize-textarea"></textarea>
-                                            <label for="chat_input">Написать сообщение</label>
                                         </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <!-- ---------- history block form end----------- -->
-                        <!-- ---------- outgoing call block form beginning----------- -->
-                        <div id="outgoingCall_Form" class="outform inactive">
-                            <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
-                            <div id="avatarCalled" style="background:url(http://ballroom12.ru/images/avatars/1.jpg);" class="circle avatar outform__avatar"></div>
-                            <span id="calledName" class="outform__called-name">Протасова Елена</span>
-                            <span id="statusCall" class="outform__status"></span>
-                            <span id="timerCall" class="outform__timer">1:10</span>
-                            <div id="buttons_block">
-                                <ul id="out_buttons" class="outform__buttons">
-                                    <li id="out_call_ok" class="outform__buttons_item">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/phone.png">
-                                        </a>
                                     </li>
-                                    <li id="out_mic_off" class="outform__buttons_item">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/mic-on.png">
-                                        </a>
+                                    <li class="histform-head__item" id="outgoingCall">
+                                        <img src="web/public/softphone/images/phone_dark.png" class="histform-head__item_img-style">
                                     </li>
-                                    <li id="out_volume_mute" class="outform__buttons_item">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/speaker-on.png">
-                                        </a>
+                                    <li class="histform-head__item" id="outgoingVideo">
+                                        <img src="web/public/softphone/images/video_dark.png" class="histform-head__item_img-style">
                                     </li>
-                                    <li id="out_videocam" class="outform__buttons_item">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/video.png">
-                                        </a>
-                                    </li>
-                                    <li id="out_message" class="outform__buttons_item" style="">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/chat.png">
-                                        </a>
-                                    </li>
+                                    <!--                                    <li class="histform-head__item" id="outgoingVideo">
+                                                                            <img src="img/video_dark.png" class="histform-head__item_img-style">
+                                                                        </li>-->
                                 </ul>
-
-                                <div class="center-flex">
-                                    <a id="out_call_end" class="btn-floating btn-large waves-effect waves-light call-end_btn red center-flex  btn-size">
-                                        <img src="web/public/softphone/images/endcall.png">
-                                    </a>
-                                </div>
                             </div>
+                        </nav>
+                        <div class="histform__table1" style="width:100%; margin-right:0%;">
+                            <table class="chat scrollspy">
+                                <tbody class="scrollspy">
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <!-- начало необходимо только для демо входящего звонка -->
+                                            <br>
+                                            <br>
+                                            <br> входящий звонок
+                                            <a class="waves-effect waves-light btn" id="testIncCall">Click</a>
+                                            <!-- конец необходимо только для демо входящего звонка -->
+                                            <!-- начало необходимо только для демо окна чата во время звонка -->
+                                            <br>
+                                            <br>
+                                            <br> окно чата во время звонка
+                                            <a class="waves-effect waves-light btn" id="testMsgIncCall">Click</a>
+                                            <!-- конец необходимо только для демо окна чата во время звонка -->
+                                            <!-- начало необходимо только для демо видеозвонок -->
+                                            <br>
+                                            <br>
+                                            <br> видеозвонок
+                                            <a class="waves-effect waves-light btn" id="testMsgVideoCall">Click</a>
+                                            <!-- конец необходимо только для демо видеозвонок -->
+                                        </td>
+                                    </tr>
+                                    <tr class="msg__missed_call">
+                                        <td>
+                                            <img src="web/public/softphone/images/phone_dark.png" alt="phone">
+                                        </td>
+                                        <td>Пропущенный звонок</td>
+                                        <td>19.01.16 11:13</td>
+                                    </tr>
+                                    <tr class="msg__missed_video-call">
+                                        <td>
+                                            <img src="web/public/softphone/images/video_dark.png" alt="videocam">
+                                        </td>
+                                        <td>Пропущенный видеозвонок</td>
+                                        <td>21.01.16 11:13</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <div class="bubble right">
+                                                <div class="content1">Нууу мааааам!</div>
+                                            </div>
+                                        </td>
+                                        <td>19.01.16 11:13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="circle1">1</div>
+                                        </td>
+                                        <td>
+                                            <div class="bubble left">
+                                                <div class="content1">Ромка хватит работать, ложись спать!</div>
+                                            </div>
+                                        </td>
+                                        <td>19.01.16 11:13</td>
+                                    </tr>
+                                    <tr class="msg__incoming_call">
+                                        <td>
+                                            <img src="web/public/softphone/images/phone_dark.png" alt="phone">
+                                        </td>
+                                        <td>Входящий звонок. Длительность: 00:01:33</td>
+                                        <td>19.01.16 11:13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <!-- ---------- outgoing call block form end----------- -->
+                        <div class="row histform__input1" style="display:block; position:fixed; bottom:0;width:90%;min-height:70px; max-height:100px; background:white; box-shadow: 0 -8px 5px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="chat_input1" class="materialize-textarea"></textarea>
+                                        <label for="chat_input">Написать сообщение</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-                        <!-- ---------- incoming call block form beginning----------- -->
-                        <div id="incomingCall_Form" class="incform">
-                            <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
-                            <div id="avatarCaller" style="background:url(web/public/softphone/avatars/1.jpg);" class="circle avatar incform__avatar"></div>
-                            <span id="callerName" class="incform__caller-name">Звонящее Нечто</span>
-                            <span class="incform__status">Входящий звонок</span>
-
-                            <ul id="inc_buttons" class="incform__buttons" style="margin-top:20px; ">
-                                <li id="inc_phone" class="incform__buttons_item">
+                    <!-- ---------- history block form end----------- -->
+                    <!-- ---------- outgoing call block form beginning----------- -->
+                    <div id="outgoingCall_Form" class="outform inactive">
+                        <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
+                        <div id="avatarCalled" style="background:url(http://ballroom12.ru/images/avatars/1.jpg);" class="circle avatar outform__avatar"></div>
+                        <span id="calledName" class="outform__called-name">Протасова Елена</span>
+                        <span id="statusCall" class="outform__status"></span>
+                        <span id="timerCall" class="outform__timer">1:10</span>
+                        <div id="buttons_block">
+                            <ul id="out_buttons" class="outform__buttons">
+                                <li id="out_call_ok" class="outform__buttons_item">
                                     <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
                                         <img src="web/public/softphone/images/phone.png">
                                     </a>
                                 </li>
-                                <li id="inc_videocam" class="incform__buttons_item">
-                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size" style="width:60px; height:60px;">
+                                <li id="out_mic_off" class="outform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                        <img src="web/public/softphone/images/mic-on.png">
+                                    </a>
+                                </li>
+                                <li id="out_volume_mute" class="outform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                        <img src="web/public/softphone/images/speaker-on.png">
+                                    </a>
+                                </li>
+                                <li id="out_videocam" class="outform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
                                         <img src="web/public/softphone/images/video.png">
                                     </a>
                                 </li>
-                                <li id="inc_message" class="incform__buttons_item">
+                                <li id="out_message" class="outform__buttons_item" style="">
                                     <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
                                         <img src="web/public/softphone/images/chat.png">
                                     </a>
@@ -557,99 +582,133 @@
                             </ul>
 
                             <div class="center-flex">
-                                <a id="inc_call_end" class="btn-floating btn-large waves-effect waves-light red center-flex  btn-size call-end_btn" >
+                                <a id="out_call_end" class="btn-floating btn-large waves-effect waves-light call-end_btn red center-flex  btn-size">
                                     <img src="web/public/softphone/images/endcall.png">
                                 </a>
                             </div>
                         </div>
-                        <!-- ---------- incoming call block form end----------- -->
+                    </div>
+                    <!-- ---------- outgoing call block form end----------- -->
 
+                    <!-- ---------- incoming call block form beginning----------- -->
+                    <div id="incomingCall_Form" class="incform">
+                        <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
+                        <div id="avatarCaller" style="background:url(web/public/softphone/avatars/1.jpg);" class="circle avatar incform__avatar"></div>
+                        <span id="callerName" class="incform__caller-name">Звонящее Нечто</span>
+                        <span class="incform__status">Входящий звонок</span>
 
-                        <!-- ---------- chat in call form beginning----------- -->
-                        <div class="chatInCall" id="chatCall">
-                            <nav class="histform__nav" style="background:white; color:black;">
-                                <div class="nav-wrapper">
-                                    <ul>
-                                        <li class="histform__nav_li" id="backAction">
-                                            <img src="web/public/softphone/images/back.png" style="background:#DAD1D1; vertical-align: middle">
-                                        </li>
-                                        <li class="histform__nav_li" id="userNameCall">
-                                            <a href="#!" id="userFullNameCall" class="truncate" style="color:black;">Имя Какого-то Пользователя</a>
-                                        </li>
-                                        <li class="histform__nav_li" id="timeCall">
-                                            1:10:05
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
+                        <ul id="inc_buttons" class="incform__buttons" style="margin-top:20px; ">
+                            <li id="inc_phone" class="incform__buttons_item">
+                                <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                    <img src="web/public/softphone/images/phone.png">
+                                </a>
+                            </li>
+                            <li id="inc_videocam" class="incform__buttons_item">
+                                <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size" style="width:60px; height:60px;">
+                                    <img src="web/public/softphone/images/video.png">
+                                </a>
+                            </li>
+                            <li id="inc_message" class="incform__buttons_item">
+                                <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                    <img src="web/public/softphone/images/chat.png">
+                                </a>
+                            </li>
+                        </ul>
 
+                        <div class="center-flex">
+                            <a id="inc_call_end" class="btn-floating btn-large waves-effect waves-light red center-flex  btn-size call-end_btn" >
+                                <img src="web/public/softphone/images/endcall.png">
+                            </a>
                         </div>
-                        <!-- ---------- chat in call form end----------- -->
+                    </div>
+                    <!-- ---------- incoming call block form end----------- -->
 
 
-                        <!-- ---------- video call block form beginning----------- -->
-                        <div id="outgoingVideo_Form" class="videoform">
-                            <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
-                            <div id="avatarVideo" style="background:url(web/public/softphone/avatars/8.jpg);" class="circle avatar videoform__avatar"></div>
-                            <span id="statusVideo" class="videoform__status">Соединение...</span>
-                            <span id="timerVideo" class="videoform__timer">1:10</span>
-                            <div class="videoform__btn_footer">
-                                <ul id="video_buttons" class="videoform__buttons">
-                                    <li id="video_volume_mut1e" class="videoform__buttons_item">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/speaker-on.png">
-                                        </a>
+                    <!-- ---------- chat in call form beginning----------- -->
+                    <div class="chatInCall" id="chatCall">
+                        <nav class="histform__nav" style="background:white; color:black;">
+                            <div class="nav-wrapper">
+                                <ul>
+                                    <li class="histform__nav_li" id="backAction">
+                                        <img src="web/public/softphone/images/back.png" style="background:#DAD1D1; vertical-align: middle">
                                     </li>
-                                    <li id="video_volume_mute" class="videoform__buttons_item">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/speaker-on.png">
-                                        </a>
+                                    <li class="histform__nav_li" id="userNameCall">
+                                        <a href="#!" id="userFullNameCall" class="truncate" style="color:black;">Имя Какого-то Пользователя</a>
                                     </li>
-                                    <li id="video_videocam" class="videoform__buttons_item">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/video.png">
-                                        </a>
-                                    </li>
-                                    <li id="video_message" class="videoform__buttons_item" style="margin-right:0px;">
-                                        <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
-                                            <img src="web/public/softphone/images/chat.png">
-                                        </a>
+                                    <li class="histform__nav_li" id="timeCall">
+                                        1:10:05
                                     </li>
                                 </ul>
+                            </div>
+                        </nav>
 
-                                <div class="center-flex">
-                                    <a id="video_end" class="btn-floating btn-large waves-effect waves-light red center-flex btn-size call-end_btn">
-                                        <img src="web/public/softphone/images/endcall.png">
+                    </div>
+                    <!-- ---------- chat in call form end----------- -->
+
+
+                    <!-- ---------- video call block form beginning----------- -->
+                    <div id="outgoingVideo_Form" class="videoform">
+                        <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
+                        <div id="avatarVideo" style="background:url(web/public/softphone/avatars/8.jpg);" class="circle avatar videoform__avatar"></div>
+                        <span id="statusVideo" class="videoform__status">Соединение...</span>
+                        <span id="timerVideo" class="videoform__timer">1:10</span>
+                        <div class="videoform__btn_footer">
+                            <ul id="video_buttons" class="videoform__buttons">
+                                <li id="video_volume_mut1e" class="videoform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                        <img src="web/public/softphone/images/speaker-on.png">
                                     </a>
-                                </div>
+                                </li>
+                                <li id="video_volume_mute" class="videoform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                        <img src="web/public/softphone/images/speaker-on.png">
+                                    </a>
+                                </li>
+                                <li id="video_videocam" class="videoform__buttons_item">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                        <img src="web/public/softphone/images/video.png">
+                                    </a>
+                                </li>
+                                <li id="video_message" class="videoform__buttons_item" style="margin-right:0px;">
+                                    <a class="btn-floating btn-large waves-effect waves-light blue center-flex btn-size">
+                                        <img src="web/public/softphone/images/chat.png">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="center-flex">
+                                <a id="video_end" class="btn-floating btn-large waves-effect waves-light red center-flex btn-size call-end_btn">
+                                    <img src="web/public/softphone/images/endcall.png">
+                                </a>
                             </div>
                         </div>
-                        <!-- ---------- video call block form end----------- -->
                     </div>
-
-
+                    <!-- ---------- video call block form end----------- -->
                 </div>
+
+
             </div>
+        </div>
 
 
-            <div id="sessions"></div>
+        <div id="sessions"></div>
 
 
-            <div id="webcam" style="display:none;">
-                <video id="remoteView" autoplay _hidden=true></video>
-                <!-- <video id="remoteView" autoplay
-                   src="http://shapeshed.com/examples/HTML5-video-element/video/320x240.ogg">
-                 </video>-->
+        <div id="webcam" style="display:none;">
+            <video id="remoteView" autoplay _hidden=true></video>
+            <!-- <video id="remoteView" autoplay
+               src="http://shapeshed.com/examples/HTML5-video-element/video/320x240.ogg">
+             </video>-->
 
-                <video id="selfView" autoplay muted="true" _hidden=true></video>
-                <!-- <video id="selfView" autoplay
-                   src="http://shapeshed.com/examples/HTML5-video-element/video/320x240.ogg">
-                 </video>-->
-            </div>
+            <video id="selfView" autoplay muted="true" _hidden=true></video>
+            <!-- <video id="selfView" autoplay
+               src="http://shapeshed.com/examples/HTML5-video-element/video/320x240.ogg">
+             </video>-->
+        </div>
 
-            <div id="ws_reconnect"></div>
-            <div id="unregister_all"></div>
-       
+        <div id="ws_reconnect"></div>
+        <div id="unregister_all"></div>
+
 
     </body>
 </html>
