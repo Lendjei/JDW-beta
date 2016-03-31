@@ -849,7 +849,7 @@ td{
 }
 .phone__btn_call{
     border-radius: 20px; 
-    width: 230px;
+    width: 200px;
 }
 .phone__btn_call img {
     width: 40px;
@@ -858,3 +858,13 @@ td{
 }
 /*конец вкладки Номер*/
 
+#test4{
+    /*width:30px;*/
+    position: absolute;
+ top:89px;
+ left:635px;
+ opacity: 1;
+ display: block;
+ background: white;
+ z-index: 100;
+}

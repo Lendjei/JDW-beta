@@ -120,61 +120,61 @@
         <!-- ----------  dropdown list status end ----------- -->
 
         <!-- ---------- numpad beginning ----------- -->
-        <div id="numpad" class="dropdown-content drop-numpad">
-            <!-- начало вкладки Номер -->
-            <div id="phonePage" class="col s12 phone">
-                <div class="phone__inp">
-                    <form class="col s12" style="height:100%;">
-                        <div class="input-field col s6 left phone__inp_text" style="height:100%;">
-                            <input id="telephone" type="tel" class="validate phoneInput center">
-                            <!--TODO уменьшение шрифта по ширине строки. если больше 15 символов - обрезка многоточием слева есть matrialize flow-text и truncate-->
+        <!--        <div id="numpad" class="dropdown-content drop-numpad">
+                     начало вкладки Номер 
+                    <div id="phonePage" class="col s12 phone">
+                        <div class="phone__inp">
+                            <form class="col s12" style="height:100%;">
+                                <div class="input-field col s6 left phone__inp_text" style="height:100%;">
+                                    <input id="telephone" type="tel" class="validate phoneInput center">
+                                    TODO уменьшение шрифта по ширине строки. если больше 15 символов - обрезка многоточием слева есть matrialize flow-text и truncate
+                                </div>
+                                <div style="line-height: 100px;" class="left phone__inp_backspace" id="button_backspace">
+                                    <img src="web/public/softphone/images/backspace.png" alt="backspace">
+                                    TODO автоповтор при нажатии на кнопку
+                                </div>
+                                <div style="clear:both;"></div>
+                            </form>
                         </div>
-                        <div style="line-height: 100px;" class="left phone__inp_backspace" id="button_backspace">
-                            <img src="web/public/softphone/images/backspace.png" alt="backspace">
-                            <!--TODO автоповтор при нажатии на кнопку-->
+        
+                         кнопки 
+                        <ul class="collection phone__numb">
+                            <li class="collection-item dialerLi">
+                                <a href="javascript:void(0)" class="collection-item left dialer">1</a>
+                                <a href="javascript:void(0)" class="collection-item left dialer">2</a>
+                                <a href="javascript:void(0)" class="collection-item left dialer">3</a>
+                                <div style="clear:both;"></div>
+                            </li>
+                            <li class="collection-item dialerLi">
+                                <a href="javascript:void(0)" class="collection-item left dialer">4</a>
+                                <a href="javascript:void(0)" class="collection-item left dialer">5</a>
+                                <a href="javascript:void(0)" class="collection-item left dialer">6</a>
+                                <div style="clear:both;"></div>
+                            </li>
+                            <li class="collection-item dialerLi">
+                                <a href="javascript:void(0)" class="collection-item left dialer">7</a>
+                                <a href="javascript:void(0)" class="collection-item left dialer">8</a>
+                                <a href="javascript:void(0)" class="collection-item left dialer">9</a>
+                                <div style="clear:both;"></div>
+                            </li>
+                            <li class="collection-item dialerLi">
+                                <a href="javascript:void(0)" class="collection-item left dialer">*</a>
+                                <a href="javascript:void(0)" class="collection-item left dialer">0</a>
+                                <a href="javascript:void(0)" class="collection-item left dialer">#</a>
+                                <div style="clear:both;"></div>
+                            </li>
+                        </ul>
+                         кнопка вызова 
+                        <div style="height:100px; line-height: 100px;" class="center_div">
+                            <a class="waves-effect waves-light btn-large phone__btn_call without_shadow blue">
+                                <img src="web/public/softphone/images/phone.png">
+                            </a>
                         </div>
-                        <div style="clear:both;"></div>
-                    </form>
-                </div>
-
-                <!-- кнопки -->
-                <ul class="collection phone__numb">
-                    <li class="collection-item dialerLi">
-                        <a href="javascript:void(0)" class="collection-item left dialer">1</a>
-                        <a href="javascript:void(0)" class="collection-item left dialer">2</a>
-                        <a href="javascript:void(0)" class="collection-item left dialer">3</a>
-                        <div style="clear:both;"></div>
-                    </li>
-                    <li class="collection-item dialerLi">
-                        <a href="javascript:void(0)" class="collection-item left dialer">4</a>
-                        <a href="javascript:void(0)" class="collection-item left dialer">5</a>
-                        <a href="javascript:void(0)" class="collection-item left dialer">6</a>
-                        <div style="clear:both;"></div>
-                    </li>
-                    <li class="collection-item dialerLi">
-                        <a href="javascript:void(0)" class="collection-item left dialer">7</a>
-                        <a href="javascript:void(0)" class="collection-item left dialer">8</a>
-                        <a href="javascript:void(0)" class="collection-item left dialer">9</a>
-                        <div style="clear:both;"></div>
-                    </li>
-                    <li class="collection-item dialerLi">
-                        <a href="javascript:void(0)" class="collection-item left dialer">*</a>
-                        <a href="javascript:void(0)" class="collection-item left dialer">0</a>
-                        <a href="javascript:void(0)" class="collection-item left dialer">#</a>
-                        <div style="clear:both;"></div>
-                    </li>
-                </ul>
-                <!-- кнопка вызова -->
-                <div style="margin-top:1.5vh;" class="center_div">
-                    <a class="waves-effect waves-light btn-large phone__btn_call without_shadow blue">
-                        <img src="web/public/softphone/images/phone.png">
-                    </a>
-                </div>
-                <!-- конец кнопки вызова -->
-
-            </div>
-
-        </div>
+                         конец кнопки вызова 
+        
+                    </div>
+        
+                </div>-->
         <!-- ----------  numpad end ----------- -->
 
 
@@ -385,7 +385,66 @@
                         <ul class="right head__nav_right ability" >
                             <li style="" class="ability__item ">
                                 <img src="web/public/softphone/images/numpad.png" data-alignment='right'
-                                     data-activates='numpad' class="ability__item_numpad-icon dropdown-button" data-beloworigin="true" id="call_smb"/>
+                                     class="ability__item_numpad-icon dropdown-button" data-beloworigin="true" id="call_smb"/>
+                                <div class="row z-depth-1" id="test4" >
+                                    <!-- ---------- numpad beginning ----------- -->
+                                    <div id="numpad" class="drop-numpad" style="background: white;">
+                                        <!--начало вкладки Номер--> 
+                                        <div id="phonePage" class="col s12 phone" >
+                                            <div class="phone__inp">
+                                                <form class="col s12" style="height:100%;">
+                                                    <div class="input-field col s6 left phone__inp_text" style="height:100%;">
+                                                        <input id="telephone" type="tel" class="validate phoneInput center">
+                                                        <!--TODO уменьшение шрифта по ширине строки. если больше 15 символов - обрезка многоточием слева есть matrialize flow-text и truncate-->
+                                                    </div>
+                                                    <div style="line-height: 100px;" class="left phone__inp_backspace" id="button_backspace">
+                                                        <img src="web/public/softphone/images/backspace.png" alt="backspace">
+                                                        <!--TODO автоповтор при нажатии на кнопку-->
+                                                    </div>
+                                                    <div style="clear:both;"></div>
+                                                </form>
+                                            </div>
+
+                                            <!--кнопки--> 
+                                            <ul class="collection phone__numb">
+                                                <li class="collection-item dialerLi">
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">1</a>
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">2</a>
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">3</a>
+                                                    <div style="clear:both;"></div>
+                                                </li>
+                                                <li class="collection-item dialerLi">
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">4</a>
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">5</a>
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">6</a>
+                                                    <div style="clear:both;"></div>
+                                                </li>
+                                                <li class="collection-item dialerLi">
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">7</a>
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">8</a>
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">9</a>
+                                                    <div style="clear:both;"></div>
+                                                </li>
+                                                <li class="collection-item dialerLi">
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">*</a>
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">0</a>
+                                                    <a href="javascript:void(0)" class="collection-item left dialer">#</a>
+                                                    <div style="clear:both;"></div>
+                                                </li>
+                                            </ul>
+                                            <!--кнопка вызова--> 
+                                            <div style="height:100px; line-height: 100px;" class="center_div">
+                                                <a class="waves-effect waves-light btn-large phone__btn_call without_shadow blue">
+                                                    <img src="web/public/softphone/images/phone.png">
+                                                </a>
+                                            </div>
+                                            <!--конец кнопки вызова--> 
+
+                                        </div>
+
+                                    </div>
+                                    <!-- ----------  numpad end ----------- -->
+                                </div>
                             </li>
                             <li class="ability__item">
                                 <div class="input-field">

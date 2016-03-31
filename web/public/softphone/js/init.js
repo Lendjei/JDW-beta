@@ -250,14 +250,28 @@ function hideAuth() {
     });
 }
 
+$(document).on('click', function (event) {
+    console.log('---------');
+        console.log(event.target.id);
+    });
+
+
 
 $(document).ready(function () {
     
     updateStorage();
     $('ul.collapsible').unbind('click'); //чтобы не закрывался список последних действий
     
-    $('#phone-page, #history, #guestLoginForm, #outgoingCall_Form, #incomingCall_Form, #chatCall, #outgoingVideo_Form, #contacts').hide();
-    
+    $('#test4, #phone-page, #history, #guestLoginForm, #outgoingCall_Form, #incomingCall_Form, #chatCall, #outgoingVideo_Form, #contacts').hide();
+//$("body").on('click',function (event) {
+//	if ($(event.target).closest("#test4").length === 0) {
+//		console.log(1);
+//	}
+//        else{
+//            console.log(2);
+//        }
+//});
+
     createLastMsg();
     createListContacts();
     
@@ -278,6 +292,22 @@ $(document).ready(function () {
         $('#history').show();
     });
 
+    $('#call_smb').on('click', function(){
+        $('#test4').show();
+//        event.stopPropagation();
+//        $(document).bind('click', function(event){
+//            if( $(event.target).closest('#test4').length ) {
+//                console.log(555);
+//                return;} else
+//            {
+//                console.log(6666);
+//                $('#test4').fadeOut(700);}
+//        event.stopPropagation();
+// 
+//});
+        
+    });
+    
     /*временно*/
     $('#testIncCall').on('click', function () {
         $('#history').hide();
