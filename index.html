@@ -369,7 +369,7 @@
         </div><!-- phone-page -->
         <div id="general">
             <!-- ---------- head block form beginning ----------- -->
-            <div id="head" class="head" style="box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);">
+            <div id="head" class="head" style="z-index: 1;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);">
                 <nav class="head__nav " style="background:white;">
                     <div class="nav-wrapper">
 
@@ -386,15 +386,15 @@
                             <li style="" class="ability__item ">
                                 <img src="web/public/softphone/images/numpad.png" data-alignment='right'
                                      class="ability__item_numpad-icon dropdown-button" data-beloworigin="true" id="call_smb"/>
-                                <div class="row z-depth-1" id="test4" >
+                                <div class="row z-depth-2" id="test4" >
                                     <!-- ---------- numpad beginning ----------- -->
                                     <div id="numpad" class="drop-numpad" style="background: white;">
                                         <!--начало вкладки Номер--> 
-                                        <div id="phonePage" class="col s12 phone" >
+                                        <div id="phonePage" class="col s12 phone">
                                             <div class="phone__inp">
-                                                <form class="col s12" style="height:100%;">
+                                                <form class="col s12" style="height:100%; padding: 0;">
                                                     <div class="input-field col s6 left phone__inp_text" style="height:100%;">
-                                                        <input id="telephone" type="tel" class="validate phoneInput center">
+                                                        <input id="telephone" type="tel" class="validate phoneInput center" style="padding-left:1rem;">
                                                         <!--TODO уменьшение шрифта по ширине строки. если больше 15 символов - обрезка многоточием слева есть matrialize flow-text и truncate-->
                                                     </div>
                                                     <div style="line-height: 100px;" class="left phone__inp_backspace" id="button_backspace">
@@ -439,9 +439,7 @@
                                                 </a>
                                             </div>
                                             <!--конец кнопки вызова--> 
-
                                         </div>
-
                                     </div>
                                     <!-- ----------  numpad end ----------- -->
                                 </div>

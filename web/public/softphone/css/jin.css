@@ -792,10 +792,11 @@ td{
 /*    width:75vw; 
     margin: 0 auto;*/
     height:100px;
+    line-height: 100px;
 }
 
 .phone__inp_text{
-    width: 150px !important;
+    width: 230px !important;
 }
 
 .phone__inp .phone__inp_text input {
@@ -839,11 +840,11 @@ td{
     border: none !important;
 }
 .dialer{
-    height: 5vh !important;
-    width: 70px !important;
+    height: 50px !important;
+    width: 90px !important;
     padding: 0px !important;
     border-bottom: none !important;
-    line-height: 5vh !important;
+    line-height: 50px !important;
     text-align: center !important;
     color: #489FD1 !important;
 }
