@@ -91,27 +91,27 @@ function updateStorage() {
     }
 }
 /*add some plugins materializecss beginning*/
- $('.dropdown-button').dropdown({
-      inDuration: 300,
-      outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
-      gutter: 200, // Spacing from edge
-      belowOrigin: false, // Displays dropdown below the button
-      alignment: 'left' // Displays dropdown with edge aligned to the left of button
-    }
-  );
-     
- $('.dropdown-button1').dropdown({
-      inDuration: 300,
-      outDuration: 225,
-      constrain_width: true, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
-      gutter: 200, // Spacing from edge
-      belowOrigin: false, // Displays dropdown below the button
-      alignment: 'right' // Displays dropdown with edge aligned to the left of button
-    }
-  );
+$('.dropdown-button').dropdown({
+    inDuration: 300,
+    outDuration: 225,
+    constrain_width: false, // Does not change width of dropdown to that of the activator
+    hover: true, // Activate on hover
+    gutter: 200, // Spacing from edge
+    belowOrigin: false, // Displays dropdown below the button
+    alignment: 'left' // Displays dropdown with edge aligned to the left of button
+}
+);
+
+$('.dropdown-button1').dropdown({
+    inDuration: 300,
+    outDuration: 225,
+    constrain_width: true, // Does not change width of dropdown to that of the activator
+    hover: true, // Activate on hover
+    gutter: 200, // Spacing from edge
+    belowOrigin: false, // Displays dropdown below the button
+    alignment: 'right' // Displays dropdown with edge aligned to the left of button
+}
+);
 $(document).ready(function () {
     $('ul.tabs').tabs();
 });
@@ -147,7 +147,7 @@ function createListContacts() {
 //    listItemsContacts += '</ul>';
 //    listContacts.html(listItemsContacts);
 
-  // Создаем список контактов
+    // Создаем список контактов
     var listContacts = $('#contacts_list');
     var listItemsContacts = '<ul class="collection contacts-list" style="border: none; height:100%"; margin-bottom:20px>';
     var length = arrayListContacts.length;
@@ -192,7 +192,7 @@ function createLastMsg() {
     listUsers.html(listItemsUsers);
 }
 
-window.getCurrentTransport = function() {
+window.getCurrentTransport = function () {
     if (document.getElementById('transport_webrtc') && document.getElementById('transport_webrtc').checked) {
         return 'webrtc';
     }
@@ -256,21 +256,29 @@ function hideAuth() {
 //    });
 
 
+$(document).bind('click', function (event) {
+    if ($(event.target).closest('#numpad_test').length)
+        return;
+    $('#test4').fadeOut(700);
+    event.stopPropagation();
+
+});
+
 
 $(document).ready(function () {
-    
+
     updateStorage();
     $('ul.collapsible').unbind('click'); //чтобы не закрывался список последних действий
-    
+
     $('#test4, #phone-page, #history, #guestLoginForm, #outgoingCall_Form, #incomingCall_Form, #chatCall, #outgoingVideo_Form, #contacts').hide();
-    
+
     createLastMsg();
     createListContacts();
-    
-    $('#search_input').on('click', function(){
+
+    $('#search_input').on('click', function () {
         $('#test4').hide();
-    })
-    
+    });
+
     $('#lastAction li.action').on('click', function () {
         $('#history').show();
     });
@@ -278,7 +286,7 @@ $(document).ready(function () {
     $('#contacts li.action').on('click', function () {
         $('#history').show();
     });
-   $('#outgoingCall').on('click', function () {
+    $('#outgoingCall').on('click', function () {
         $('#history').hide();
         $('#outgoingCall_Form').show();
     });
@@ -288,22 +296,10 @@ $(document).ready(function () {
         $('#history').show();
     });
 
-    $('#call_smb').on('click', function(){
+    $('#call_smb').on('click', function () {
         $('#test4').show();
-//        event.stopPropagation();
-        $(document).bind('click', function(event){
-            if( $(event.target).closest('#test4').length ) {
-                console.log(555);
-                return;} else
-            {
-                console.log(6666);
-                $('#test4').fadeOut(700);}
-        event.stopPropagation();
- 
-});
-        
     });
-    
+
     /*временно*/
     $('#testIncCall').on('click', function () {
         $('#history').hide();
@@ -330,173 +326,184 @@ $(document).ready(function () {
         $('#outgoingVideo_Form').hide();
         $('#history').show();
     });
- 
+
     $('#contact_btn').on('click', function () {
         $('#history, #guestLoginForm, #outgoingCall_Form, #incomingCall_Form, #chatCall, #outgoingVideo_Form').hide();
         $('#contacts').show();
     });
-    
+
+    $('#button_backspace').on('click', function () {
+        var str = $("#telephone").val();
+        str = str.slice(0, -1);
+        $("#telephone").val(str);
+        if ($("#telephone").val() == '') {
+            $('#label_telephone').removeClass("active");
+        }
+    });
+
     function disableSipAccount() {
         //if (window.getCurrentTransport() === 'rtp') {
-            mars.events.request('settingsListData', {}, function (err, data) {
-                if (err) {
-                    return false;
+        mars.events.request('settingsListData', {}, function (err, data) {
+            if (err) {
+                return false;
+            }
+
+            try {
+                var config = JSON.parse(data[0].value);
+                var sipAccount = config.sipAccounts[0];
+
+                if (sipAccount) {
+                    sipAccount['disable'] = 1;
                 }
 
-                try {
-                    var config = JSON.parse(data[0].value);
-                    var sipAccount = config.sipAccounts[0];
-
-                    if (sipAccount) {
-                        sipAccount['disable'] = 1;
-                    }
-
-                    // Сохранение sip Аккаунта в config.js
-                    mars.events.emit('updateData', { source: 'config', data: {sipAccounts: [ sipAccount ]} });
-                } catch (err) {
-                    console.warn(err.toString());
-                }
-            });
+                // Сохранение sip Аккаунта в config.js
+                mars.events.emit('updateData', {source: 'config', data: {sipAccounts: [sipAccount]}});
+            } catch (err) {
+                console.warn(err.toString());
+            }
+        });
         //}
     }
 
     function enableSipAccount() {
         //if (window.getCurrentTransport() === 'rtp') {
-            mars.events.request('settingsListData', {}, function (err, data) {
+        mars.events.request('settingsListData', {}, function (err, data) {
+            if (err) {
+                return false;
+            }
+
+            try {
+                var config = JSON.parse(data[0].value);
+                var sipAccount = config.sipAccounts[0];
+
+                if (sipAccount) {
+                    sipAccount['disable'] = 0;
+                }
+
+                // Сохранение sip Аккаунта в config.js
+                mars.events.emit('updateData', {source: 'config', data: {sipAccounts: [sipAccount]}});
+            } catch (err) {
+                console.warn(err.toString());
+            }
+        });
+        //}
+    }
+
+    function sendNewSipAccount() {
+        //if (window.getCurrentTransport() === 'rtp') {
+        var login = document.getElementById("sip_uri").value;
+        var pass = document.getElementById("sip_password").value;
+        var host = document.getElementById("ws_servers").value;
+        host = host.match(/\/\/([^:/]+)/);
+        if (host && host[1]) {
+            host = host[1];
+        } else {
+            host = "";
+        }
+        var sipAccount = {
+            host: host,
+            expires: 60,
+            user: login,
+            password: pass,
+            disable: 0
+        };
+
+        sipUri = login + '@' + host;
+        sipPass = pass;
+
+        //console.log('************* sipUri ', sipUri);
+        //console.log('************* sipPass ', sipPass);
+
+        if (login && pass && host) {
+
+            /* Если аккаунт не был изменен, проверяем его статус подключения.
+             В случае если подключен, авторизуем
+             */
+            mars.events.request('sipAccounts', {}, function (err, data) {
                 if (err) {
                     return false;
                 }
 
-                try {
-                    var config = JSON.parse(data[0].value);
-                    var sipAccount = config.sipAccounts[0];
+                if (data && data[0] && data[0].user && data[0].host && data[0].password) {
+                    var curSipUri = data[0].user + '@' + data[0].host;
 
-                    if (sipAccount) {
-                        sipAccount['disable'] = 0;
-                    }
-
-                    // Сохранение sip Аккаунта в config.js
-                    mars.events.emit('updateData', { source: 'config', data: {sipAccounts: [ sipAccount ]} });
-                } catch (err) {
-                    console.warn(err.toString());
-                }
-            });
-        //}
-    }
-    
-    function sendNewSipAccount() {
-        //if (window.getCurrentTransport() === 'rtp') {
-            var login = document.getElementById("sip_uri").value;
-            var pass = document.getElementById("sip_password").value;
-            var host = document.getElementById("ws_servers").value;
-                host = host.match(/\/\/([^:/]+)/);
-            if (host && host[1]) {
-                host = host[1];
-            } else {
-                host = "";
-            }
-            var sipAccount = {
-                host: host,
-                expires: 60,
-                user: login,
-                password: pass,
-                disable: 0
-            };
-
-            sipUri = login + '@' + host;
-            sipPass = pass;
-            
-            //console.log('************* sipUri ', sipUri);
-            //console.log('************* sipPass ', sipPass);
-            
-            if (login && pass && host) {
-
-                /* Если аккаунт не был изменен, проверяем его статус подключения.
-                    В случае если подключен, авторизуем
-                */
-                mars.events.request('sipAccounts', {}, function (err, data) {
-                    if (err) {
-                        return false;
-                    }
-
-                    if (data && data[0] && data[0].user && data[0].host && data[0].password) {
-                        var curSipUri = data[0].user + '@' + data[0].host;
-
-                        if ( (curSipUri == sipUri) && (sipPass == data[0].password) ) {
-                            mars.events.request('getStatusUAList', {}, function (err, statusUa) {
-                                if (err) {
-                                    return false;
-                                }
-                                if ( statusUa && statusUa[0] && statusUa[0].name && (statusUa[0].name == curSipUri) ) {
-                                    if (statusUa[0].status && statusUa[0].status == 1) {
-                                        hideAuth();
-                                    } else {
-                                        Y_U_NO('Registration failure', 2000);
-                                    }
-                                }
-                            });
-                        }
-                    }
-                    // Сохранение sip Аккаунта в config.js
-                    mars.events.emit('updateData', { source: 'config', data: {sipAccounts: [sipAccount]} });
-                    document.getElementById("transport_rtp").checked = true;
-                });
-            }
-        //}
-    }
-    
-    // Ветка
-    //if (window.getCurrentTransport() === 'rtp') {
-        mars.events.on('register', function (regSipAccount) {
-            if (regSipAccount && regSipAccount.uri) {
-                var uriParse = parsingUri(regSipAccount.uri);
-                var regUri = uriParse.user + '@' + uriParse.host;
-
-                // При успешной авторизации устанавливаем radio button в checked
-                //document.getElementById("transport_rtp").checked = true;
-
-                // Проверка на наличие элемента в dom $("#login-full-background").length > 0
-                if (submit && (regUri == sipUri) && ($("#login-full-background").length > 0) && regSipAccount.status) {
-
-                    // Скрыть авторизационное окно
-                    if (regSipAccount.status == 'registered') {
-                        mars.events.request('sipAccounts', {}, function (err, sipAccount) {
+                    if ((curSipUri == sipUri) && (sipPass == data[0].password)) {
+                        mars.events.request('getStatusUAList', {}, function (err, statusUa) {
                             if (err) {
                                 return false;
                             }
-
-                            if (sipAccount && sipAccount[0] && sipAccount[0].user && sipAccount[0].host) {
-                                var tmpSipUri = sipAccount[0].user + '@' + sipAccount[0].host;
-
-                                if ( (tmpSipUri == sipUri) && sipAccount[0].password && (sipAccount[0].password == sipPass) ) {
+                            if (statusUa && statusUa[0] && statusUa[0].name && (statusUa[0].name == curSipUri)) {
+                                if (statusUa[0].status && statusUa[0].status == 1) {
                                     hideAuth();
+                                } else {
+                                    Y_U_NO('Registration failure', 2000);
                                 }
-                            };
+                            }
                         });
                     }
+                }
+                // Сохранение sip Аккаунта в config.js
+                mars.events.emit('updateData', {source: 'config', data: {sipAccounts: [sipAccount]}});
+                document.getElementById("transport_rtp").checked = true;
+            });
+        }
+        //}
+    }
 
-                    // Показать сообщение об ошибке
-                    if (regSipAccount.status == 'unregistered') {
-                        Y_U_NO('Registration failure', 2000);
-                    }
+    // Ветка
+    //if (window.getCurrentTransport() === 'rtp') {
+    mars.events.on('register', function (regSipAccount) {
+        if (regSipAccount && regSipAccount.uri) {
+            var uriParse = parsingUri(regSipAccount.uri);
+            var regUri = uriParse.user + '@' + uriParse.host;
+
+            // При успешной авторизации устанавливаем radio button в checked
+            //document.getElementById("transport_rtp").checked = true;
+
+            // Проверка на наличие элемента в dom $("#login-full-background").length > 0
+            if (submit && (regUri == sipUri) && ($("#login-full-background").length > 0) && regSipAccount.status) {
+
+                // Скрыть авторизационное окно
+                if (regSipAccount.status == 'registered') {
+                    mars.events.request('sipAccounts', {}, function (err, sipAccount) {
+                        if (err) {
+                            return false;
+                        }
+
+                        if (sipAccount && sipAccount[0] && sipAccount[0].user && sipAccount[0].host) {
+                            var tmpSipUri = sipAccount[0].user + '@' + sipAccount[0].host;
+
+                            if ((tmpSipUri == sipUri) && sipAccount[0].password && (sipAccount[0].password == sipPass)) {
+                                hideAuth();
+                            }
+                        }
+                        ;
+                    });
                 }
 
-                // Установить состояние подключения
-
-                switch (regSipAccount.status) {
-                    case 'unregistered':
-                        GUI.setStatus("disconnected", 'rtp');
-                        break;
-                    case 'registered':
-                        GUI.setStatus("registered", 'rtp');
-                        break;
-                    default:
-                        GUI.setStatus("connected", 'rtp');
-                        break;
-                };
-
+                // Показать сообщение об ошибке
+                if (regSipAccount.status == 'unregistered') {
+                    Y_U_NO('Registration failure', 2000);
+                }
             }
-        });
+
+            // Установить состояние подключения
+
+            switch (regSipAccount.status) {
+                case 'unregistered':
+                    GUI.setStatus("disconnected", 'rtp');
+                    break;
+                case 'registered':
+                    GUI.setStatus("registered", 'rtp');
+                    break;
+                default:
+                    GUI.setStatus("connected", 'rtp');
+                    break;
+            }
+            ;
+
+        }
+    });
     //}
 
     $('#use-tryit-account-link a').focus();
@@ -506,10 +513,13 @@ $(document).ready(function () {
     document.title = PageTitle;
 
     register_checkbox = $("#phone > .status #register");
-    phone_dialed_number_screen = $("#phone > .controls  input.destination");
-    phone_call_button = $("#phone > .controls > .dialbox > .dial-buttons > .call");
+//    phone_dialed_number_screen = $("#phone > .controls  input.destination");
+    phone_dialed_number_screen = $("#telephone");
+    //phone_call_button = $("#phone > .controls > .dialbox > .dial-buttons > .call");
+    phone_call_button = $('#callBtn');
     phone_chat_button = $("#phone > .controls > .dialbox > .dial-buttons > .chat");
-    phone_dialpad_button = $("#phone > .controls > .dialpad .button");
+//    phone_dialpad_button = $("#phone > .controls > .dialpad .button");numpad-btn
+    phone_dialpad_button = $(".numpad-btn");
     soundPlayer = document.createElement("audio");
     soundPlayer.volume = 1;
 
@@ -534,7 +544,7 @@ $(document).ready(function () {
     var sip_uri = null;
     var sip_password = null;
     var ws_servers = "ws://" + hostname + ':' + port + '/sip';
-    
+
     hostname = "172.17.2.77";
     port = ":8000";
     ws_servers = "ws://" + hostname + port + "/sip";
@@ -542,37 +552,37 @@ $(document).ready(function () {
 
     // Ветка
     //if (window.getCurrentTransport() === 'rtp') {
-        mars.events.on('refresh', function (type) {
-            if (type === 'config') {
-                mars.events.request('settingsListData', {}, function (err, data) {
-                    if (err) {
+    mars.events.on('refresh', function (type) {
+        if (type === 'config') {
+            mars.events.request('settingsListData', {}, function (err, data) {
+                if (err) {
+                    return;
+                }
+
+                var config;
+                if (data && data[0] && data[0].value) {
+                    try {
+                        config = JSON.parse(data[0].value);
+                    } catch (err) {
+                        console.log(err);
                         return;
                     }
+                }
+                if (config && config.sipAccounts && config.sipAccounts[0]) {
+                    if (config.sipAccounts[0].user && document.getElementById("sip_uri")) {
+                        document.getElementById("sip_uri").value = config.sipAccounts[0].user;
+                    }
+                    if (config.sipAccounts[0].password && document.getElementById("sip_password")) {
+                        document.getElementById("sip_password").value = config.sipAccounts[0].password;
+                    }
+                }
+            })
+        }
+    });
 
-                    var config;
-                    if (data && data[0] && data[0].value) {
-                        try {
-                            config = JSON.parse(data[0].value);
-                        } catch (err) {
-                            console.log(err);
-                            return;
-                        }
-                    }
-                    if (config && config.sipAccounts && config.sipAccounts[0]) {
-                        if ( config.sipAccounts[0].user && document.getElementById("sip_uri") ) {
-                            document.getElementById("sip_uri").value = config.sipAccounts[0].user;
-                        }
-                        if ( config.sipAccounts[0].password && document.getElementById("sip_password") ) {
-                            document.getElementById("sip_password").value = config.sipAccounts[0].password;
-                        }
-                    }
-                })
-            }
-        });
-    
-        mars.events.emit('refresh', 'config');    
+    mars.events.emit('refresh', 'config');
     //}
-    
+
     var ws_was_connected = false;
 
     var login_form = $("#loginForm");
@@ -580,8 +590,10 @@ $(document).ready(function () {
     var login_display_name = $("#loginForm input#display_name");
     var login_sip_uri = $("#loginForm input#sip_uri");
     //  var login_sip_uri = ws_servers ;
-    var login_sip_password = $("#loginForm input#sip_password");
-    var login_ws_servers = $("#loginForm input#ws_servers");
+    //var login_sip_password = $("#loginForm input#sip_password");
+    var login_sip_password = $("#sip_password");
+//    var login_ws_servers = $("#loginForm input#ws_servers");
+    var login_ws_servers = $("#ws_servers");
     var login_Y_U_NO = $("#Y_U_NO");
     var login_Y_U_NO_text = $("#Y_U_NO p");
     var login_advanced_settings_link = $("#advanced-settings-link a");
@@ -611,14 +623,14 @@ $(document).ready(function () {
      * заменено на код ниже, чтобы не было конфликтов с добавляемыми переменными*/
 
     var regV = /\?lang/gi;
-/*
-    var result = window.location.href.match(regV);
-    if (result) {
-        invitation_link_pre = window.location.href + "&invited-by=";
-    } else {
-        invitation_link_pre = window.location.href + "?invited-by=";
-    }
-*/
+    /*
+     var result = window.location.href.match(regV);
+     if (result) {
+     invitation_link_pre = window.location.href + "&invited-by=";
+     } else {
+     invitation_link_pre = window.location.href + "?invited-by=";
+     }
+     */
     var result = hostname.match(regV);
     if (result) {
         invitation_link_pre = hostname + ":" + port + "&invited-by=";
@@ -665,14 +677,14 @@ $(document).ready(function () {
         } else {
             hostname = "";
         }
-        
+
         port = login_ws_servers.val().match(/\:([0-9]+)/);
         if (port && port[1]) {
             port = port[1];
         } else {
             port = "";
         }
-        
+
         tryit_sip_domain = hostname;
 
         result = hostname.match(regV);
@@ -767,7 +779,7 @@ $(document).ready(function () {
          balloon_text = "<p>Click here to generate an account at our SIP and WebSocket servers</p><p>...and just enjoy!</p>";
          break;
          }
-
+         
          return {
          contents: balloon_text,
          minLifetime: 100,
@@ -869,8 +881,7 @@ $(document).ready(function () {
             if (!sip_uri) {
                 Y_U_NO("Y U NO SIP URI ?");
                 return false;
-            }
-            else if (!ws_servers) {
+            } else if (!ws_servers) {
                 Y_U_NO("Y U NO WS URI ?");
                 return false;
             }
@@ -930,126 +941,125 @@ $(document).ready(function () {
 
         // Ветка
         //if (window.getCurrentTransport() === 'webrtc') {
-            // Transport connection/disconnection callbacks
-            ua.on('connected', function (e) {
+        // Transport connection/disconnection callbacks
+        ua.on('connected', function (e) {
 
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    document.title = PageTitle;
-                    GUI.setStatus("connected", "webrtc");
-                    // Habilitar el phone.
-                    $("#phone .controls .ws-disconnected").hide();
-                    ws_was_connected = true;
-                //} else {
-                //    webrtcOff();
-                //}
-                
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            document.title = PageTitle;
+            GUI.setStatus("connected", "webrtc");
+            // Habilitar el phone.
+            $("#phone .controls .ws-disconnected").hide();
+            ws_was_connected = true;
+            //} else {
+            //    webrtcOff();
+            //}
+
+        });
+
+        ua.on('disconnected', function (e) {
+
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            document.title = PageTitle;
+            GUI.setStatus("disconnected", "webrtc");
+            Y_U_NO('Disconnected', 4000);
+            // Deshabilitar el phone.
+            // $("#phone .controls .ws-disconnected").show();
+            // Eliminar todas las sessiones existentes.
+            $("#sessions > .session").each(function (i, session) {
+                GUI.removeSession(session, 500);
             });
 
-            ua.on('disconnected', function (e) {
-
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    document.title = PageTitle;
-                    GUI.setStatus("disconnected", "webrtc");
-                    Y_U_NO('Disconnected', 4000);
-                    // Deshabilitar el phone.
-                    // $("#phone .controls .ws-disconnected").show();
-                    // Eliminar todas las sessiones existentes.
-                    $("#sessions > .session").each(function (i, session) {
-                        GUI.removeSession(session, 500);
-                    });
-
-                    if (!ws_was_connected) {
-                        //alert("WS connection error:\n\n- WS close code: " + e.data.code + "\n- WS close reason: " + e.data.reason);
-                        console.error("WS connection error | WS close code: " + e.code + " | WS close reason: " + e.reason);
-                        //if (! window.CustomJsSIPSettings) { window.location.reload(false); }
-                    }
-                //}
-            });
-
-            function webrtcOn() {
-                console.log('******************** WebRTC on *******************');
-                console.warn("register_checkbox has been checked");
-                // Don't change current status for now. Registration callbacks will do it.
-                register_checkbox.attr("checked", false);
-                // Avoid new change until the registration action ends.
-                register_checkbox.attr("disabled", true);
-                ua.register();              
+            if (!ws_was_connected) {
+                //alert("WS connection error:\n\n- WS close code: " + e.data.code + "\n- WS close reason: " + e.data.reason);
+                console.error("WS connection error | WS close code: " + e.code + " | WS close reason: " + e.reason);
+                //if (! window.CustomJsSIPSettings) { window.location.reload(false); }
             }
+            //}
+        });
 
-            function webrtcOff() {
-                console.log('******************** WebRTC off *******************');
-                console.warn("register_checkbox has been unchecked");
-                // Don't change current status for now. Registration callbacks will do it.
-                register_checkbox.attr("checked", true);
-                // Avoid new change until the registration action ends.
-                register_checkbox.attr("disabled", true);
-                ua.unregister();
-            }
+        function webrtcOn() {
+            console.log('******************** WebRTC on *******************');
+            console.warn("register_checkbox has been checked");
+            // Don't change current status for now. Registration callbacks will do it.
+            register_checkbox.attr("checked", false);
+            // Avoid new change until the registration action ends.
+            register_checkbox.attr("disabled", true);
+            ua.register();
+        }
 
-            //webrtcOff();
+        function webrtcOff() {
+            console.log('******************** WebRTC off *******************');
+            console.warn("register_checkbox has been unchecked");
+            // Don't change current status for now. Registration callbacks will do it.
+            register_checkbox.attr("checked", true);
+            // Avoid new change until the registration action ends.
+            register_checkbox.attr("disabled", true);
+            ua.unregister();
+        }
 
-            register_checkbox.change(function (event) {
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    if ($(this).is(":checked")) {
-                        webrtcOn();
-                        /*
-                        console.warn("register_checkbox has been checked");
-                        // Don't change current status for now. Registration callbacks will do it.
-                        register_checkbox.attr("checked", false);
-                        // Avoid new change until the registration action ends.
-                        register_checkbox.attr("disabled", true);
-                        ua.register();
-                        */
-                    }
-                    else {
-                        webrtcOff();
-                        /*
-                        console.warn("register_checkbox has been unchecked");
-                        // Don't change current status for now. Registration callbacks will do it.
-                        register_checkbox.attr("checked", true);
-                        // Avoid new change until the registration action ends.
-                        register_checkbox.attr("disabled", true);
-                        ua.unregister();
-                        */
-                    }
-                //}
-            });
+        //webrtcOff();
 
-            $("#transport_webrtc").change(function () {
+        register_checkbox.change(function (event) {
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            if ($(this).is(":checked")) {
                 webrtcOn();
-                disableSipAccount();
-            });
-
-            $("#transport_rtp").change(function () {
+                /*
+                 console.warn("register_checkbox has been checked");
+                 // Don't change current status for now. Registration callbacks will do it.
+                 register_checkbox.attr("checked", false);
+                 // Avoid new change until the registration action ends.
+                 register_checkbox.attr("disabled", true);
+                 ua.register();
+                 */
+            } else {
                 webrtcOff();
-                enableSipAccount();
-            });
+                /*
+                 console.warn("register_checkbox has been unchecked");
+                 // Don't change current status for now. Registration callbacks will do it.
+                 register_checkbox.attr("checked", true);
+                 // Avoid new change until the registration action ends.
+                 register_checkbox.attr("disabled", true);
+                 ua.unregister();
+                 */
+            }
+            //}
+        });
+
+        $("#transport_webrtc").change(function () {
+            webrtcOn();
+            disableSipAccount();
+        });
+
+        $("#transport_rtp").change(function () {
+            webrtcOff();
+            enableSipAccount();
+        });
 
 
-            // NOTE: Para hacer unregister_all (esquina arriba-dcha un cuadro
-            // transparente de 20 x 20 px).
-            $("#unregister_all").click(function () {
+        // NOTE: Para hacer unregister_all (esquina arriba-dcha un cuadro
+        // transparente de 20 x 20 px).
+        $("#unregister_all").click(function () {
 
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    ua.unregister({'all': true});
-                //}
-            });
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            ua.unregister({'all': true});
+            //}
+        });
 
-            // NOTE: Para desconectarse/conectarse al WebSocket.
-            $("#ws_reconnect").click(function () {
+        // NOTE: Para desconectarse/conectarse al WebSocket.
+        $("#ws_reconnect").click(function () {
 
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    if (ua.transport.connected)
-                        ua.transport.disconnect();
-                    else
-                        ua.transport.connect();
-                //}
-            });
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            if (ua.transport.connected)
+                ua.transport.disconnect();
+            else
+                ua.transport.connect();
+            //}
+        });
         //}
         phone_call_button.click(function (event) {
             GUI.phoneCallButtonPressed();
@@ -1081,134 +1091,133 @@ $(document).ready(function () {
 
         // Ветка
         //if (window.getCurrentTransport() === 'webrtc') {
-        
-            // Call/Message reception callbacks
-            ua.on('newRTCSession', function (e) {
 
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    // Set a global '_Session' variable with the session for testing.
-                    _Session = e.session;
-                    GUI.new_session(e)
-                //}
-            });
+        // Call/Message reception callbacks
+        ua.on('newRTCSession', function (e) {
 
-            ua.on('newMessage', function (e) {
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            // Set a global '_Session' variable with the session for testing.
+            _Session = e.session;
+            GUI.new_session(e)
+            //}
+        });
 
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    GUI.new_message(e)
-                //}
-            });
+        ua.on('newMessage', function (e) {
 
-            // Registration/Deregistration callbacks
-            ua.on('registered', function (e) {
-                // При успешной авторизации устанавливаем radio button в checked
-                if (window.getCurrentTransport() === 'webrtc') {
-                    //document.getElementById("transport_webrtc").checked = true;
-                }
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            GUI.new_message(e)
+            //}
+        });
 
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    console.info('Registered');
-                    GUI.setStatus("registered", "webrtc");
-                    user_display_name.text(login_display_name.val());
+        // Registration/Deregistration callbacks
+        ua.on('registered', function (e) {
+            // При успешной авторизации устанавливаем radio button в checked
+            if (window.getCurrentTransport() === 'webrtc') {
+                //document.getElementById("transport_webrtc").checked = true;
+            }
 
-                    //alert($(session).find(".peer > .display-name").text());
-                    //$("#phone-page #user_display_name").text(user_display_name);
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            console.info('Registered');
+            GUI.setStatus("registered", "webrtc");
+            user_display_name.text(login_display_name.val());
 
-                    if (invitedBy) {
-                        // This fails in Chrome M38 (it does not propmt for getUseMedia).
-                        // phone_dialed_number_screen.val(invitedBy);
-                        // phone_call_button.click();
-                        // var invited_session = GUI.getSession("sip:" + invitedBy + "@" + tryit_sip_domain);
-                        // invitedBy = null;
+            //alert($(session).find(".peer > .display-name").text());
+            //$("#phone-page #user_display_name").text(user_display_name);
 
-                        // $(invited_session).find(".chat > input[type='text']").val("Hi there, you have invited me to call you :)");
-                        // var e = jQuery.Event("keydown");
-                        // e.which = 13  // Enter
-                        // $(invited_session).find(".chat > input[type='text']").trigger(e);
-                        // $(invited_session).find(".chat > input[type='text']").focus();
+            if (invitedBy) {
+                // This fails in Chrome M38 (it does not propmt for getUseMedia).
+                // phone_dialed_number_screen.val(invitedBy);
+                // phone_call_button.click();
+                // var invited_session = GUI.getSession("sip:" + invitedBy + "@" + tryit_sip_domain);
+                // invitedBy = null;
 
-                        // So let's just chat.
-                        phone_dialed_number_screen.val(invitedBy);
-                        phone_chat_button.click();
-                        var invited_session = GUI.getSession("sip:" + invitedBy + "@" + tryit_sip_domain);
-                        invitedBy = null;
+                // $(invited_session).find(".chat > input[type='text']").val("Hi there, you have invited me to call you :)");
+                // var e = jQuery.Event("keydown");
+                // e.which = 13  // Enter
+                // $(invited_session).find(".chat > input[type='text']").trigger(e);
+                // $(invited_session).find(".chat > input[type='text']").focus();
 
-                        var lang = getUrlVars()["lang"];
-                        (lang == undefined || lang == "ru") ?
-                                $(invited_session).find(".chat > input[type='text']").val("Привет, поболтаем?") :
-                                $(invited_session).find(".chat > input[type='text']").val("Hi there, wanna talk?");
-                        //  $(invited_session).find(".chat > input[type='text']").val("Hi there, wanna talk?");
-                        var e = jQuery.Event("keydown");
-                        e.which = 13;  // Enter
-                        $(invited_session).find(".chat > input[type='text']").trigger(e);
-                        $(invited_session).find(".chat > input[type='text']").focus();
-                    }
-            
-                    // Remove login page.
-                    $("#login-full-background").fadeOut(1000, function () {
+                // So let's just chat.
+                phone_dialed_number_screen.val(invitedBy);
+                phone_chat_button.click();
+                var invited_session = GUI.getSession("sip:" + invitedBy + "@" + tryit_sip_domain);
+                invitedBy = null;
 
-                        $(".balloonTip").css("display", "none");
-                        $(this).remove();
-                    });
-                    $("#login-box").fadeOut(1000, function () {
-                        $(this).remove();
-                    });
+                var lang = getUrlVars()["lang"];
+                (lang == undefined || lang == "ru") ?
+                        $(invited_session).find(".chat > input[type='text']").val("Привет, поболтаем?") :
+                        $(invited_session).find(".chat > input[type='text']").val("Hi there, wanna talk?");
+                //  $(invited_session).find(".chat > input[type='text']").val("Hi there, wanna talk?");
+                var e = jQuery.Event("keydown");
+                e.which = 13;  // Enter
+                $(invited_session).find(".chat > input[type='text']").trigger(e);
+                $(invited_session).find(".chat > input[type='text']").focus();
+            }
 
-                    $("#call-invitation").show();
-                //}
-            
-            });
-        
-        
-            ua.on('unregistered', function (e) {
-
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    console.info('Deregistered');
-                    GUI.setStatus("unregistered", "webrtc");
-
-                    Y_U_NO('Deregistered', 4000);
-                    //GUI.setStatus("connected", "webrtc");
-                //}
-            });
-        
-        
-            ua.on('registrationFailed', function (e) {
-
-                // Ветка
-                //if (window.getCurrentTransport() === 'webrtc') {
-                    console.info('Registration failure');
-                    GUI.setStatus("registrationFailed", "webrtc");
-                    Y_U_NO('Registration failure', 4000);
-
-                    //GUI.setStatus("connected", "webrtc");
-
-                    if (!e.response) {
-                        //alert("SIP registration error:\n" + e.data.cause);
-                    }
-                    else {
-                        //  alert("SIP registration error:\n" + e.data.response.status_code.toString() + " " + e.data.response.reason_phrase)
-                    }
-                    // if (! window.CustomJsSIPSettings) { window.location.reload(false); }
-                //}
-            });
-
-            // Start
-            ua.start();
-        
             // Remove login page.
-            /*     $("#login-full-background").fadeOut(1000, function () {
+            $("#login-full-background").fadeOut(1000, function () {
 
-             $(".balloonTip").css("display", "none");
-             $(this).remove();
-             });
-             $("#login-box").fadeOut(1000, function () {
-             //   alert(1);
-             $(this).remove();
-             });*/
+                $(".balloonTip").css("display", "none");
+                $(this).remove();
+            });
+            $("#login-box").fadeOut(1000, function () {
+                $(this).remove();
+            });
+
+            $("#call-invitation").show();
+            //}
+
+        });
+
+
+        ua.on('unregistered', function (e) {
+
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            console.info('Deregistered');
+            GUI.setStatus("unregistered", "webrtc");
+
+            Y_U_NO('Deregistered', 4000);
+            //GUI.setStatus("connected", "webrtc");
+            //}
+        });
+
+
+        ua.on('registrationFailed', function (e) {
+
+            // Ветка
+            //if (window.getCurrentTransport() === 'webrtc') {
+            console.info('Registration failure');
+            GUI.setStatus("registrationFailed", "webrtc");
+            Y_U_NO('Registration failure', 4000);
+
+            //GUI.setStatus("connected", "webrtc");
+
+            if (!e.response) {
+                //alert("SIP registration error:\n" + e.data.cause);
+            } else {
+                //  alert("SIP registration error:\n" + e.data.response.status_code.toString() + " " + e.data.response.reason_phrase)
+            }
+            // if (! window.CustomJsSIPSettings) { window.location.reload(false); }
+            //}
+        });
+
+        // Start
+        ua.start();
+
+        // Remove login page.
+        /*     $("#login-full-background").fadeOut(1000, function () {
+         
+         $(".balloonTip").css("display", "none");
+         $(this).remove();
+         });
+         $("#login-box").fadeOut(1000, function () {
+         //   alert(1);
+         $(this).remove();
+         });*/
         //}
         // Apply custom settings.
         if (window.Settings) {
@@ -1220,7 +1229,7 @@ $(document).ready(function () {
 
         if (window.getCurrentTransport() === 'webrtc') {
             // Invitation text and balloon for tryit.jssip.net accounts.
-        
+
             if (ua.configuration.uri.host === tryit_sip_domain) {
                 //  $("#call-invitation").show();
                 $("#call-invitation").click(function () {
@@ -1251,17 +1260,17 @@ $(document).ready(function () {
          $("body").removeClass();
          $("body").addClass("bg01");
          });
-
+         
          theme02.click(function (event) {
          $("body").removeClass();
          $("body").addClass("bg02");
          });
-
+         
          theme03.click(function (event) {
          $("body").removeClass();
          $("body").addClass("bg03");
          });
-
+         
          theme04.click(function (event) {
          $("body").removeClass();
          $("body").addClass("bg04");
