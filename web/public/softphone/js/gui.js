@@ -473,7 +473,9 @@ $(document).ready(function () {
       ');
 
             $("#sessions").append(session_div);
-
+            
+            $("#incomingCall_Form").show();
+            
             var session = $("#sessions .session").filter(":last");
             var call_status = $(session).find(".call");
             var close = $(session).find("> .close");
@@ -553,6 +555,10 @@ $(document).ready(function () {
             var call = $(session).find(".call");
             var status_text = $(session).find(".call-status");
             var button_dial = $(session).find(".button.dial");
+            //--
+            var btnIncPhone = $("#inc_phone");
+            var btnIncEnd = $('#inc_call_end');
+            //--
             var button_hangup = $(session).find(".button.hangup");
             var button_hold = $(session).find(".button.hold");
             var button_resume = $(session).find(".button.resume");
@@ -572,6 +578,8 @@ $(document).ready(function () {
             button_hold.unbind("click");
             button_resume.unbind("click");
             button_dtmf.unbind("click");
+            //--
+            
 
             if (session.call && session.call.status !== 'terminated' && status !== 'inactive') {
                 button_hangup.click(function () {
@@ -584,11 +592,26 @@ $(document).ready(function () {
                         appExtension.emit('callTerminated', sender);
                     }
                 });
+                btnIncEnd.click(function () {
+                    GUI.setCallSessionStatus(session, "terminated", "terminated");
+                    session.call.terminate();
+                    GUI.removeSession(session, 500);
+                    
+                    // Ветка
+                    if (window.getCurrentTransport() === 'rtp') {
+                        appExtension.emit('callTerminated', sender);
+                    };
+                    
+//                    $('#incomingCall_Form').hide();
+//                    $('#history').show();
+$("#content").children().hide();
+$('#contacts').show();
+                });
             }
             else {
                 button_dtmf.unbind("click");
             }
-
+console.log(status);
             switch (status) {
                 case "inactive":
                     call.removeClass();
@@ -599,7 +622,10 @@ $(document).ready(function () {
                         var user = parsingUri(uri).user;
                         GUI.jssipCall(user, sender.sipAccountID);
                     });
-
+                   btnIncPhone.click(function () {
+                        var user = parsingUri(uri).user;
+                        GUI.jssipCall(user, sender.sipAccountID);
+                    });
                     // Hide DTMF box.
                     dtmf_box.hide();
                     break;
@@ -733,6 +759,9 @@ $(document).ready(function () {
                     call.addClass("call terminated");
                     status_text.text(description || "terminated");
                     button_hangup.unbind("click");
+                    
+                    $("#content").children().hide();
+                    $('#contacts').show();
 
                     // Hide DTMF box.
                     dtmf_box.hide();
@@ -746,6 +775,28 @@ $(document).ready(function () {
                     soundPlayer.play();
 
                     button_dial.click(function () {
+                        session.call.answer({
+                            pcConfig: peerconnection_config,
+                            // TMP:
+                            mediaConstraints: {audio: true, video: true},
+                            extraHeaders: [
+                                'X-Can-Renegotiate: ' + localCanRenegotiateRTC()
+                                //'X-Can-Renegotiate: '
+                            ],
+                            rtcOfferConstraints: {
+                                offerToReceiveAudio: 1,
+                                offerToReceiveVideo: 1
+                            },
+                        });
+                        GUI.setCallSessionStatus(session, 'answered');
+                        
+                        // Ветка
+                        if (window.getCurrentTransport() === 'rtp') {
+                            appExtension.emit('answerIncomingCall', sender);
+                        }
+                    });
+                    
+                    btnIncPhone.click(function () {
                         session.call.answer({
                             pcConfig: peerconnection_config,
                             // TMP:
