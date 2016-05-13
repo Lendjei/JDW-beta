@@ -5,8 +5,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="Author" content="Jose Luis Millan, Inaki Baz Castillo" />
         <link rel="stylesheet" href="web/public/softphone/css/style.css" type="text/css" />
-        <script>
-        </script>
         <script type='text/javascript'>
 
 
@@ -56,6 +54,8 @@
         <script src="web/public/softphone/js/parseuri.js" type="text/javascript"></script>
         <script src="web/public/softphone/js/init.js" type="text/javascript"></script>
         <script src="web/public/softphone/js/gui.js" type="text/javascript"></script>
+        <script src="web/public/softphone/js/callStatus.js" type="text/javascript"></script>
+        <script src="web/public/softphone/js/plugins.js" type="text/javascript"></script>
 
         <script src="jin.js"></script>
         <link href="web/public/softphone/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -759,6 +759,14 @@
         <div id="ws_reconnect"></div>
         <div id="unregister_all"></div>
 
-
+<div id="my_alert" class="modal">
+            <div class="modal-content">
+                <h4 id="alert_header"></h4>
+                <p id="alert_text"></p>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0)" class=" modal-action modal-close waves-effect waves-light btn">OK</a>
+            </div>
+        </div>
     </body>
 </html>

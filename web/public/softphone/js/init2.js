@@ -11,23 +11,9 @@ var peerconnection_config;
 var sipUri;
 var sipPass;
 var submit = false;
-var PageTitle = "JIN";
-var db_host = "https://kloud24.com/storage";
-var hostname = window.location.hostname;
-var port = window.location.port;
-    hostname = "172.17.2.77";
-    port = ":8000";
-    
-var serviceMsg = {
-    'User not found!': 'Пользователь не найден!',
-    'Invalid password!': 'Пароль введён неверно!',
-    'errorMsgTitle': 'Ошибка авторизации!',
-    'errorSipUri': 'Логин не заполнен!',
-    'errorWsServer': 'Сервер не найден!',
-    'registrationFailed': 'Не удалось подключиться к sip серверу. Проверьте правильность ввода логина и пароля'
-};
-    
-    
+
+
+
 function formatDate(date) {
     var rez = new Date() - date;
     if (rez < 1000)
@@ -53,23 +39,6 @@ localStorage.setItem('contacts', '{"success":true,"data":[["3", "Николае�
 localStorage.setItem('user_notifications', '{"success":true,"data":[["7", "inc_mes", "Ромка хватит работать, ложись спать!","2016-01-19T08:13:33.371Z"],["1", "inc_mes", "Ромка хватит работать, ложись спать!","2016-01-19T08:13:33.371Z"],["3", "miss_call", "Пропущенный звонок","2016-01-19T08:13:33.371Z"],["3", "miss_vid", "Пропущенный видеозвонок","2016-01-21T08:13:33.371Z"],["3", "out_mes", "Нууу мааааам!","2016-01-19T08:13:33.371Z"],["3", "inc_call", "Входящий звонок. Длительность: 00:01:33","2016-01-19T08:13:33.371Z"],["4", "out_call","Исходящий звонок. Длительность: 00:01:33","2016-01-19T08:13:33.371Z"],["", "out_vid","Исходящий видеозвонок. Длительность: 00:01:33","2016-01-19T08:13:33.371Z"]]}');
 localStorage.setItem('status', '{"success":true,"data":[["1", "notAvailable"],["2", "offline"],["3", "online"],["4", "notAvailable"],["5", "offline"],["6", "online"],["7", "notAvailable"], ["8", "offline"],["9", "online"],["10", "notAvailable"],["11", "offline"],["12", "online"],["13", "online"],["14", "notAvailable"],["15", "offline"],["16", "online"],["17", "notAvailable"], ["18", "offline"],["19", "online"],["20", "notAvailable"]]}');
 
-function myAlert(header, text) {
-    $("#my_alert > div.modal-content > h4").text(header);
-    $("#my_alert > div.modal-content > p").text(text);
-    $('#my_alert').openModal();
-}
-
-function auth_login_callback(res) {
-    var login_sip_uri = $("#loginForm input#sip_uri");
-    var login_sip_password = $("#sip_password");
-    if (res === true) {
-        console.log('+++++++++++++++++++++');
-    } else {
-        console.log('--------------------------------');
-          myAlert(serviceMsg['errorMsgTitle'], serviceMsg[res]);
-        //ua = "";
-    }
-}
 function updateStorage() {
     statusLists = JSON.parse(localStorage.getItem("status")).data;
     arrayAvatarsIcon = []; //JSON.parse(localStorage.getItem("last_notifications")).data; 
@@ -123,6 +92,114 @@ function updateStorage() {
     }
 }
 
+
+function auth_login_callback(res) {
+  if (res===true){ 
+      console.log('+++++++++++++++++++++');
+    submit = true;
+        var login_ws_servers = $("#ws_servers");
+        var login_advanced_settings = $("#advanced-settings");
+       var hostname = login_ws_servers.val().match(/\/\/([^:/]+)/);
+        console.log(' - - - - - hostname: ' + hostname);
+        if (hostname && hostname[1]) {
+            hostname = hostname[1];
+        } else {
+            hostname = "";
+        }
+
+        var port = login_ws_servers.val().match(/\:([0-9]+)/);
+        if (port && port[1]) {
+            port = port[1];
+        } else {
+            port = "";
+        }
+ // Tryit JsSIP data.
+    var tryit_sip_domain = hostname;
+
+    //var tryit_ws_uri = "ws://ws1.versatica.com:10080"
+    var tryit_ws_uri = ws_servers;
+    var invitation_link_pre;
+
+    /* invitation_link_pre = window.location.href + "?invited-by=";
+     * заменено на код ниже, чтобы не было конфликтов с добавляемыми переменными*/
+
+    var regV = /\?lang/gi;
+    /*
+     var result = window.location.href.match(regV);
+     if (result) {
+     invitation_link_pre = window.location.href + "&invited-by=";
+     } else {
+     invitation_link_pre = window.location.href + "?invited-by=";
+     }
+     */
+    var result = hostname.match(regV);
+    if (result) {
+        invitation_link_pre = hostname + ":" + port + "&invited-by=";
+    } else {
+        invitation_link_pre = hostname + ":" + port + "?invited-by=";
+    }
+
+        result = hostname.match(regV);
+        if (result) {
+            invitation_link_pre = "http://" + hostname + ":" + port + "/client/&invited-by=";
+        } else {
+            invitation_link_pre = "http://" + hostname + ":" + port + "/client/?invited-by=";
+        }
+        if (window.getCurrentTransport() === 'webrtc') {
+            login_advanced_settings.hide();
+        }
+        try {
+            phoneInit();
+        } catch (err) {
+            console.warn(err.toString());
+            alert(err.toString());
+        }
+
+//        return false;
+  }else{console.log('--------------------------------');
+ //   myAlert('Ошибка авторизации!', res);
+    //ua = "";
+  }
+}
+
+
+/*add some plugins materializecss beginning*/
+$('.dropdown-button').dropdown({
+    inDuration: 300,
+    outDuration: 225,
+    constrain_width: false, // Does not change width of dropdown to that of the activator
+    hover: true, // Activate on hover
+    gutter: 200, // Spacing from edge
+    belowOrigin: false, // Displays dropdown below the button
+    alignment: 'left' // Displays dropdown with edge aligned to the left of button
+}
+);
+
+$('.dropdown-button1').dropdown({
+    inDuration: 300,
+    outDuration: 225,
+    constrain_width: true, // Does not change width of dropdown to that of the activator
+    hover: true, // Activate on hover
+    gutter: 200, // Spacing from edge
+    belowOrigin: false, // Displays dropdown below the button
+    alignment: 'right' // Displays dropdown with edge aligned to the left of button
+}
+);
+$(document).ready(function () {
+    $('ul.tabs').tabs();
+});
+$(document).ready(function () {
+    $('.scrollspy').scrollSpy();
+});
+$(document).ready(function () {
+    $('.collapsible').collapsible({
+        accordion: true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+});
+$('[data-click]').on('click', function (e) {
+    $($(this).data('click')).trigger('click');
+});
+/*add some plugins materializecss end*/
 
 function createListContacts() {
 //    // Создаем список контактов
@@ -429,8 +506,7 @@ $(document).ready(function () {
                                 if (statusUa[0].status && statusUa[0].status == 1) {
                                     hideAuth();
                                 } else {
-                                   // Y_U_NO('Registration failure', 2000);
-                                    myAlert(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
+                                    Y_U_NO('Registration failure', 2000);
                                 }
                             }
                         });
@@ -477,8 +553,7 @@ $(document).ready(function () {
 
                 // Показать сообщение об ошибке
                 if (regSipAccount.status == 'unregistered') {
-                    //Y_U_NO('Registration failure', 2000);
-                     myAlert(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
+                    Y_U_NO('Registration failure', 2000);
                 }
             }
 
@@ -504,7 +579,7 @@ $(document).ready(function () {
     $('#use-tryit-account-link a').focus();
 
     // Global variables.
-    
+    var PageTitle = "JIN";
     document.title = PageTitle;
 
     register_checkbox = $("#phone > .status #register");
@@ -533,12 +608,16 @@ $(document).ready(function () {
      var sip_password = null;
      var ws_servers = null;*/
 
-    
+    var hostname = window.location.hostname;
+    var port = window.location.port;
     var display_name = null;
     var sip_uri = null;
     var sip_password = null;
     var ws_servers = "ws://" + hostname + ':' + port + '/sip';
-       
+    var db_host = "https://kloud24.com/storage";
+
+    hostname = "172.17.2.77";
+    port = ":8000";
     ws_servers = "ws://" + hostname + port + "/sip";
     sip_uri = "sip:" + $('#sip_uri').val() + "@" + hostname;
 
@@ -656,56 +735,54 @@ $(document).ready(function () {
     $("a.balloon.ws_uri").balloon(getBalloonContent("login_ws_uri"));
     login_advanced_settings_link.balloon(getBalloonContent("login_advanced_settings"));
     login_use_trit_account_link.balloon(getBalloonContent("login_login_use_trit_account"));
-
-
+        
 
     login_form.submit(function () {
-        //    auth function:1-auth on service kloud24. if true than
-        //    2 - auth on sip server      
-
-        $.ajax({
-            url: db_host + "/auth/login",
-            jsonpCallback: "auth_login_callback",
-            dataType: "jsonp",
-            contentType: "application/json",
-            data: "token=" + btoa(login_sip_uri.val() + ":" + login_sip_password.val())
-        });
-
-        submit = true;
-        hostname = login_ws_servers.val().match(/\/\/([^:/]+)/);
-        console.log(' - - - - - hostname: ' + hostname);
-        if (hostname && hostname[1]) {
-            hostname = hostname[1];
-        } else {
-            hostname = "";
-        }
-
-        port = login_ws_servers.val().match(/\:([0-9]+)/);
-        if (port && port[1]) {
-            port = port[1];
-        } else {
-            port = "";
-        }
-
-        tryit_sip_domain = hostname;
-
-        result = hostname.match(regV);
-        if (result) {
-            invitation_link_pre = "http://" + hostname + ":" + port + "/client/&invited-by=";
-        } else {
-            invitation_link_pre = "http://" + hostname + ":" + port + "/client/?invited-by=";
-        }
-        if (window.getCurrentTransport() === 'webrtc') {
-            login_advanced_settings.hide();
-        }
-        try {
-            phoneInit();
-        } catch (err) {
-            console.warn(err.toString());
-            alert(err.toString());
-        }
-
-        return false;
+  //    auth function:1-auth on service kloud24. if true than
+//    2 - auth on sip server      
+    $.ajax({
+        url:db_host+"/auth/login",
+        jsonpCallback: "auth_login_callback",
+        dataType:"jsonp",
+        contentType: "application/json",
+        data:"token="+btoa(login_sip_uri.val() + ":" + login_sip_password.val())
+      });
+        
+ //       submit = true;
+//        hostname = login_ws_servers.val().match(/\/\/([^:/]+)/);
+//        console.log(' - - - - - hostname: ' + hostname);
+//        if (hostname && hostname[1]) {
+//            hostname = hostname[1];
+//        } else {
+//            hostname = "";
+//        }
+//
+//        port = login_ws_servers.val().match(/\:([0-9]+)/);
+//        if (port && port[1]) {
+//            port = port[1];
+//        } else {
+//            port = "";
+//        }
+//
+//        tryit_sip_domain = hostname;
+//
+//        result = hostname.match(regV);
+//        if (result) {
+//            invitation_link_pre = "http://" + hostname + ":" + port + "/client/&invited-by=";
+//        } else {
+//            invitation_link_pre = "http://" + hostname + ":" + port + "/client/?invited-by=";
+//        }
+//        if (window.getCurrentTransport() === 'webrtc') {
+//            login_advanced_settings.hide();
+//        }
+//        try {
+//            phoneInit();
+//        } catch (err) {
+//            console.warn(err.toString());
+//            alert(err.toString());
+//        }
+//
+       return false;
     });
 
     login_advanced_settings_form.submit(function () {
@@ -851,8 +928,8 @@ $(document).ready(function () {
     }
 
     function phoneInit() {
-      //  console.log('-----------------------------');
-
+        console.log('-----------------------------');
+        
         var configuration;
 
         // If js/custom.js was found then use its CustomJsSIPSettings object.
@@ -883,10 +960,10 @@ $(document).ready(function () {
             }
 
             if (!sip_uri) {
-                myAlert(serviceMsg['errorMsgTitle'], serviceMsg['errorSipUri']);
+                Y_U_NO("Y U NO SIP URI ?");
                 return false;
             } else if (!ws_servers) {
-                myAlert(serviceMsg['errorMsgTitle'], serviceMsg['errorWsServer']);
+                Y_U_NO("Y U NO WS URI ?");
                 return false;
             }
 
@@ -935,8 +1012,7 @@ $(document).ready(function () {
             sendNewSipAccount();
         } catch (e) {
             console.log(e.toString());
-         //   Y_U_NO(e.message, 4000);
-            myAlert(serviceMsg['errorMsgTitle'], e.message);
+            Y_U_NO(e.message, 4000);
             return;
         }
 
@@ -1197,8 +1273,7 @@ $(document).ready(function () {
             //if (window.getCurrentTransport() === 'webrtc') {
             console.info('Registration failure');
             GUI.setStatus("registrationFailed", "webrtc");
-            //Y_U_NO('Registration failure', 4000);
-            myAlert(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
+            Y_U_NO('Registration failure', 4000);
 
             //GUI.setStatus("connected", "webrtc");
 

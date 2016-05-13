@@ -1,0 +1,1596 @@
+[2016-05-11 13:20:29.311] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:20:29.324] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 13:20:29.329] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] started
+[2016-05-11 13:20:29.330] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] start registration
+[2016-05-11 13:20:29.339] [DEBUG] server - Refresh status "tasks"
+[2016-05-11 13:20:29.342] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-11 13:20:29.492] [INFO] server - nStore DB connected
+[2016-05-11 13:20:29.814] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:20:38.407] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:21:01.911] [INFO] server - sipUA started
+[2016-05-11 13:21:33.920] [ERROR] server - SIP UA0 [sip:_l@kloud24.com] registration status "unregistered"
+[2016-05-11 13:32:03.551] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:07.061] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:08.489] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:09.512] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:10.733] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:12.835] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:19.731] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:33.475] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:33.488] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 13:32:33.493] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] started
+[2016-05-11 13:32:33.494] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] start registration
+[2016-05-11 13:32:33.503] [DEBUG] server - Refresh status "tasks"
+[2016-05-11 13:32:33.505] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-11 13:32:33.950] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:32:34.027] [INFO] server - nStore DB connected
+[2016-05-11 13:32:37.044] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:33:06.113] [INFO] server - sipUA started
+[2016-05-11 13:33:38.228] [ERROR] server - SIP UA0 [sip:_l@kloud24.com] registration status "unregistered"
+[2016-05-11 13:35:35.014] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:35:35.028] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 13:35:35.033] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] started
+[2016-05-11 13:35:35.034] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] start registration
+[2016-05-11 13:35:35.043] [DEBUG] server - Refresh status "tasks"
+[2016-05-11 13:35:35.047] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-11 13:35:35.514] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:35:35.601] [INFO] server - nStore DB connected
+[2016-05-11 13:35:37.264] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:36:07.613] [INFO] server - sipUA started
+[2016-05-11 13:36:39.621] [ERROR] server - SIP UA0 [sip:_l@kloud24.com] registration status "unregistered"
+[2016-05-11 13:38:36.284] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:38:36.296] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 13:38:36.300] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] started
+[2016-05-11 13:38:36.301] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] start registration
+[2016-05-11 13:38:36.310] [DEBUG] server - Refresh status "tasks"
+[2016-05-11 13:38:36.313] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-11 13:38:36.764] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:38:36.856] [INFO] server - nStore DB connected
+[2016-05-11 13:38:38.228] [DEBUG] server - Refresh status "config"
+[2016-05-11 13:39:08.873] [INFO] server - sipUA started
+[2016-05-11 13:39:40.880] [ERROR] server - SIP UA0 [sip:_l@kloud24.com] registration status "unregistered"
+[2016-05-11 17:02:03.751] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:02:03.763] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 17:02:03.768] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] started
+[2016-05-11 17:02:03.769] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] start registration
+[2016-05-11 17:02:03.777] [DEBUG] server - Refresh status "tasks"
+[2016-05-11 17:02:03.780] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-11 17:02:04.269] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:02:04.371] [INFO] server - nStore DB connected
+[2016-05-11 17:02:06.865] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:02:36.500] [INFO] server - sipUA started
+[2016-05-11 17:02:36.508] [INFO] server - SIP UA0 [sip:_l@kloud24.com] detected external ip: "172.17.2.125:43807"
+[2016-05-11 17:02:36.512] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] registration status "registered"
+[2016-05-11 17:02:38.885] [DEBUG] server - SIP UA0 [sip:_l@kloud24.com] registration status "registered"
+[2016-05-11 17:02:38.888] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 17:02:38.890] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-11 17:02:38.894] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-11 17:02:38.904] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:57069"
+[2016-05-11 17:02:38.919] [INFO] server - sipUA started
+[2016-05-11 17:02:38.926] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:03:35.938] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:04:22.978] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:04:22.992] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 17:04:22.996] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-11 17:04:22.997] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-11 17:04:23.011] [DEBUG] server - Refresh status "tasks"
+[2016-05-11 17:04:23.014] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-11 17:04:23.489] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:04:23.579] [INFO] server - nStore DB connected
+[2016-05-11 17:04:23.589] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:39097"
+[2016-05-11 17:04:23.593] [INFO] server - sipUA started
+[2016-05-11 17:04:23.600] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:04:25.335] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:05:20.610] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:06:17.614] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:07:14.620] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:08:11.623] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:09:08.627] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:10:05.632] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:11:02.635] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:11:59.638] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:12:56.640] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:13:53.654] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:14:50.648] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:15:47.655] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:16:44.656] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:17:41.658] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:18:38.670] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:19:35.665] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:20:32.668] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:21:29.671] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:22:26.673] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:22:40.784] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:22:40.796] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 17:22:40.801] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-11 17:22:40.801] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-11 17:22:40.813] [DEBUG] server - Refresh status "tasks"
+[2016-05-11 17:22:40.816] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-11 17:22:41.291] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:22:41.374] [INFO] server - nStore DB connected
+[2016-05-11 17:22:41.397] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:60290"
+[2016-05-11 17:22:41.401] [INFO] server - sipUA started
+[2016-05-11 17:22:41.410] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:22:42.812] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:24:30.395] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:24:30.407] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-11 17:24:30.411] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-11 17:24:30.411] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-11 17:24:30.424] [DEBUG] server - Refresh status "tasks"
+[2016-05-11 17:24:30.427] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-11 17:24:30.896] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:24:30.988] [INFO] server - nStore DB connected
+[2016-05-11 17:24:30.997] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:49640"
+[2016-05-11 17:24:31.003] [INFO] server - sipUA started
+[2016-05-11 17:24:31.049] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:24:32.444] [DEBUG] server - Refresh status "config"
+[2016-05-11 17:25:28.056] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:26:25.078] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:27:22.088] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:28:19.092] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:29:16.096] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:30:13.097] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:31:10.105] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:32:07.104] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:33:04.107] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:34:01.110] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:34:58.111] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:35:55.113] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:36:52.114] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:37:49.117] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:38:46.119] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:39:43.122] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:40:40.126] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:41:37.129] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:42:34.130] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:43:31.136] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:44:28.137] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:45:25.141] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:46:22.144] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:47:19.148] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:48:16.151] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:49:13.154] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:50:10.156] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:51:07.167] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-11 17:52:04.182] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:35:31.917] [DEBUG] server - Refresh status "config"
+[2016-05-12 09:35:31.929] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 09:35:31.933] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-12 09:35:31.934] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-12 09:35:31.945] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 09:35:31.948] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 09:35:32.823] [DEBUG] server - Refresh status "config"
+[2016-05-12 09:35:33.108] [INFO] server - nStore DB connected
+[2016-05-12 09:35:33.133] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:37795"
+[2016-05-12 09:35:33.136] [INFO] server - sipUA started
+[2016-05-12 09:35:33.144] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:35:36.467] [DEBUG] server - Refresh status "config"
+[2016-05-12 09:36:30.151] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:37:27.156] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:38:24.164] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:39:21.168] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:40:18.172] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:41:15.173] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:42:12.177] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:43:09.178] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:44:06.181] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:45:03.183] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:46:00.184] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:46:57.187] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:47:54.188] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:48:51.191] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:49:48.195] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:50:45.197] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:51:42.198] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:52:39.202] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:53:36.205] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:54:33.208] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:55:30.209] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:56:27.213] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:57:24.214] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:58:21.216] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 09:59:18.219] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:00:15.221] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:01:12.223] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:02:09.228] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:03:06.232] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:04:03.241] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:05:00.237] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:05:57.240] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:06:54.243] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:07:51.245] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:08:48.248] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:09:45.250] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:10:42.252] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:11:39.255] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:12:36.258] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:13:33.265] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:14:30.267] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:15:27.270] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:16:24.272] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:17:21.276] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:18:18.281] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:19:15.285] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:20:12.289] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:21:09.305] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:22:06.312] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:23:03.314] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:24:00.316] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:24:57.318] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:25:54.321] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:26:51.323] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:27:48.325] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:28:45.327] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:29:42.339] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:30:39.350] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:31:36.354] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:32:03.351] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:32:03.364] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 10:32:03.368] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-12 10:32:03.369] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-12 10:32:03.381] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 10:32:03.385] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 10:32:03.855] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:32:03.955] [INFO] server - nStore DB connected
+[2016-05-12 10:32:03.964] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:38117"
+[2016-05-12 10:32:03.967] [INFO] server - sipUA started
+[2016-05-12 10:32:04.007] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:32:05.844] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:32:11.547] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:32:11.565] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 10:32:11.570] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-12 10:32:11.571] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-12 10:32:11.585] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 10:32:11.588] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 10:32:11.745] [INFO] server - nStore DB connected
+[2016-05-12 10:32:12.067] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:32:12.192] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:37069"
+[2016-05-12 10:32:12.197] [INFO] server - sipUA started
+[2016-05-12 10:32:12.203] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 10:32:16.622] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:32:16.633] [ERROR] server - SIP UA0 [sip:_l@172.17.2.77] registration status "unregistered"
+[2016-05-12 10:32:16.635] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 10:32:16.636] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 10:32:16.636] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 10:32:16.641] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:40469"
+[2016-05-12 10:32:16.644] [INFO] server - sipUA started
+[2016-05-12 10:32:16.660] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:32:46.427] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:32:46.440] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 10:32:46.445] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 10:32:46.446] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 10:32:46.460] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 10:32:46.463] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 10:32:46.604] [INFO] server - nStore DB connected
+[2016-05-12 10:32:46.925] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:32:47.087] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:39789"
+[2016-05-12 10:32:47.092] [INFO] server - sipUA started
+[2016-05-12 10:32:47.100] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:33:07.842] [DEBUG] server - Refresh status "config"
+[2016-05-12 10:33:44.106] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:34:41.111] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:35:38.135] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:36:35.148] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:37:32.152] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:38:29.156] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:39:26.162] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:40:23.164] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:41:20.173] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:42:17.181] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:43:14.184] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:44:11.188] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:45:08.190] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:46:05.198] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:47:02.204] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:47:59.206] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:48:56.208] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:49:53.210] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:50:50.215] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:51:47.217] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:52:44.226] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:53:41.223] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:54:38.225] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:55:35.228] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:56:32.232] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:57:29.235] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:58:26.238] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 10:59:23.241] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:00:20.247] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:01:17.251] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:02:14.253] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:03:11.258] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:04:08.259] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:05:05.263] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:06:02.266] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:06:59.267] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:07:56.270] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:08:53.271] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:09:50.274] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:10:47.276] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:11:44.279] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:12:41.281] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:13:38.284] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:14:35.304] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:15:32.337] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:16:29.349] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:17:26.352] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:18:23.356] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:19:20.359] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:20:17.362] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:21:14.364] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:22:11.365] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:23:08.369] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:24:05.372] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:25:02.374] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:25:59.376] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:26:56.379] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:27:53.381] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:28:29.219] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:28:29.232] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:28:29.237] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:28:29.238] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:28:29.251] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:28:29.255] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:28:29.731] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:28:29.827] [INFO] server - nStore DB connected
+[2016-05-12 11:28:29.837] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:48892"
+[2016-05-12 11:28:29.841] [INFO] server - sipUA started
+[2016-05-12 11:28:29.868] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:28:32.939] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:28:48.971] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:29:26.879] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:30:02.679] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:30:02.693] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:30:02.697] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:30:02.698] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:30:02.710] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:30:02.713] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:30:03.166] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:30:03.269] [INFO] server - nStore DB connected
+[2016-05-12 11:30:03.278] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:46683"
+[2016-05-12 11:30:03.282] [INFO] server - sipUA started
+[2016-05-12 11:30:03.308] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:30:04.736] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:30:21.907] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:31:00.328] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:31:57.350] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:32:24.133] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:32:24.147] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:32:24.151] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:32:24.152] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:32:24.166] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:32:24.169] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:32:24.310] [INFO] server - nStore DB connected
+[2016-05-12 11:32:24.632] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:32:24.719] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:35260"
+[2016-05-12 11:32:24.724] [INFO] server - sipUA started
+[2016-05-12 11:32:24.730] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:32:26.018] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:33:21.741] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:33:35.672] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:33:35.687] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:33:35.694] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:33:35.694] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:33:35.708] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:33:35.711] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:33:35.845] [INFO] server - nStore DB connected
+[2016-05-12 11:33:36.158] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:33:36.251] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:42515"
+[2016-05-12 11:33:36.255] [INFO] server - sipUA started
+[2016-05-12 11:33:36.292] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:33:37.786] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:34:33.299] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:35:30.320] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:36:27.329] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:36:35.927] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:36:35.940] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:36:35.944] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:36:35.945] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:36:35.957] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:36:35.960] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:36:36.408] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:36:36.502] [INFO] server - nStore DB connected
+[2016-05-12 11:36:36.511] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:36560"
+[2016-05-12 11:36:36.516] [INFO] server - sipUA started
+[2016-05-12 11:36:36.553] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:36:38.093] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:37:33.564] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:38:30.588] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:39:27.598] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:40:24.601] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:41:21.603] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:42:18.606] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:43:15.531] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:43:15.544] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:43:15.548] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:43:15.548] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:43:15.561] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:43:15.564] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:43:15.736] [INFO] server - nStore DB connected
+[2016-05-12 11:43:15.747] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:38544"
+[2016-05-12 11:43:15.751] [INFO] server - sipUA started
+[2016-05-12 11:43:15.760] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:44:08.203] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:44:08.217] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:44:08.222] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:44:08.223] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:44:08.234] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:44:08.237] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:44:08.718] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:44:08.831] [INFO] server - nStore DB connected
+[2016-05-12 11:44:08.876] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:34565"
+[2016-05-12 11:44:08.880] [INFO] server - sipUA started
+[2016-05-12 11:44:08.888] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:44:09.883] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:45:05.899] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:45:34.214] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:45:34.227] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:45:34.232] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:45:34.233] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:45:34.246] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:45:34.249] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:45:34.413] [INFO] server - nStore DB connected
+[2016-05-12 11:45:34.423] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:54826"
+[2016-05-12 11:45:34.426] [INFO] server - sipUA started
+[2016-05-12 11:45:34.738] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:45:34.852] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:45:36.703] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:46:25.159] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:46:25.173] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:46:25.177] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:46:25.178] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:46:25.191] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:46:25.194] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:46:25.667] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:46:25.755] [INFO] server - nStore DB connected
+[2016-05-12 11:46:25.766] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:34827"
+[2016-05-12 11:46:25.770] [INFO] server - sipUA started
+[2016-05-12 11:46:25.813] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:46:27.228] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:47:22.827] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:47:27.712] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:47:27.725] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:47:27.729] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:47:27.729] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:47:27.741] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:47:27.744] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:47:28.222] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:47:28.320] [INFO] server - nStore DB connected
+[2016-05-12 11:47:28.330] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:46339"
+[2016-05-12 11:47:28.334] [INFO] server - sipUA started
+[2016-05-12 11:47:28.343] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:47:29.983] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:48:25.353] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:49:22.374] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:50:19.385] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:51:16.388] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:52:13.393] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:53:10.394] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:54:07.398] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:54:22.295] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:54:22.309] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:54:22.314] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:54:22.315] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:54:22.331] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:54:22.334] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:54:22.811] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:54:22.964] [INFO] server - nStore DB connected
+[2016-05-12 11:54:22.973] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:52451"
+[2016-05-12 11:54:22.978] [INFO] server - sipUA started
+[2016-05-12 11:54:22.986] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:54:23.802] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:54:31.936] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:54:39.386] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:54:39.398] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:54:39.405] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:54:39.405] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:54:39.418] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:54:39.420] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:54:39.895] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:54:39.972] [INFO] server - nStore DB connected
+[2016-05-12 11:54:39.981] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:44674"
+[2016-05-12 11:54:39.984] [INFO] server - sipUA started
+[2016-05-12 11:54:39.991] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:54:49.722] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:55:11.809] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:55:11.822] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:55:11.826] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:55:11.827] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:55:11.838] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:55:11.841] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:55:12.314] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:55:12.403] [INFO] server - nStore DB connected
+[2016-05-12 11:55:12.413] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:50302"
+[2016-05-12 11:55:12.417] [INFO] server - sipUA started
+[2016-05-12 11:55:12.462] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:55:13.768] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:56:09.472] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:56:44.695] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:56:44.711] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:56:44.714] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:56:44.716] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:56:44.732] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:56:44.734] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:56:44.888] [INFO] server - nStore DB connected
+[2016-05-12 11:56:45.215] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:56:45.320] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:57013"
+[2016-05-12 11:56:45.324] [INFO] server - sipUA started
+[2016-05-12 11:56:45.331] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:56:46.406] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:57:09.522] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:57:09.535] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:57:09.539] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:57:09.539] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:57:09.552] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:57:09.554] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:57:10.017] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:57:10.117] [INFO] server - nStore DB connected
+[2016-05-12 11:57:10.128] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:53505"
+[2016-05-12 11:57:10.132] [INFO] server - sipUA started
+[2016-05-12 11:57:10.168] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:57:11.987] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:57:38.987] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:57:38.998] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:57:39.002] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:57:39.004] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:57:39.016] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:57:39.019] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:57:39.160] [INFO] server - nStore DB connected
+[2016-05-12 11:57:39.478] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:57:39.581] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:42831"
+[2016-05-12 11:57:39.585] [INFO] server - sipUA started
+[2016-05-12 11:57:39.612] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:57:43.465] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:58:34.391] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:58:34.403] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 11:58:34.407] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 11:58:34.408] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 11:58:34.421] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 11:58:34.424] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 11:58:34.883] [DEBUG] server - Refresh status "config"
+[2016-05-12 11:58:34.966] [INFO] server - nStore DB connected
+[2016-05-12 11:58:34.975] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:55466"
+[2016-05-12 11:58:34.978] [INFO] server - sipUA started
+[2016-05-12 11:58:34.985] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 11:59:31.992] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:00:29.014] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:01:07.190] [DEBUG] server - Refresh status "config"
+[2016-05-12 12:01:07.202] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 12:01:07.207] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 12:01:07.207] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 12:01:07.220] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 12:01:07.222] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 12:01:07.682] [DEBUG] server - Refresh status "config"
+[2016-05-12 12:01:07.786] [INFO] server - nStore DB connected
+[2016-05-12 12:01:07.796] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:55600"
+[2016-05-12 12:01:07.800] [INFO] server - sipUA started
+[2016-05-12 12:01:07.839] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:02:04.847] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:03:01.867] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:03:58.876] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:04:55.879] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:05:52.880] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:06:49.883] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:07:46.886] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:08:43.889] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:09:40.893] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:10:37.894] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:11:34.905] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:12:31.918] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:13:28.918] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:14:25.921] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:15:22.923] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:16:19.930] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:17:16.937] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:18:13.940] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:19:10.944] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:20:07.947] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:21:04.950] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:22:01.952] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:22:58.955] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:23:55.957] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:24:52.958] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:25:49.961] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:26:46.963] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:27:43.970] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:28:40.972] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:29:37.974] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:30:34.976] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:31:31.979] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:32:28.983] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:33:25.987] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:34:22.990] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:35:19.993] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:36:16.997] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:37:14.000] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:38:11.003] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:39:08.005] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:40:05.008] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:41:02.011] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:41:59.014] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:42:56.017] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:43:53.022] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:44:50.040] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:45:47.027] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:46:44.031] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:47:41.035] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:48:38.039] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:49:35.041] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:50:32.044] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:51:29.045] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:52:26.048] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:53:23.050] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:54:20.054] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:55:17.055] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:56:14.058] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:57:11.060] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:58:08.061] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 12:59:05.063] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:00:02.065] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:00:59.067] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:01:56.070] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:02:53.072] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:03:50.075] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:04:47.078] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:05:44.081] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:06:41.084] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:07:38.093] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:08:35.087] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:09:32.091] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:10:29.092] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:11:26.094] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:12:23.096] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:13:20.098] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:14:17.100] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:15:14.103] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:16:11.107] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:17:08.111] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:18:05.116] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:19:02.120] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:19:59.123] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:20:56.127] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:21:53.131] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:22:50.134] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:23:47.138] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:24:44.141] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:25:41.144] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:26:38.149] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:27:35.150] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:28:32.152] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:29:29.179] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:30:26.158] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:31:23.176] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:32:20.184] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:33:17.189] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:34:14.190] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:35:11.196] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:36:08.199] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:37:05.201] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:38:02.203] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:38:59.206] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:39:56.217] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:40:53.212] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:41:50.213] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:42:47.216] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:43:44.217] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:44:41.224] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:45:38.230] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:46:35.233] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:47:32.235] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:48:29.237] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:49:26.240] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:50:23.241] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:51:20.244] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:52:17.245] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:53:14.247] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:54:11.249] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:55:08.251] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:56:05.253] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:57:02.255] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:57:59.266] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:58:56.274] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 13:59:53.275] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:00:50.279] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:01:47.283] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:02:44.287] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:03:41.290] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:04:38.292] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:05:35.296] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:06:32.301] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:07:29.305] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:08:26.307] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:09:23.310] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:10:20.313] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:11:17.316] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:12:14.321] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:13:11.322] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:14:08.327] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:15:05.331] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:16:02.334] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:16:59.339] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:17:56.341] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:18:53.343] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:19:50.347] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:20:47.349] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:21:44.353] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:22:41.356] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:23:38.358] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:24:35.359] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:25:32.362] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:26:29.365] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:27:26.373] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:28:23.383] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:29:20.386] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:30:17.389] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:31:14.391] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:32:11.394] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:33:08.396] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:34:05.399] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:35:02.402] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:35:59.405] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:36:56.406] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:37:53.418] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:38:50.421] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:39:47.430] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:40:44.439] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:41:41.441] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:42:38.444] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:43:35.446] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:44:32.449] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:45:29.451] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:46:26.454] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:47:23.457] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:48:20.462] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:49:17.465] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:50:14.468] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:51:11.471] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:52:08.474] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:53:05.476] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:54:02.480] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:54:59.498] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:55:56.515] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:56:53.517] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:57:50.521] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:58:47.522] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 14:59:44.526] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:00:41.527] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:01:38.530] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:02:35.533] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:03:32.535] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:04:29.537] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:05:26.540] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:06:23.555] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:07:20.578] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:08:17.586] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:09:14.588] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:10:11.594] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:11:08.593] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:12:05.595] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:13:02.597] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:13:59.600] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:14:56.603] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:15:53.605] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:16:50.608] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:17:47.611] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:18:44.613] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:19:41.614] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:20:38.616] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:21:35.618] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:22:32.620] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:23:29.622] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:24:26.624] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:25:23.625] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:26:20.628] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:27:17.630] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:28:14.632] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:29:11.642] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:30:08.653] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:31:05.656] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:32:02.657] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:32:30.124] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:32:30.138] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 15:32:30.143] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 15:32:30.143] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 15:32:30.156] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 15:32:30.159] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 15:32:30.648] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:32:30.776] [INFO] server - nStore DB connected
+[2016-05-12 15:32:30.806] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:34329"
+[2016-05-12 15:32:30.810] [INFO] server - sipUA started
+[2016-05-12 15:32:30.834] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:33:27.841] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:34:24.848] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:35:21.853] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:36:18.855] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:37:15.859] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:38:12.865] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:39:09.868] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:39:18.617] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:39:18.631] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 15:39:18.635] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 15:39:18.635] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 15:39:18.648] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 15:39:18.651] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 15:39:18.690] [INFO] server - nStore DB connected
+[2016-05-12 15:39:18.720] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:59094"
+[2016-05-12 15:39:18.723] [INFO] server - sipUA started
+[2016-05-12 15:39:18.738] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:40:05.350] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:40:05.363] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 15:40:05.368] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 15:40:05.369] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 15:40:05.381] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 15:40:05.384] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 15:40:05.530] [INFO] server - nStore DB connected
+[2016-05-12 15:40:05.857] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:40:05.951] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:57101"
+[2016-05-12 15:40:05.954] [INFO] server - sipUA started
+[2016-05-12 15:40:05.962] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:41:02.973] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:41:51.277] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:41:51.292] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 15:41:51.296] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 15:41:51.297] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 15:41:51.310] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 15:41:51.312] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 15:41:51.770] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:41:51.866] [INFO] server - nStore DB connected
+[2016-05-12 15:41:51.875] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:42389"
+[2016-05-12 15:41:51.878] [INFO] server - sipUA started
+[2016-05-12 15:41:51.888] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:42:48.899] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:43:45.908] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:44:42.915] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:45:39.919] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:46:36.925] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:47:33.934] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:48:30.941] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:49:06.758] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:49:06.771] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 15:49:06.776] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 15:49:06.777] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 15:49:06.790] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 15:49:06.793] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 15:49:06.963] [INFO] server - nStore DB connected
+[2016-05-12 15:49:06.979] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:45583"
+[2016-05-12 15:49:06.983] [INFO] server - sipUA started
+[2016-05-12 15:49:06.990] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:50:04.001] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:50:37.239] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:50:37.252] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 15:50:37.256] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 15:50:37.257] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 15:50:37.269] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 15:50:37.272] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 15:50:37.426] [INFO] server - nStore DB connected
+[2016-05-12 15:50:37.756] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:50:37.902] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:51265"
+[2016-05-12 15:50:37.907] [INFO] server - sipUA started
+[2016-05-12 15:50:37.937] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:50:39.149] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:51:34.947] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:51:48.389] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:51:48.402] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 15:51:48.406] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 15:51:48.407] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 15:51:48.418] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 15:51:48.421] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 15:51:48.900] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:51:49.008] [INFO] server - nStore DB connected
+[2016-05-12 15:51:49.017] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:48044"
+[2016-05-12 15:51:49.024] [INFO] server - sipUA started
+[2016-05-12 15:51:49.064] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:51:51.199] [DEBUG] server - Refresh status "config"
+[2016-05-12 15:52:46.074] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:53:43.082] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:54:40.090] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:55:37.095] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:56:34.101] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:57:31.105] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:58:28.107] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 15:59:25.111] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:00:22.112] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:01:19.114] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:02:16.117] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:03:13.123] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:04:10.124] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:05:07.126] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:05:36.235] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:05:36.248] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:05:36.253] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 16:05:36.254] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 16:05:36.266] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 16:05:36.269] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 16:05:36.459] [INFO] server - nStore DB connected
+[2016-05-12 16:05:36.468] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:43425"
+[2016-05-12 16:05:36.471] [INFO] server - sipUA started
+[2016-05-12 16:05:36.477] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:06:33.489] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:07:30.494] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:08:27.498] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:09:24.502] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:10:21.506] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:11:18.508] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:12:15.511] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:12:34.445] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:12:34.458] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:12:34.461] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 16:12:34.463] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 16:12:34.475] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 16:12:34.478] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 16:12:34.652] [INFO] server - nStore DB connected
+[2016-05-12 16:12:34.982] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:12:35.162] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:38665"
+[2016-05-12 16:12:35.165] [INFO] server - sipUA started
+[2016-05-12 16:12:35.172] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:13:32.181] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:13:40.316] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:13:40.328] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:13:40.332] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 16:13:40.333] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 16:13:40.345] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 16:13:40.347] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 16:13:40.828] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:13:40.937] [INFO] server - nStore DB connected
+[2016-05-12 16:13:40.946] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:52918"
+[2016-05-12 16:13:40.950] [INFO] server - sipUA started
+[2016-05-12 16:13:40.971] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:14:21.849] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:14:21.866] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:14:21.870] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 16:14:21.871] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 16:14:21.884] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 16:14:21.887] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 16:14:22.044] [INFO] server - nStore DB connected
+[2016-05-12 16:14:22.375] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:14:22.507] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:56546"
+[2016-05-12 16:14:22.510] [INFO] server - sipUA started
+[2016-05-12 16:14:22.521] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:15:19.530] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:16:16.534] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:17:13.539] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:18:10.543] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:19:07.547] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:20:04.550] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:21:01.552] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:21:58.556] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:22:55.558] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:23:52.561] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:24:49.565] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:25:46.566] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:26:43.570] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:27:40.572] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:28:37.576] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:29:34.581] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:30:31.583] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:31:28.585] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:32:25.588] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:33:22.591] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:34:19.593] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:35:16.595] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:36:13.598] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:37:10.603] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:38:07.605] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:39:04.607] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:40:01.611] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:40:58.615] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:41:55.619] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:42:52.623] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:43:49.627] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:44:46.630] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:45:39.900] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:45:39.912] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:45:39.916] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 16:45:39.916] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 16:45:39.929] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 16:45:39.931] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 16:45:40.082] [INFO] server - nStore DB connected
+[2016-05-12 16:45:40.391] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:45:40.499] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:60027"
+[2016-05-12 16:45:40.503] [INFO] server - sipUA started
+[2016-05-12 16:45:40.510] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:45:41.856] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:46:37.518] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:47:34.525] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:48:31.531] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:49:28.537] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:50:25.541] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:51:22.544] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:52:19.546] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:52:26.120] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:52:26.135] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:52:26.140] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 16:52:26.140] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 16:52:26.156] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 16:52:26.159] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 16:52:26.299] [INFO] server - nStore DB connected
+[2016-05-12 16:52:26.599] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:52:26.713] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:40035"
+[2016-05-12 16:52:26.723] [INFO] server - sipUA started
+[2016-05-12 16:52:26.751] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:52:34.031] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:53:23.761] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:54:08.954] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:54:08.965] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:54:08.969] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 16:54:08.970] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 16:54:08.982] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 16:54:08.984] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 16:54:09.431] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:54:09.570] [INFO] server - nStore DB connected
+[2016-05-12 16:54:09.580] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:50553"
+[2016-05-12 16:54:09.583] [INFO] server - sipUA started
+[2016-05-12 16:54:09.593] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:54:11.381] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:54:20.458] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:54:23.133] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:54:23.163] [ERROR] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "unregistered"
+[2016-05-12 16:54:23.166] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:54:23.169] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-12 16:54:23.170] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-12 16:54:23.176] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:41188"
+[2016-05-12 16:54:23.179] [INFO] server - sipUA started
+[2016-05-12 16:54:23.199] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 16:54:31.771] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:54:37.881] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:54:37.896] [ERROR] server - SIP UA0 [sip:_l@172.17.2.77] registration status "unregistered"
+[2016-05-12 16:54:37.897] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:54:37.898] [DEBUG] server - SIP UA0 [sip:l@172.17.2.77] started
+[2016-05-12 16:54:37.899] [DEBUG] server - SIP UA0 [sip:l@172.17.2.77] start registration
+[2016-05-12 16:54:37.915] [INFO] server - SIP UA0 [sip:l@172.17.2.77] detected external ip: "172.17.2.125:49076"
+[2016-05-12 16:54:37.916] [INFO] server - sipUA started
+[2016-05-12 16:54:37.939] [ERROR] server - SIP UA0 [sip:l@172.17.2.77] registration status "unregistered"
+[2016-05-12 16:58:19.705] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:58:19.717] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:58:19.721] [DEBUG] server - SIP UA0 [sip:l@172.17.2.77] started
+[2016-05-12 16:58:19.722] [DEBUG] server - SIP UA0 [sip:l@172.17.2.77] start registration
+[2016-05-12 16:58:19.734] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 16:58:19.738] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 16:58:20.190] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:58:20.305] [INFO] server - nStore DB connected
+[2016-05-12 16:58:20.315] [INFO] server - SIP UA0 [sip:l@172.17.2.77] detected external ip: "172.17.2.125:43254"
+[2016-05-12 16:58:20.323] [INFO] server - sipUA started
+[2016-05-12 16:58:20.377] [ERROR] server - SIP UA0 [sip:l@172.17.2.77] registration status "unregistered"
+[2016-05-12 16:58:21.722] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:58:40.702] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:58:40.719] [ERROR] server - SIP UA0 [sip:l@172.17.2.77] registration status "unregistered"
+[2016-05-12 16:58:40.722] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:58:40.723] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-12 16:58:40.724] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-12 16:58:40.740] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:55366"
+[2016-05-12 16:58:40.743] [INFO] server - sipUA started
+[2016-05-12 16:58:40.748] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-12 16:58:45.819] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:58:49.022] [DEBUG] server - Refresh status "config"
+[2016-05-12 16:58:49.037] [ERROR] server - SIP UA0 [sip:_l@172.17.2.77] registration status "unregistered"
+[2016-05-12 16:58:49.038] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 16:58:49.039] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 16:58:49.040] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 16:58:49.044] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:45706"
+[2016-05-12 16:58:49.046] [INFO] server - sipUA started
+[2016-05-12 16:58:49.056] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 16:59:46.077] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:00:43.089] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:01:40.093] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:02:06.027] [DEBUG] server - Refresh status "config"
+[2016-05-12 17:02:06.039] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 17:02:06.043] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 17:02:06.044] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 17:02:06.055] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 17:02:06.058] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 17:02:06.492] [DEBUG] server - Refresh status "config"
+[2016-05-12 17:02:06.602] [INFO] server - nStore DB connected
+[2016-05-12 17:02:06.636] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:43070"
+[2016-05-12 17:02:06.641] [INFO] server - sipUA started
+[2016-05-12 17:02:06.648] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:02:08.821] [DEBUG] server - Refresh status "config"
+[2016-05-12 17:03:03.659] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:04:00.677] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:04:57.687] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:05:54.689] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:06:51.691] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:07:48.695] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:08:35.213] [DEBUG] server - Refresh status "config"
+[2016-05-12 17:08:35.227] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-12 17:08:35.232] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-12 17:08:35.233] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-12 17:08:35.249] [DEBUG] server - Refresh status "tasks"
+[2016-05-12 17:08:35.253] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-12 17:08:35.698] [DEBUG] server - Refresh status "config"
+[2016-05-12 17:08:35.801] [INFO] server - nStore DB connected
+[2016-05-12 17:08:35.826] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:33332"
+[2016-05-12 17:08:35.830] [INFO] server - sipUA started
+[2016-05-12 17:08:35.837] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:08:37.416] [DEBUG] server - Refresh status "config"
+[2016-05-12 17:09:32.845] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:10:29.865] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:11:26.877] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:12:23.880] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:13:20.883] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-12 17:14:17.886] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:12:21.578] [DEBUG] server - Refresh status "config"
+[2016-05-13 10:12:21.590] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 10:12:21.594] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 10:12:21.595] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 10:12:21.606] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 10:12:21.609] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 10:12:21.952] [INFO] server - nStore DB connected
+[2016-05-13 10:12:22.339] [DEBUG] server - Refresh status "config"
+[2016-05-13 10:12:22.717] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:46200"
+[2016-05-13 10:12:22.721] [INFO] server - sipUA started
+[2016-05-13 10:12:22.728] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:13:19.737] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:14:16.741] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:15:13.746] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:16:10.751] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:17:07.755] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:18:04.759] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:19:01.762] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:19:58.763] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:20:55.766] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:21:52.768] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:22:49.772] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:23:46.775] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:24:43.776] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:25:40.778] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:26:37.780] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:27:34.786] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:28:31.787] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:29:28.807] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:30:25.816] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:31:22.818] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:32:19.821] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:33:16.824] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:34:13.825] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:35:10.827] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:36:07.828] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:37:04.832] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:38:01.836] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:38:58.839] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:39:55.841] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:40:52.851] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:41:49.861] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:42:46.863] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:43:43.865] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:44:40.870] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:45:37.870] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:46:34.872] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:47:31.874] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:48:28.876] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:49:25.878] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:50:22.880] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:51:19.882] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:52:16.883] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:53:13.894] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:54:10.892] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:55:07.896] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:56:04.898] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:57:01.901] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:57:58.906] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:58:55.908] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 10:59:52.912] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:00:49.915] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:01:46.919] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:02:43.923] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:03:40.926] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:04:37.931] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:05:34.932] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:06:31.934] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:07:28.936] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:08:25.939] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:09:22.944] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:10:19.961] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:11:16.969] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:11:26.732] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:11:26.744] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:11:26.749] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 11:11:26.750] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 11:11:26.763] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:11:26.767] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:11:27.206] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:11:27.311] [INFO] server - nStore DB connected
+[2016-05-13 11:11:27.319] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:57587"
+[2016-05-13 11:11:27.324] [INFO] server - sipUA started
+[2016-05-13 11:11:27.358] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:11:29.221] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:04.721] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:04.733] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:12:04.737] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 11:12:04.737] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 11:12:04.749] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:12:04.752] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:12:05.180] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:05.289] [INFO] server - nStore DB connected
+[2016-05-13 11:12:05.298] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:47116"
+[2016-05-13 11:12:05.301] [INFO] server - sipUA started
+[2016-05-13 11:12:05.326] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:12:06.274] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:34.292] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:34.308] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:12:34.313] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 11:12:34.314] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 11:12:34.326] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:12:34.328] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:12:34.752] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:34.906] [INFO] server - nStore DB connected
+[2016-05-13 11:12:34.915] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:52130"
+[2016-05-13 11:12:34.918] [INFO] server - sipUA started
+[2016-05-13 11:12:34.927] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:12:40.390] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:45.489] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:50.716] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:50.728] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:12:50.732] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 11:12:50.733] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 11:12:50.744] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:12:50.747] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:12:50.891] [INFO] server - nStore DB connected
+[2016-05-13 11:12:51.176] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:12:51.273] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:44565"
+[2016-05-13 11:12:51.276] [INFO] server - sipUA started
+[2016-05-13 11:12:51.282] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:13:48.289] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:14:45.295] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:15:42.298] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:16:39.303] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:17:36.309] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:18:33.312] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:19:30.314] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:20:27.317] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:21:24.318] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:22:21.321] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:23:18.323] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:24:15.326] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:25:12.328] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:26:09.341] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:27:06.353] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:28:03.356] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:29:00.358] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:29:57.362] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:30:54.364] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:31:02.992] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:31:03.006] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:31:03.011] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 11:31:03.012] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 11:31:03.028] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:31:03.031] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:31:03.483] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:31:03.596] [INFO] server - nStore DB connected
+[2016-05-13 11:31:03.607] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:34499"
+[2016-05-13 11:31:03.611] [INFO] server - sipUA started
+[2016-05-13 11:31:03.620] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:31:05.981] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:32:00.630] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:32:07.179] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:32:07.191] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:32:07.196] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 11:32:07.197] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 11:32:07.209] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:32:07.213] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:32:07.363] [INFO] server - nStore DB connected
+[2016-05-13 11:32:07.657] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:32:07.778] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:40291"
+[2016-05-13 11:32:07.781] [INFO] server - sipUA started
+[2016-05-13 11:32:07.792] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:32:09.215] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:32:29.554] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:32:29.566] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:32:29.571] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 11:32:29.571] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 11:32:29.584] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:32:29.587] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:32:29.740] [INFO] server - nStore DB connected
+[2016-05-13 11:32:30.036] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:32:30.186] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:48735"
+[2016-05-13 11:32:30.190] [INFO] server - sipUA started
+[2016-05-13 11:32:30.208] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:32:30.939] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:33:27.216] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:34:24.223] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:35:21.244] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:35:31.596] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:35:32.789] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:36:18.256] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:36:31.931] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:36:37.696] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:36:47.065] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:36:47.078] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:36:47.082] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] started
+[2016-05-13 11:36:47.083] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] start registration
+[2016-05-13 11:36:47.094] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:36:47.097] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:36:47.532] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:36:47.633] [INFO] server - nStore DB connected
+[2016-05-13 11:36:47.642] [INFO] server - SIP UA0 [sip:_ld@172.17.2.77] detected external ip: "172.17.2.125:56286"
+[2016-05-13 11:36:47.647] [INFO] server - sipUA started
+[2016-05-13 11:36:47.656] [DEBUG] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "registered"
+[2016-05-13 11:36:53.366] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:36:53.390] [ERROR] server - SIP UA0 [sip:_ld@172.17.2.77] registration status "unregistered"
+[2016-05-13 11:36:53.391] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:36:53.393] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-13 11:36:53.393] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-13 11:36:53.409] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:57084"
+[2016-05-13 11:36:53.412] [INFO] server - sipUA started
+[2016-05-13 11:36:53.434] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:37:50.443] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:38:47.446] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:38:52.713] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:38:52.725] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:38:52.730] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-13 11:38:52.731] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-13 11:38:52.744] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:38:52.747] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:38:52.900] [INFO] server - nStore DB connected
+[2016-05-13 11:38:53.202] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:38:53.365] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:51004"
+[2016-05-13 11:38:53.370] [INFO] server - sipUA started
+[2016-05-13 11:38:53.378] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:38:56.401] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:39:50.388] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:40:47.400] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:41:24.953] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:41:24.966] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 11:41:24.971] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-13 11:41:24.972] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-13 11:41:24.986] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 11:41:24.989] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 11:41:25.429] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:41:25.559] [INFO] server - nStore DB connected
+[2016-05-13 11:41:25.595] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:42908"
+[2016-05-13 11:41:25.601] [INFO] server - sipUA started
+[2016-05-13 11:41:25.626] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:41:27.190] [DEBUG] server - Refresh status "config"
+[2016-05-13 11:42:22.635] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:43:19.641] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:44:16.645] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:45:13.648] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:46:10.651] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:47:07.654] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:48:04.657] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:49:01.659] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:49:58.662] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:50:55.665] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:51:52.675] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:52:49.686] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:53:46.689] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:54:43.692] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:55:40.694] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:56:37.702] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:57:34.698] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:58:31.701] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 11:59:28.704] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:00:25.706] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:01:22.708] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:02:19.713] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:03:16.721] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:04:13.715] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:05:10.717] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:06:07.720] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:07:04.722] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:08:01.726] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:08:58.729] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:09:55.733] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:10:52.736] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:11:49.738] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:12:46.741] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:13:43.743] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:14:40.746] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:15:37.748] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:16:34.750] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:17:31.753] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:18:28.758] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:19:25.763] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:20:22.766] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:21:19.767] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:22:16.770] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:23:13.773] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:24:10.777] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:25:07.796] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:26:04.830] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:27:01.837] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:27:58.839] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:28:55.842] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:29:52.843] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:30:49.845] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:31:46.847] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:32:43.849] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:33:40.851] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:34:37.863] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:35:34.873] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:36:31.875] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:37:28.877] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:38:25.881] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:39:22.881] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:40:19.883] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:41:16.887] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:42:13.888] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:43:10.890] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:44:07.892] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:45:04.894] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:46:01.902] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:46:58.898] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:47:55.901] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:48:52.903] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:49:49.904] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:50:46.907] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:51:43.911] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:52:40.913] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:53:37.914] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:54:34.917] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:55:31.921] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:56:28.923] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:57:25.926] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:58:22.928] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 12:59:19.930] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:00:16.934] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:01:13.936] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:02:10.939] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:03:07.942] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:04:04.945] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:05:01.949] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:05:58.952] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:06:55.955] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:07:52.973] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:08:50.008] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:09:47.014] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:10:44.016] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:11:41.019] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:12:38.020] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:13:35.023] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:14:32.025] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:15:29.026] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:16:26.029] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:17:23.039] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:18:20.051] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:19:17.052] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:20:14.055] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:21:11.056] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:22:08.059] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:23:05.061] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:24:02.064] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:24:59.066] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:25:56.069] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:26:53.071] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:27:50.073] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:28:47.081] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:29:44.076] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:30:41.078] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:31:38.081] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:32:35.082] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:33:32.085] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:34:29.087] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:35:26.090] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:36:23.092] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:37:20.094] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:38:17.100] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:39:14.104] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:40:11.108] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:41:08.112] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:42:05.115] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:43:02.118] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:43:59.121] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:44:56.123] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:45:53.125] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:46:01.841] [DEBUG] server - Refresh status "config"
+[2016-05-13 13:46:01.853] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 13:46:01.857] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-13 13:46:01.858] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-13 13:46:01.869] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 13:46:01.872] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 13:46:02.297] [DEBUG] server - Refresh status "config"
+[2016-05-13 13:46:02.408] [INFO] server - nStore DB connected
+[2016-05-13 13:46:02.418] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:55607"
+[2016-05-13 13:46:02.422] [INFO] server - sipUA started
+[2016-05-13 13:46:02.468] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:46:03.813] [DEBUG] server - Refresh status "config"
+[2016-05-13 13:46:13.957] [DEBUG] server - Refresh status "config"
+[2016-05-13 13:46:13.970] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 13:46:13.974] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-13 13:46:13.975] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-13 13:46:13.988] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 13:46:13.991] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 13:46:14.143] [INFO] server - nStore DB connected
+[2016-05-13 13:46:14.445] [DEBUG] server - Refresh status "config"
+[2016-05-13 13:46:14.565] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:46975"
+[2016-05-13 13:46:14.568] [INFO] server - sipUA started
+[2016-05-13 13:46:14.575] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 13:46:25.273] [DEBUG] server - Refresh status "config"
+[2016-05-13 13:46:25.283] [ERROR] server - SIP UA0 [sip:_l@172.17.2.77] registration status "unregistered"
+[2016-05-13 13:46:25.287] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 13:46:25.288] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] started
+[2016-05-13 13:46:25.289] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] start registration
+[2016-05-13 13:46:25.296] [INFO] server - SIP UA0 [sip:lena@172.17.2.77] detected external ip: "172.17.2.125:58277"
+[2016-05-13 13:46:25.299] [INFO] server - sipUA started
+[2016-05-13 13:46:25.318] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 14:13:39.893] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:13:39.906] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 14:13:39.910] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] started
+[2016-05-13 14:13:39.911] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] start registration
+[2016-05-13 14:13:39.923] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 14:13:39.927] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 14:13:40.373] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:13:40.498] [INFO] server - nStore DB connected
+[2016-05-13 14:13:40.507] [INFO] server - SIP UA0 [sip:lena@172.17.2.77] detected external ip: "172.17.2.125:36244"
+[2016-05-13 14:13:40.511] [INFO] server - sipUA started
+[2016-05-13 14:13:40.543] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 14:13:42.715] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:14:02.413] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:14:02.425] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 14:14:02.430] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] started
+[2016-05-13 14:14:02.430] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] start registration
+[2016-05-13 14:14:02.443] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 14:14:02.446] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 14:14:02.898] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:14:03.021] [INFO] server - nStore DB connected
+[2016-05-13 14:14:03.030] [INFO] server - SIP UA0 [sip:lena@172.17.2.77] detected external ip: "172.17.2.125:45948"
+[2016-05-13 14:14:03.034] [INFO] server - sipUA started
+[2016-05-13 14:14:03.087] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 14:14:03.920] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:24:45.515] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:24:45.527] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 14:24:45.531] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] started
+[2016-05-13 14:24:45.532] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] start registration
+[2016-05-13 14:24:45.544] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 14:24:45.546] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 14:24:45.700] [INFO] server - nStore DB connected
+[2016-05-13 14:24:46.000] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:24:46.122] [INFO] server - SIP UA0 [sip:lena@172.17.2.77] detected external ip: "172.17.2.125:38414"
+[2016-05-13 14:24:46.129] [INFO] server - sipUA started
+[2016-05-13 14:24:46.160] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 14:24:47.881] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:27:13.216] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:27:13.227] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 14:27:13.231] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] started
+[2016-05-13 14:27:13.232] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] start registration
+[2016-05-13 14:27:13.245] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 14:27:13.248] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 14:27:13.707] [DEBUG] server - Refresh status "config"
+[2016-05-13 14:27:13.844] [INFO] server - nStore DB connected
+[2016-05-13 14:27:13.866] [INFO] server - SIP UA0 [sip:lena@172.17.2.77] detected external ip: "172.17.2.125:57231"
+[2016-05-13 14:27:13.872] [INFO] server - sipUA started
+[2016-05-13 14:27:13.888] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 14:28:13.552] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:24:07.673] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:24:07.685] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 15:24:07.690] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] started
+[2016-05-13 15:24:07.690] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] start registration
+[2016-05-13 15:24:07.702] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 15:24:07.705] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 15:24:08.163] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:24:08.330] [INFO] server - nStore DB connected
+[2016-05-13 15:24:08.340] [INFO] server - SIP UA0 [sip:lena@172.17.2.77] detected external ip: "172.17.2.125:57726"
+[2016-05-13 15:24:08.345] [INFO] server - sipUA started
+[2016-05-13 15:24:08.408] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 15:24:10.109] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:25:09.461] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:25:09.473] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 15:25:09.478] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] started
+[2016-05-13 15:25:09.479] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] start registration
+[2016-05-13 15:25:09.491] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 15:25:09.494] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 15:25:09.929] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:25:10.040] [INFO] server - nStore DB connected
+[2016-05-13 15:25:10.049] [INFO] server - SIP UA0 [sip:lena@172.17.2.77] detected external ip: "172.17.2.125:48439"
+[2016-05-13 15:25:10.053] [INFO] server - sipUA started
+[2016-05-13 15:25:10.087] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 15:27:45.436] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:27:45.448] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 15:27:45.452] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] started
+[2016-05-13 15:27:45.453] [DEBUG] server - SIP UA0 [sip:lena@172.17.2.77] start registration
+[2016-05-13 15:27:45.465] [DEBUG] server - Refresh status "tasks"
+[2016-05-13 15:27:45.467] [DEBUG] server - setOnEvent "on_call[0]" script "softPhone.js"
+[2016-05-13 15:27:45.926] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:27:46.026] [INFO] server - nStore DB connected
+[2016-05-13 15:27:46.035] [INFO] server - SIP UA0 [sip:lena@172.17.2.77] detected external ip: "172.17.2.125:33714"
+[2016-05-13 15:27:46.040] [INFO] server - sipUA started
+[2016-05-13 15:27:46.081] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 15:27:51.655] [DEBUG] server - Refresh status "config"
+[2016-05-13 15:27:51.667] [ERROR] server - SIP UA0 [sip:lena@172.17.2.77] registration status "unregistered"
+[2016-05-13 15:27:51.669] [DEBUG] server - Server ip 172.17.2.125
+[2016-05-13 15:27:51.670] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] started
+[2016-05-13 15:27:51.671] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] start registration
+[2016-05-13 15:27:51.676] [INFO] server - SIP UA0 [sip:_l@172.17.2.77] detected external ip: "172.17.2.125:60580"
+[2016-05-13 15:27:51.679] [INFO] server - sipUA started
+[2016-05-13 15:27:51.684] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 15:28:48.693] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"
+[2016-05-13 15:29:45.704] [DEBUG] server - SIP UA0 [sip:_l@172.17.2.77] registration status "registered"

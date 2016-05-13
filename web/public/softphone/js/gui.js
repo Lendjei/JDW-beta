@@ -474,8 +474,6 @@ $(document).ready(function () {
 
             $("#sessions").append(session_div);
             
-            $("#incomingCall_Form").show();
-            
             var session = $("#sessions .session").filter(":last");
             var call_status = $(session).find(".call");
             var close = $(session).find("> .close");
@@ -558,6 +556,8 @@ $(document).ready(function () {
             //--
             var btnIncPhone = $("#inc_phone");
             var btnIncEnd = $('#inc_call_end');
+            
+            var btnOutEnd = $('#out_call_end');
             //--
             var button_hangup = $(session).find(".button.hangup");
             var button_hold = $(session).find(".button.hold");
@@ -592,7 +592,7 @@ $(document).ready(function () {
                         appExtension.emit('callTerminated', sender);
                     }
                 });
-                btnIncEnd.click(function () {
+                $('#inc_call_end, #out_call_end').click(function () {
                     GUI.setCallSessionStatus(session, "terminated", "terminated");
                     session.call.terminate();
                     GUI.removeSession(session, 500);
@@ -604,14 +604,15 @@ $(document).ready(function () {
                     
 //                    $('#incomingCall_Form').hide();
 //                    $('#history').show();
-$("#content").children().hide();
-$('#contacts').show();
+//$("#content").children().hide();
+//$('#contacts').show();
                 });
             }
             else {
                 button_dtmf.unbind("click");
             }
-console.log(status);
+            console.log("- - - - Call status: "+status);
+            
             switch (status) {
                 case "inactive":
                     call.removeClass();
@@ -759,9 +760,6 @@ console.log(status);
                     call.addClass("call terminated");
                     status_text.text(description || "terminated");
                     button_hangup.unbind("click");
-                    
-                    $("#content").children().hide();
-                    $('#contacts').show();
 
                     // Hide DTMF box.
                     dtmf_box.hide();
@@ -833,6 +831,7 @@ console.log(status);
                     alert("ERROR: setCallSessionStatus() called with unknown status '" + status + "'");
                     break;
             }
+            showCallProcessing(status);
         },
         removeSession: function (session, time, force) {
             var default_time = 500;
