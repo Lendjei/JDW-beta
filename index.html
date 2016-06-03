@@ -50,12 +50,12 @@
     <body id="body" class="bg01">
         <script src="web/public/softphone/js/jquery-2.1.1.min.js"></script>
         <script src="web/public/softphone/js/materialize.js"></script>
-        <script src="web/public/softphone/js/jquery.balloon.min.js" type="text/javascript"></script>
-        <script src="web/public/softphone/js/parseuri.js" type="text/javascript"></script>
-        <script src="web/public/softphone/js/init.js" type="text/javascript"></script>
-        <script src="web/public/softphone/js/gui.js" type="text/javascript"></script>
-        <script src="web/public/softphone/js/callStatus.js" type="text/javascript"></script>
-        <script src="web/public/softphone/js/plugins.js" type="text/javascript"></script>
+        <script src="web/public/softphone/js/jquery.balloon.min.js"></script>
+        <script src="web/public/softphone/js/parseuri.js"></script>
+        <script src="web/public/softphone/js/init.js"></script>
+        <script src="web/public/softphone/js/gui.js"></script>
+        <script src="web/public/softphone/js/callStatus.js"></script>
+        <script src="web/public/softphone/js/plugins.js"></script>
 
         <script src="jin.js"></script>
         <link href="web/public/softphone/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -101,20 +101,31 @@
                             }
 
         </script>
-
+        <!-- ---------- warning window beginning ----------- -->
+        <div id="warning" class="modal">
+            <div class="modal-content">
+                <h4 id="warningHeader"></h4>
+                <p id="warningText"></p>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0)" class=" modal-action modal-close waves-effect waves-light btn">OK</a>
+            </div>
+        </div>
+        <!-- ----------  warning window end ----------- -->
+        
         <!-- ---------- dropdown list status beginning ----------- -->
-        <ul id="dropdown_status" class="dropdown-content drop-status">
-            <li class="drop-status__el">
+        <ul id="dropdownStatus" class="dropdown-content drop_status">
+            <li class="drop_status__el">
                 <a href="#!">
-                    <div class="drop-status__el_icon-style circle online-icon"></div>В сети</a>
+                    <div class="drop_status__ico circle online-icon"></div>В сети</a>
             </li>
-            <li class="drop-status__el">
+            <li class="drop_status__el">
                 <a href="#!">
-                    <div class="drop-status__el_icon-style circle notAvailable-icon"></div>Занят</a>
+                    <div class="drop_status__ico circle notAvailable-icon"></div>Занят</a>
             </li>
-            <li class="drop-status__el">
+            <li class="drop_status__el">
                 <a href="#!">
-                    <div class="drop-status__el_icon-style circle dontDisturb-icon"></div>Не в сети</a>
+                    <div class="drop_status__ico circle dontDisturb-icon"></div>Не в сети</a>
             </li>
         </ul>
         <!-- ----------  dropdown list status end ----------- -->
@@ -181,7 +192,7 @@
 
         <div id="login-full-background"></div>
 
-        <div id="login-box">
+        <div id="loginBox">
             <!-- ---------- login form beginning----------- -->
 
             <div id="loginForm" class="row login">
@@ -223,9 +234,13 @@
             <a href="index.html#" class="text_settings"></a>
         </div>
 
-        <div id="advanced-settings" style="display:none;">
+        <!-- ---------- This form invisible begin----------- -->
+        <div id="advancedSettings" style="display:none;">
             <div class="close"></div>
-            <p class="link-jssip-doc"><span class="link_jssip_text"></span> <a href="http://jssip.net/documentation/" target="_blank" class="link_text"></a></p>
+            <p class="link-jssip-doc">
+                <span class="link_jssip_text"></span> 
+                <a href="http://jssip.net/documentation/" target="_blank" class="link_text"></a>
+            </p>
             <form id="advanced-settings-form" action="index.html">
                 <table>
                     <tr>
@@ -284,11 +299,12 @@
                 <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
             </form>
         </div>
-
+        <!-- ---------- This form invisible end----------- -->
+        
         <div id="Y_U_NO"><p></p></div>
 
-
-        <div id="phone-page" style="display: none;">
+        <!-- ---------- This form invisible begin----------- -->
+        <div id="phonePage" style="display: none;">
             <div class="display_user_name">
                 <span id="user_display_name"></span>
             </div>
@@ -360,16 +376,18 @@
             </div><!-- #phone -->
 
         </div><!-- phone-page -->
+        <!-- ---------- This form invisible end----------- -->
+        
         <div id="general">
             <!-- ---------- head block form beginning ----------- -->
-            <div id="head" class="head" style="z-index: 1;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);">
-                <nav class="head__nav " style="background:white;">
+            <div id="head" class="head">
+                <nav class="head__nav " style="">
                     <div class="nav-wrapper">
 
-                        <div class="circle dropdown-button head__nav_my-status online-icon" id="myStatus" data-activates='dropdown_status' ></div>
-                        <div class="collection head__nav_left my-profile">
-                            <div class="collection-item avatar action my-profile__el">
-                                <div class="circle my-profile__el_ava" style="background:url(web/public/softphone/avatars/4.jpg);" id="myAvatar"></div>
+                        <div class="circle dropdown-button head__nav_my-status online-icon" id="myStatus" data-activates='dropdownStatus' ></div>
+                        <div class="collection head__nav_left my_profile">
+                            <div class="collection-item avatar action my_profile__el">
+                                <div class="circle my_profile__ava" style="background:url(web/public/softphone/avatars/4.jpg);" id="myAvatar"></div>
                                 <span class="title truncate" id="myName">Кондратьев Константин Юрьевич бла бла бла балаааааааааааааааааааааааааааааааааааааааааааа</span>
                                 <p class="truncate online-text" id="myStatus" style="color: #565656 !important;"></p>
                             </div>
@@ -596,10 +614,10 @@
 
                     <!-- ---------- history block form end----------- -->
                     <!-- ---------- outgoing call block form beginning----------- -->
-                    <div id="outgoingCall_Form" class="outform inactive">
+                    <div id="outgoingCallForm" class="outform inactive">
                         <!-- здесь необходимо менять элементы: подставлять нужный аватар, менять статус соединения, время соединения -->
                         <div id="avatarCalled" style="background:url(http://ballroom12.ru/images/avatars/1.jpg);" class="circle avatar outform__avatar"></div>
-                        <span id="calledName" class="outform__called-name">Протасова Елена</span>
+                        <span id="calledName" class="outform__called_name">Протасова Елена</span>
                         <span id="statusCall" class="outform__status"></span>
                         <span id="timerCall" class="outform__timer">1:10</span>
                         <div id="buttons_block">
@@ -759,14 +777,6 @@
         <div id="ws_reconnect"></div>
         <div id="unregister_all"></div>
 
-<div id="my_alert" class="modal">
-            <div class="modal-content">
-                <h4 id="alert_header"></h4>
-                <p id="alert_text"></p>
-            </div>
-            <div class="modal-footer">
-                <a href="javascript:void(0)" class=" modal-action modal-close waves-effect waves-light btn">OK</a>
-            </div>
-        </div>
+
     </body>
 </html>

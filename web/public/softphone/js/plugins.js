@@ -34,4 +34,10 @@ $(document).ready(function () {
 $('[data-click]').on('click', function (e) {
     $($(this).data('click')).trigger('click');
 });
+
+
+$(document).ready(function () {
+    $('.tooltipped').tooltip({delay: 50});
+});
+        
 /*add some plugins materializecss end*/

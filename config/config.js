@@ -18,8 +18,8 @@
         {
             "host": "172.17.2.77",
             "expires": 60,
-            "user": "_l",
-            "password": "_l",
+            "user": "user",
+            "password": "user",
             "disable": 0
         }
     ],

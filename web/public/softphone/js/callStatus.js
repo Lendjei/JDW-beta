@@ -8,7 +8,7 @@ function showCallProcessing(status){
             break;
         case "in-progress":
             $("#content").children().hide();
-            $('#outgoingCall_Form').show();
+            $('#outgoingCallForm').show();
             break;
         case "answered":
             break;

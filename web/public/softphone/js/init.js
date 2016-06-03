@@ -17,6 +17,7 @@ var hostname = window.location.hostname;
 var port = window.location.port;
     hostname = "172.17.2.77";
     port = ":8000";
+var authService;
     
 var serviceMsg = {
     'User not found!': 'Пользователь не найден!',
@@ -53,23 +54,71 @@ localStorage.setItem('contacts', '{"success":true,"data":[["3", "Николае�
 localStorage.setItem('user_notifications', '{"success":true,"data":[["7", "inc_mes", "Ромка хватит работать, ложись спать!","2016-01-19T08:13:33.371Z"],["1", "inc_mes", "Ромка хватит работать, ложись спать!","2016-01-19T08:13:33.371Z"],["3", "miss_call", "Пропущенный звонок","2016-01-19T08:13:33.371Z"],["3", "miss_vid", "Пропущенный видеозвонок","2016-01-21T08:13:33.371Z"],["3", "out_mes", "Нууу мааааам!","2016-01-19T08:13:33.371Z"],["3", "inc_call", "Входящий звонок. Длительность: 00:01:33","2016-01-19T08:13:33.371Z"],["4", "out_call","Исходящий звонок. Длительность: 00:01:33","2016-01-19T08:13:33.371Z"],["", "out_vid","Исходящий видеозвонок. Длительность: 00:01:33","2016-01-19T08:13:33.371Z"]]}');
 localStorage.setItem('status', '{"success":true,"data":[["1", "notAvailable"],["2", "offline"],["3", "online"],["4", "notAvailable"],["5", "offline"],["6", "online"],["7", "notAvailable"], ["8", "offline"],["9", "online"],["10", "notAvailable"],["11", "offline"],["12", "online"],["13", "online"],["14", "notAvailable"],["15", "offline"],["16", "online"],["17", "notAvailable"], ["18", "offline"],["19", "online"],["20", "notAvailable"]]}');
 
-function myAlert(header, text) {
-    $("#my_alert > div.modal-content > h4").text(header);
-    $("#my_alert > div.modal-content > p").text(text);
-    $('#my_alert').openModal();
+function showWarning(header, text) {
+    $('#warningHeader').text(header);
+    $('#warningText').text(text);
+    $('#warning').openModal();
 }
 
 function auth_login_callback(res) {
-    var login_sip_uri = $("#loginForm input#sip_uri");
-    var login_sip_password = $("#sip_password");
+//    var login_sip_uri = $('#loginForm input#sip_uri');
+//    var login_sip_password = $('#sip_password');
     if (res === true) {
         console.log('+++++++++++++++++++++');
+        authService = true;
+        console.log(3333333);
     } else {
         console.log('--------------------------------');
-          myAlert(serviceMsg['errorMsgTitle'], serviceMsg[res]);
+        showWarning(serviceMsg['errorMsgTitle'], serviceMsg[res]);
         //ua = "";
     }
 }
+
+function getUserSettings(){
+    /*function list 
+     * what we need to download for user
+     * */
+    
+    getContacts(); 
+}
+
+function getContacts() {
+    /*get contacts list for user*/
+    console.log(55555555);
+    if (authService) {console.log(11111);
+        $.ajax({
+            url: db_host + "/contacts/get_contacts",
+            dataType: "jsonp",
+            jsonpCallback: "get_my_contacts_callback"
+        });
+    }
+}
+
+function get_my_contacts_callback(json) {
+    if (!json.Error) {
+            console.log("-----------");
+            console.log("--error - ");
+            console.log("-----------2");
+        }
+        else {
+console.log("-----------");
+            console.log(json.Message);
+            console.log("-----------2");
+        }
+//    console.log("-----------");
+//    console.log(json);
+//    console.log("-----------2");
+//  if (res) {
+//      console.log(JSON.stringify(res));
+//    localStorage.setItem("contacts", JSON.stringify(res));
+//    $.ajax({
+//      url: db_host+"/notifications/get",
+//      dataType: "jsonp",
+//      jsonpCallback: "get_my_notifications_callback"
+//    });
+//  }
+  };
+
 function updateStorage() {
     statusLists = JSON.parse(localStorage.getItem("status")).data;
     arrayAvatarsIcon = []; //JSON.parse(localStorage.getItem("last_notifications")).data; 
@@ -161,8 +210,14 @@ function createListContacts() {
     listItemsContacts += '</ul>';
     listContacts.html(listItemsContacts);
 
+
 }
 
+function get_my_notifications_callback(res) {
+//  localStorage.setItem("user_notifications", JSON.stringify(res));
+//  updateStorage();
+
+}
 $(document).on('change', '#autoEnter', function () {
     $("#autoEnter").prop("checked") ? $('#btnEnter').text('Автовход') : $('#btnEnter').text('Войти');
 });
@@ -241,7 +296,7 @@ function hideAuth() {
         $(".balloonTip").css("display", "none");
         $(this).remove();
     });
-    $("#login-box").fadeOut(1000, function () {
+    $("#loginBox").fadeOut(1000, function () {
         $(this).remove();
     });
 }
@@ -266,7 +321,7 @@ $(document).ready(function () {
     updateStorage();
     $('ul.collapsible').unbind('click'); //чтобы не закрывался список последних действий
 
-    $('#test4, #phone-page, #history, #guestLoginForm, #outgoingCall_Form, #incomingCall_Form, #chatCall, #outgoingVideo_Form, #contacts').hide();
+    $('#test4, #phonePage, #history, #guestLoginForm, #outgoingCallForm, #incomingCall_Form, #chatCall, #outgoingVideo_Form, #contacts').hide();
 
     createLastMsg();
     createListContacts();
@@ -284,11 +339,11 @@ $(document).ready(function () {
     });
     $('#outgoingCall').on('click', function () {
         $('#history').hide();
-        $('#outgoingCall_Form').show();
+        $('#outgoingCallForm').show();
     });
 
     $('#out_call_end').on('click', function () {
-//        $('#outgoingCall_Form').hide();
+//        $('#outgoingCallForm').hide();
 //        $('#history').show();
     });
 
@@ -321,7 +376,7 @@ $(document).ready(function () {
     });
 
     $('#contact_btn').on('click', function () {
-        $('#history, #guestLoginForm, #outgoingCall_Form, #incomingCall_Form, #chatCall, #outgoingVideo_Form').hide();
+        $('#history, #guestLoginForm, #outgoingCallForm, #incomingCall_Form, #chatCall, #outgoingVideo_Form').hide();
         $('#contacts').show();
     });
 
@@ -428,9 +483,10 @@ $(document).ready(function () {
                             if (statusUa && statusUa[0] && statusUa[0].name && (statusUa[0].name == curSipUri)) {
                                 if (statusUa[0].status && statusUa[0].status == 1) {
                                     hideAuth();
+                                    getUserSettings();
                                 } else {
                                    // Y_U_NO('Registration failure', 2000);
-                                    myAlert(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
+                                    showWarning(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
                                 }
                             }
                         });
@@ -478,7 +534,7 @@ $(document).ready(function () {
                 // Показать сообщение об ошибке
                 if (regSipAccount.status == 'unregistered') {
                     //Y_U_NO('Registration failure', 2000);
-                     myAlert(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
+                     showWarning(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
                 }
             }
 
@@ -589,13 +645,13 @@ $(document).ready(function () {
     var login_Y_U_NO = $("#Y_U_NO");
     var login_Y_U_NO_text = $("#Y_U_NO p");
     var login_advanced_settings_link = $("#advanced-settings-link a");
-    var login_advanced_settings = $("#advanced-settings");
-    var login_advanced_settings_close = $("#advanced-settings .close");
+    var login_advanced_settings = $("#advancedSettings");
+    var login_advanced_settings_close = $("#advancedSettings .close");
     var login_advanced_settings_form = $("#advanced-settings-form");
     var login_use_trit_account_link = $("#use-tryit-account-link a");
     var login_form_from_invitation = $("#login-form-from-invitation");
     var login_display_name_from_invitation = $("#login-form-from-invitation input.display_name");
-    var user_display_name = $("#phone-page #user_display_name");
+    var user_display_name = $("#phonePage #user_display_name");
 
     var div_webcam = $("div#webcam");
     var balloons = $("a.balloon");
@@ -883,10 +939,10 @@ $(document).ready(function () {
             }
 
             if (!sip_uri) {
-                myAlert(serviceMsg['errorMsgTitle'], serviceMsg['errorSipUri']);
+                showWarning(serviceMsg['errorMsgTitle'], serviceMsg['errorSipUri']);
                 return false;
             } else if (!ws_servers) {
-                myAlert(serviceMsg['errorMsgTitle'], serviceMsg['errorWsServer']);
+                showWarning(serviceMsg['errorMsgTitle'], serviceMsg['errorWsServer']);
                 return false;
             }
 
@@ -936,7 +992,7 @@ $(document).ready(function () {
         } catch (e) {
             console.log(e.toString());
          //   Y_U_NO(e.message, 4000);
-            myAlert(serviceMsg['errorMsgTitle'], e.message);
+            showWarning(serviceMsg['errorMsgTitle'], e.message);
             return;
         }
 
@@ -1168,7 +1224,7 @@ $(document).ready(function () {
                 $(".balloonTip").css("display", "none");
                 $(this).remove();
             });
-            $("#login-box").fadeOut(1000, function () {
+            $("#loginBox").fadeOut(1000, function () {
                 $(this).remove();
             });
 
@@ -1198,7 +1254,7 @@ $(document).ready(function () {
             console.info('Registration failure');
             GUI.setStatus("registrationFailed", "webrtc");
             //Y_U_NO('Registration failure', 4000);
-            myAlert(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
+            showWarning(serviceMsg['errorMsgTitle'], serviceMsg['registrationFailed']);
 
             //GUI.setStatus("connected", "webrtc");
 
